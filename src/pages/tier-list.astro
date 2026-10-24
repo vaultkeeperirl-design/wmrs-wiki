@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PowerBadge from '../components/PowerBadge.astro';
 import {entries,href,entryHref} from '../lib/data';
 import {categoryIcons} from '../content/game-icons';
-import {powerRanks,powerRankInfo,referenceFrame} from '../lib/power';
+import {powerRanks,powerRankInfo,referenceFrame,rankMetrics} from '../lib/power';
 import {acquisitionRoutes} from '../lib/acquisition';
 import '../styles/power.css';
 import '../styles/tier-list.css';
@@ -30,6 +30,7 @@ const fallback=entries.filter(e=>e.category==='warmachines'&&e.power&&!e.spoiler
   </header>
   <div class="tl-views" role="tablist" aria-label="What to rank">{views.map((view,index)=><button type="button" role="tab" data-view={view.value} aria-selected={index===0?'true':'false'}><img src={href(view.icon)} alt="" width="30" height="30" />{view.label}</button>)}</div>
   <div class="tl-filters">
+    <div class="field"><label for="tl-metric">RANK BY</label><select id="tl-metric">{rankMetrics.map(metric=><option value={metric.value}>{metric.label}</option>)}</select></div>
     <div class="field"><label for="tl-tier">CARD TIER</label><select id="tl-tier"><option value="">All tiers</option><option value="Base">Base only</option><option value="P">P · Prototype only</option><option value="SP">SP · Secret Prototype only</option><option value="HSP">HSP only (spoilers)</option></select></div>
     <div class="field"><label for="tl-faction">FACTION</label><select id="tl-faction"><option value="">All factions</option>{factions.map(f=><option>{f}</option>)}</select></div>
     <div class="field" data-frames-only><label for="tl-class">CHASSIS CLASS</label><select id="tl-class"><option value="">All classes</option>{chassis.map(c=><option>{c}</option>)}</select></div>

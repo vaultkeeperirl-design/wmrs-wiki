@@ -20,11 +20,21 @@ const cutoffs: [PowerRank, number][] = [['S',.10],['A',.30],['B',.60],['C',.85],
 
 // utils/combatEngine.ts: damage taken × (1 − DEF/(DEF+100)); shields absorb first.
 // utils/evasion.ts: evasion is a separate dodge roll capped at 60%.
+export const durabilityScore = (stats: Record<string,number> = {}) =>
+  ((stats.HP ?? 0) + (stats.Shield ?? 0)) * (1 + (stats.Defense ?? 0) / 100) / (1 - Math.min(60, stats.Evasion ?? 0) / 100);
+export const damageScore = (stats: Record<string,number> = {}) =>
+  (stats.Attack ?? 0) * (1 + Math.max(stats['Ranged bonus'] ?? 0, stats['Melee bonus'] ?? 0) / 100);
 export function combatScore(stats: Record<string,number> = {}) {
-  const durability = ((stats.HP ?? 0) + (stats.Shield ?? 0)) * (1 + (stats.Defense ?? 0) / 100) / (1 - Math.min(60, stats.Evasion ?? 0) / 100);
-  const damage = (stats.Attack ?? 0) * (1 + Math.max(stats['Ranged bonus'] ?? 0, stats['Melee bonus'] ?? 0) / 100);
-  return Math.round(Math.sqrt(durability * damage) * 10);
+  return Math.round(Math.sqrt(durabilityScore(stats) * damageScore(stats)) * 10);
 }
+
+/** What the tier list can rank by. Power is the overall score; the rest isolate one strength. */
+export const rankMetrics: {value: string; label: string; short: string; value_of: (e: Entry) => number | undefined}[] = [
+  {value: 'power', label: 'Overall power', short: 'PWR', value_of: e => e.power?.score},
+  {value: 'damage', label: 'Damage output', short: 'DMG', value_of: e => Math.round(damageScore(e.stats) * 10) / 10},
+  {value: 'durability', label: 'Durability (effective HP)', short: 'EHP', value_of: e => Math.round(durabilityScore(e.stats))},
+  ...['HP','Attack','Defense','Evasion','Shield','Shield regen','Energy','Energy regen','Hull regen','Ranged bonus','Melee bonus'].map(stat => ({value: stat, label: stat, short: ({Attack:'ATK',Defense:'DEF',Evasion:'EVA',Shield:'SHD','Shield regen':'SHD+','Energy regen':'EN+','Hull regen':'HP+','Ranged bonus':'RNG%','Melee bonus':'MEL%',Energy:'EN'} as Record<string,string>)[stat] ?? stat, value_of: (e: Entry) => e.stats?.[stat]})),
+];
 
 /** Median public Base frame. Pilots are scored by how much they add to it. */
 export const referenceFrame = {HP: 140, Attack: 20, Defense: 10};
