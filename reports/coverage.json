@@ -13,7 +13,7 @@
     "upgrades": 2,
     "warmachines": 682
   },
-  "gameVersion": "2.2.1",
+  "gameVersion": "2.2.2",
   "withheldCount": 1,
   "missingArt": [
     "demolisher-ff5f29e",
@@ -24,20 +24,7 @@
   "changes": {
     "added": [],
     "removed": [],
-    "changed": [
-      {
-        "id": "oblivion-bastion-533906e",
-        "fields": [
-          "background"
-        ]
-      },
-      {
-        "id": "riftmaw-colossus-750147a",
-        "fields": [
-          "background"
-        ]
-      }
-    ]
+    "changed": []
   },
   "investigations": [
     "Released story details and hidden rewards are approved behind click-to-reveal controls; unreleased DLC remains excluded.",

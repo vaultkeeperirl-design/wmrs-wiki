@@ -85,7 +85,7 @@ export const guides: Guide[] = [
   "slug": "titan-raids",
   "title": "Faction Titan raids: shared damage and repeatable rewards",
   "summary": "Fight your own battle, wear down a shared allegiance boss, and earn multiplayer equipment, a frame and a pilot.",
-  "level": "2.2.1 / MULTIPLAYER",
+  "level": "2.2.2 / MULTIPLAYER",
   "sources": [
     "data/titanRaids.ts",
     "data/titanRaidRewards.ts",
@@ -103,8 +103,8 @@ export const guides: Guide[] = [
     {
       "title": "One allegiance target, separate battles",
       "paragraphs": [
-        "Choose Vanguard or Unbound, then open Multiplayer → Faction War. Vanguard faces Oblivion Bastion; Unbound faces Riftmaw Colossus. Each side has its own 2,500,000-health weekly pool. Your allies contribute through their own battles; no synchronous party or shared battle is required.",
-        "The compact operation screen shows a large waist-up Titan over a war-torn backdrop, deployment controls, paged recent strikes and damage leaders, and tabs for milestone salvage or repeatable caches. After a strike is accepted, the foreground flashes white, the exact accepted damage appears, and the shared health bar animates the removed chunk. A preview of what is coming."
+        "Choose Vanguard or Unbound, then open Multiplayer → Faction War. Vanguard starts against Oblivion Bastion; Unbound starts against Riftmaw Colossus. Each allegiance has its own shared pool. When that Titan dies, the other Titan immediately spawns with 2,500,000 health; the two alternate for the rest of the week. Weekly damage standings and career rewards continue across spawns. Your allies contribute through their own battles; no synchronous party or shared battle is required.",
+        "The compact operation screen shows a large waist-up Titan over a war-torn backdrop, deployment controls, paged recent strikes and damage leaders, and tabs for milestone salvage or repeatable caches. Damage Leaders opens by default; Recent Strikes remains available. After a strike is accepted, the foreground flashes white, the exact accepted damage appears, and the shared health bar animates the removed chunk. A preview of what is coming."
       ]
     },
     {
@@ -112,14 +112,14 @@ export const guides: Guide[] = [
       "paragraphs": [
         "Deploy up to six occupied friendly bays against a Titan occupying two enemy bays. Its local hull is the smaller of 15,000 health and the shared hull remaining when your attempt starts. This makes a local win possible without requiring one squad to deal millions of damage.",
         "Empty the battle hull to win and withdraw with surviving frames. A squad wipe still contributes its damage. The server recalculates the battle result and clamps contributions to the remaining shared health, so simultaneous finishing strikes cannot overdraw the pool.",
-        "The boss starts with 450 Attack and 120 Defense. Its attack increases 35% every three rounds, with the normal 20-round battle limit. Click a friendly frame to toggle block, hold it to queue its chassis special, and click the Titan to focus fire. Orders resolve at the next exchange and the server replays them before accepting damage. The normal named ability flash appears when a special activates. Raids do not permanently destroy your inventory or change your PvP/ranked results."
+        "The boss starts with 450 Attack and 120 Defense. Its attack increases 35% every three rounds. New 2.2.2 strikes continue until the local Titan or the squad is defeated instead of retreating at round 20. Pending attempts started in an older version retain their original combat rules. Click a friendly frame to toggle block, hold it to queue its chassis special, and click the Titan to focus fire. Orders resolve at the next exchange and the server replays them before accepting damage. The normal named ability flash appears when a special activates. Destroyed frames, pilots and equipment follow the normal Workshop Recovery rules after the strike is accepted. Existing SP/HSP unbreakable and Apex protections still apply. Surviving items stay available. Raid results do not change your PvP/ranked results."
       ]
     },
     {
       "title": "Cooldown, resume and weekly reset",
       "paragraphs": [
         "Deployment has a 60-second server-time cooldown. An unfinished attempt can be resumed for 15 minutes, using its saved squad and random seed. The strike opens in a full-screen battle view. Returning early preserves the attempt and completed orders on this device. Once combat playback finishes, the top return control is disabled. Click Submit to record your damage and return immediately, or let the visible ten-second countdown submit automatically. If submission fails, the battle stays open for retry. Submitting the same attempt twice does not award damage or rewards twice.",
-        "Each allegiance receives a fresh operation Monday at 00:00 UTC. Career damage milestones and cache Legendary pity persist across weeks. After the shared boss reaches zero, contributors with positive damage can claim a 500-Nanite clear cache."
+        "Each allegiance receives a fresh operation Monday at 00:00 UTC. Career damage milestones and cache Legendary pity persist across weeks. Each defeated shared Titan gives its positive-damage contributors a 500-Nanite clear reward. Those credits remain claimable while the next Titan is active; multiple unclaimed kills can be collected together. A late attempt against a previously defeated Titan cannot damage the next spawn."
       ]
     },
     {
@@ -150,7 +150,7 @@ export const guides: Guide[] = [
     {
       "title": "Snapshot availability",
       "paragraphs": [
-        "These rules and rewards describe the prepared 2.2.1 Steam build. Interactive combat requires the matching multiplayer backend update. Steam publication may follow the wiki update; the wiki does not connect to or display live raid totals."
+        "These rules and rewards describe the prepared 2.2.2 Steam build. The alternating encounters, claim state and endurance combat require the matching multiplayer backend update. Steam publication may follow the wiki update; the wiki does not connect to or display live raid totals."
       ]
     }
   ]
@@ -255,6 +255,53 @@ export const guides: Guide[] = [
       "title": "Prepared base-game package",
       "paragraphs": [
         "The Windows 2.2.1 package excludes developer DLC and demo packs. Package preparation does not itself publish the update to Steam."
+      ]
+    }
+  ]
+},
+{
+  "slug": "update-2-2-2",
+  "title": "What changes in 2.2.2",
+  "summary": "Alternating Titans, battles until victory or squad wipe, normal Recovery, and clearer reward mail.",
+  "level": "UPDATE / 2.2.2",
+  "sources": [
+    "nakama-server/titanRaids.ts",
+    "utils/titanRaidCombat.ts",
+    "utils/titanRaidRecovery.ts",
+    "components/multiplayer/CommsInboxModal.tsx",
+    "data/changelog.ts"
+  ],
+  "related": [
+    "titan-raids",
+    "update-2-2-1",
+    "upgrades"
+  ],
+  "sections": [
+    {
+      "title": "The next Titan spawns when one falls",
+      "paragraphs": [
+        "Each allegiance now alternates between Oblivion Bastion and Riftmaw Colossus. Defeating the shared boss immediately spawns the other at full health. Weekly damage standings continue across those kills, while each side keeps its own pool.",
+        "Clear rewards stay claimable after the next spawn. Each contributing kill earns 500 Nanites; unclaimed credits can be collected together. Submissions remain attached to the encounter they began against, so an old strike cannot damage a new Titan."
+      ]
+    },
+    {
+      "title": "Fight until victory or squad wipe",
+      "paragraphs": [
+        "New strikes no longer stop at round 20 while frames are still alive. Combat continues until the local Titan or your squad is defeated. Already pending strikes from older versions retain their original rules.",
+        "Destroyed items follow normal Workshop Recovery after the strike is accepted. SP/HSP unbreakable and Apex protections still apply. Damage is counted even on a squad wipe, and retrying a submission does not duplicate the damage or Recovery records."
+      ]
+    },
+    {
+      "title": "See your rewards and their status",
+      "paragraphs": [
+        "Item mail now displays the actual reward artwork. Expand the attachment preview to inspect its stats before or after collection.",
+        "Collected milestone salvage correctly shows CLAIMED even when its mail record is private. Damage Leaders is the default operation tab; Recent Strikes remains available."
+      ]
+    },
+    {
+      "title": "Windows base-game package",
+      "paragraphs": [
+        "The prepared 2.2.2 package excludes DLC and developer demo packs. Preparing this release does not publish it to Steam."
       ]
     }
   ]
