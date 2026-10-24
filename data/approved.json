@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "2.2.0",
-  "databaseHash": "960b428452352e95924df3ef40186ac575c76c28c5088dc52c0b5e9aab89d9f3",
+  "gameVersion": "2.2.1",
+  "databaseHash": "8831922bc53bbeca55f06d04d5d9e0b8b6502caa601153d39eefe345809ca713",
   "assetHashes": {
     "assets/banners/aegis-alliance.webp": "5a1ac8b00cb51691b0954d56fbd6f8da538644e6a885a2990814d275ba03cba4",
     "assets/banners/cygnus-corporation.webp": "60537f206959ca2d717116f645d295ab49414b19ae8cd1b5bb16dca5e2fcc753",
@@ -1707,6 +1707,7 @@
     "assets/warmachines/bg/nexus-frame-p-bg.webp": "e1d2bb3d70aaa4a890350ea9b103afd3d4d617069809b2113c025f10e4cb1605",
     "assets/warmachines/bg/nexus-frame-sp-bg.webp": "e1d2bb3d70aaa4a890350ea9b103afd3d4d617069809b2113c025f10e4cb1605",
     "assets/warmachines/bg/null-sector-hsp-bg.webp": "8f35bf695f907ff97b173cab47d19653816ee227a7fa8fd65eccb5eac148105c",
+    "assets/warmachines/bg/oblivion-bastion-bg.webp": "bfb438c13435c0698a0512a2662ac901a8ec8220f95971d72ebece5df5aa3998",
     "assets/warmachines/bg/observer-drone-bg.webp": "8f35bf695f907ff97b173cab47d19653816ee227a7fa8fd65eccb5eac148105c",
     "assets/warmachines/bg/observer-drone-p-bg.webp": "8f35bf695f907ff97b173cab47d19653816ee227a7fa8fd65eccb5eac148105c",
     "assets/warmachines/bg/observer-drone-sp-bg.webp": "8f35bf695f907ff97b173cab47d19653816ee227a7fa8fd65eccb5eac148105c",
@@ -1734,6 +1735,7 @@
     "assets/warmachines/bg/rift-walker-bg.webp": "de56976c5fd79eb02ee80f74c5ac5fdd166a0447e5f3b97bd6696cc03e0be3a9",
     "assets/warmachines/bg/rift-walker-p-bg.webp": "de56976c5fd79eb02ee80f74c5ac5fdd166a0447e5f3b97bd6696cc03e0be3a9",
     "assets/warmachines/bg/rift-walker-sp-bg.webp": "de56976c5fd79eb02ee80f74c5ac5fdd166a0447e5f3b97bd6696cc03e0be3a9",
+    "assets/warmachines/bg/riftmaw-colossus-bg.webp": "bfb438c13435c0698a0512a2662ac901a8ec8220f95971d72ebece5df5aa3998",
     "assets/warmachines/bg/rust-baron-bg.webp": "9341f1f3dbc4f01e32d76513db95d8a59cdc0aed6ce01ef68f094d93fc0dfca2",
     "assets/warmachines/bg/rust-baron-p-bg.webp": "9341f1f3dbc4f01e32d76513db95d8a59cdc0aed6ce01ef68f094d93fc0dfca2",
     "assets/warmachines/bg/rust-baron-sp-bg.webp": "9341f1f3dbc4f01e32d76513db95d8a59cdc0aed6ce01ef68f094d93fc0dfca2",

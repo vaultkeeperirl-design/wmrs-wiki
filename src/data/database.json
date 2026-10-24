@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "2.2.0",
+  "gameVersion": "2.2.1",
   "releasePolicy": "base-game; released spoilers available behind reveal controls; deployment requires reviewed snapshot",
   "entries": [
     {
@@ -2417,7 +2417,7 @@
       "combatOnly": true,
       "spoiler": true,
       "image": "assets/warmachines/fg/oblivion-bastion/oblivion-bastion-fg.webp",
-      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "background": "assets/warmachines/bg/oblivion-bastion-bg.webp",
       "stats": {
         "HP": 15000,
         "Shared HP": 2500000,
@@ -2600,7 +2600,7 @@
       "combatOnly": true,
       "spoiler": true,
       "image": "assets/warmachines/fg/riftmaw-colossus/riftmaw-colossus-fg.webp",
-      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "background": "assets/warmachines/bg/riftmaw-colossus-bg.webp",
       "stats": {
         "HP": 15000,
         "Shared HP": 2500000,

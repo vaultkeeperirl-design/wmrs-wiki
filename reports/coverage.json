@@ -13,7 +13,7 @@
     "upgrades": 2,
     "warmachines": 682
   },
-  "gameVersion": "2.2.0",
+  "gameVersion": "2.2.1",
   "withheldCount": 1,
   "missingArt": [
     "demolisher-ff5f29e",
@@ -28,13 +28,13 @@
       {
         "id": "oblivion-bastion-533906e",
         "fields": [
-          "spoiler"
+          "background"
         ]
       },
       {
         "id": "riftmaw-colossus-750147a",
         "fields": [
-          "spoiler"
+          "background"
         ]
       }
     ]

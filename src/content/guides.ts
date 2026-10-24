@@ -85,7 +85,7 @@ export const guides: Guide[] = [
   "slug": "titan-raids",
   "title": "Faction Titan raids: shared damage and repeatable rewards",
   "summary": "Fight your own battle, wear down a shared allegiance boss, and earn multiplayer equipment, a frame and a pilot.",
-  "level": "2.2.0 / MULTIPLAYER",
+  "level": "2.2.1 / MULTIPLAYER",
   "sources": [
     "data/titanRaids.ts",
     "data/titanRaidRewards.ts",
@@ -104,7 +104,7 @@ export const guides: Guide[] = [
       "title": "One allegiance target, separate battles",
       "paragraphs": [
         "Choose Vanguard or Unbound, then open Multiplayer → Faction War. Vanguard faces Oblivion Bastion; Unbound faces Riftmaw Colossus. Each side has its own 2,500,000-health weekly pool. Your allies contribute through their own battles; no synchronous party or shared battle is required.",
-        "The screen displays shared health, recent strike damage, local engagement victories and the leading contributors. A preview of what is coming."
+        "The compact operation screen shows a large waist-up Titan over a war-torn backdrop, deployment controls, paged recent strikes and damage leaders, and tabs for milestone salvage or repeatable caches. After a strike is accepted, the foreground flashes white, the exact accepted damage appears, and the shared health bar animates the removed chunk. A preview of what is coming."
       ]
     },
     {
@@ -112,20 +112,20 @@ export const guides: Guide[] = [
       "paragraphs": [
         "Deploy up to six occupied friendly bays against a Titan occupying two enemy bays. Its local hull is the smaller of 15,000 health and the shared hull remaining when your attempt starts. This makes a local win possible without requiring one squad to deal millions of damage.",
         "Empty the battle hull to win and withdraw with surviving frames. A squad wipe still contributes its damage. The server recalculates the battle result and clamps contributions to the remaining shared health, so simultaneous finishing strikes cannot overdraw the pool.",
-        "The boss starts with 450 Attack and 120 Defense. Its attack increases 35% every three rounds, with the normal 20-round battle limit. Chassis specials are selected automatically. Raids do not permanently destroy your inventory or change your PvP/ranked results."
+        "The boss starts with 450 Attack and 120 Defense. Its attack increases 35% every three rounds, with the normal 20-round battle limit. Click a friendly frame to toggle block, hold it to queue its chassis special, and click the Titan to focus fire. Orders resolve at the next exchange and the server replays them before accepting damage. The normal named ability flash appears when a special activates. Raids do not permanently destroy your inventory or change your PvP/ranked results."
       ]
     },
     {
       "title": "Cooldown, resume and weekly reset",
       "paragraphs": [
-        "Deployment has a 60-second server-time cooldown. An unfinished attempt can be resumed for 15 minutes, using its saved squad and random seed. Return and submit the result to record the contribution; submitting the same attempt twice does not award damage or rewards twice.",
+        "Deployment has a 60-second server-time cooldown. An unfinished attempt can be resumed for 15 minutes, using its saved squad and random seed. The strike opens in a full-screen battle view. Returning early preserves the attempt and completed orders on this device. Once combat playback finishes, the top return control is disabled. Click Submit to record your damage and return immediately, or let the visible ten-second countdown submit automatically. If submission fails, the battle stays open for retry. Submitting the same attempt twice does not award damage or rewards twice.",
         "Each allegiance receives a fresh operation Monday at 00:00 UTC. Career damage milestones and cache Legendary pity persist across weeks. After the shared boss reaches zero, contributors with positive damage can claim a 500-Nanite clear cache."
       ]
     },
     {
       "title": "Three career salvage milestones",
       "paragraphs": [
-        "At 1,000 cumulative accepted damage, earn Breachline Driver, a Legendary ranged weapon. At 10,000, earn Last Line Carapace, Legendary armor. At 30,000, earn Resonance Anchor, a Legendary core. Each milestone is awarded once through Comms Mail."
+        "At 1,000 cumulative accepted damage, earn Breachline Driver, a Legendary ranged weapon. At 10,000, earn Last Line Carapace, Legendary armor. At 30,000, earn Resonance Anchor, a Legendary core. Each milestone is awarded once through Comms Mail. An eligible unclaimed reward shows Claim in Comms Mail; after you collect that mail reward, it shows CLAIMED."
       ]
     },
     {
@@ -150,7 +150,7 @@ export const guides: Guide[] = [
     {
       "title": "Snapshot availability",
       "paragraphs": [
-        "These rules and rewards describe the prepared 2.2.0 Steam build. The multiplayer backend is enabled, but access requires the matching game update. Steam publication may follow the wiki update; the wiki does not connect to or display live raid totals."
+        "These rules and rewards describe the prepared 2.2.1 Steam build. Interactive combat requires the matching multiplayer backend update. Steam publication may follow the wiki update; the wiki does not connect to or display live raid totals."
       ]
     }
   ]
@@ -213,7 +213,52 @@ export const guides: Guide[] = [
       ]
     }
   ]
-}
+},
+{
+  "slug": "update-2-2-1",
+  "title": "What changes in 2.2.1",
+  "summary": "Interactive Titan battles, a compact operation screen, clearer claims and accurate NEW badges.",
+  "level": "UPDATE / 2.2.1",
+  "sources": [
+    "components/multiplayer/TitanRaidPanel.tsx",
+    "utils/titanRaidCombat.ts",
+    "utils/ownership.ts",
+    "data/changelog.ts"
+  ],
+  "related": [
+    "titan-raids",
+    "update-2-2-0",
+    "first-battle",
+    "packs"
+  ],
+  "sections": [
+    {
+      "title": "Fight with your normal controls",
+      "paragraphs": [
+        "Titan raids now accept click-to-block, hold-to-use chassis specials and focus fire. Each command changes the battle result, and the server validates the submitted sequence. Battles open in their own full-screen view and return to the operation when the strike is submitted.",
+        "After playback finishes, a visible ten-second countdown automatically submits and returns unless you submit sooner. A failed submission stays open for retry. The return control cannot bypass the completed strike."
+      ]
+    },
+    {
+      "title": "See the boss and the damage you dealt",
+      "paragraphs": [
+        "The operation screen fits the game canvas with a large waist-up Titan and generated war-torn scenery. Paged contribution logs and reward tabs keep the controls compact. Accepted strikes trigger a white foreground flash, exact damage text and an animated reduction of shared health."
+      ]
+    },
+    {
+      "title": "Rewards and collection feedback",
+      "paragraphs": [
+        "Eligible milestone salvage shows Claim in Comms Mail and collected rewards show CLAIMED. Scout and post-run NEW badges recognize owned Apex Pilot families, renamed and evolved copies, and recovery items. Duplicate families in one reward batch only count as new once. Existing multiplayer rewards remain optional for collection completion."
+      ]
+    },
+    {
+      "title": "Prepared base-game package",
+      "paragraphs": [
+        "The Windows 2.2.1 package excludes developer DLC and demo packs. Package preparation does not itself publish the update to Steam."
+      ]
+    }
+  ]
+},
 ];
 export const journey = [
   {slug:'start-here',label:'Start here',hint:'Learn the loop'}, {slug:'first-battle',label:'First battle',hint:'Read the battlefield'},
