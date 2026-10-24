@@ -8,5 +8,5 @@ export default defineConfig({
   trailingSlash: 'always',
   output: 'static',
   integrations: [sitemap()],
-  vite: { plugins: [tailwindcss()] },
+  vite: { plugins: [tailwindcss()], server: { watch: { ignored: ['**/.staging/**', '**/.review/**', '**/dist/**'] } } },
 });
