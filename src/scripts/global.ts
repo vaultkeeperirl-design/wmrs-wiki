@@ -26,3 +26,10 @@ document.addEventListener('click',event=>{
 });
 window.addEventListener('storage',refreshState);
 refreshState();
+
+// Footer visitor total from GoatCounter's public counter; stays hidden if it is unavailable.
+const visitorCount=document.querySelector<HTMLElement>('[data-visitor-count]');
+if(visitorCount)fetch(`${visitorCount.dataset.visitorCount}/counter/TOTAL.json`).then(response=>response.ok?response.json():Promise.reject()).then((totals:{count:string})=>{
+  visitorCount.querySelector('[data-visitor-total]')!.textContent=totals.count;
+  visitorCount.hidden=false;
+}).catch(()=>{});

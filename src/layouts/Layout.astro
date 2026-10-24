@@ -6,6 +6,7 @@ import '@fontsource/orbitron/800.css';
 import '@fontsource/roboto-mono/400.css';
 import { categories, href, database } from '../lib/data';
 import { gameIcons, categoryIcons, playerToolNavigation } from '../content/game-icons';
+import { goatCounterUrl } from '../content/analytics';
 interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
 const { title, description = 'The Warmachine Rogue Scout wiki: War Machines, pilots, packs, equipment, missions and clear guides to every verified base-game system.', image = 'assets/title/base/ares-full-title.webp', noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -53,7 +54,8 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: `${
   </a>)}
   <div class="sidebar-bottom"><span class="status-dot"></span> BASE GAME REFERENCE<small>Catalog snapshot {database.gameVersion}</small><a href="https://store.steampowered.com/app/5006180/Warmachine_RogueScout/" target="_blank" rel="noopener noreferrer">Play on Steam ↗</a></div>
 </aside>
-<div class="content-shell"><main id="main" tabindex="-1"><slot /></main><footer><span>WARMACHINE: ROGUE SCOUT <b>/</b> FIELD INTELLIGENCE</span><p>Game artwork and content © Hellfun Digital. Catalog {database.gameVersion}. <a href={href('about/')}>Sources, coverage & privacy</a></p></footer></div></div>
+<div class="content-shell"><main id="main" tabindex="-1"><slot /></main><footer><span>WARMACHINE: ROGUE SCOUT <b>/</b> FIELD INTELLIGENCE</span><p>Game artwork and content © Hellfun Digital. Catalog {database.gameVersion}. <a href={href('about/')}>Sources, coverage & privacy</a></p>{goatCounterUrl && <p class="visitor-count" data-visitor-count={goatCounterUrl} hidden><span class="status-dot"></span> <b data-visitor-total>—</b> visitors to this wiki</p>}</footer></div></div>
 <div id="toast" role="status" aria-live="polite"></div>
 <script>import '../scripts/global';</script>
+{goatCounterUrl && <script is:inline async data-goatcounter={`${goatCounterUrl}/count`} src="https://gc.zgo.at/count.js"></script>}
 </body></html>
