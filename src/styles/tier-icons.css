@@ -13,3 +13,5 @@
 .comparison-table .tier-comparison-cell .tier-badge{font-size:11px}.comparison-table .tier-comparison-cell .tier-icon{width:64px;height:38px}
 .team-tier-preview{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:10px;color:var(--muted)}.team-tier-preview .tier-icon{width:48px;height:28px}
 @media(max-width:480px){.card-meta .tier-icon{width:42px;height:25px}.card-meta .tier-badge{font-size:8px}.variant-tabs .tier-icon{width:34px;height:24px}.variant-tabs .tier-badge{font-size:8px}.variant-tabs button,.variant-tabs a{min-height:54px;gap:1px}.tier-badge--detail .tier-icon{width:60px;height:36px}}
+.tier-name-icon{display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;filter:drop-shadow(0 1px 2px #0009)}
+.unit-name .tier-name-icon{height:1.05em;vertical-align:-.12em}

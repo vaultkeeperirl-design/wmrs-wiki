@@ -109864,7 +109864,7 @@
       "name": "Vaultkeeper",
       "description": "The creator himself, leading one extremely enthusiastic Sentai capture operation.",
       "sources": [
-        "Rogue completionist reward: collect every required title and claim the Rogue title."
+        "Combat-only: appears as a story boss or guest. It cannot be recruited, recovered or evolved."
       ],
       "evidence": [
         "constants.ts",
@@ -109888,6 +109888,7 @@
       "rating": 40,
       "image": "assets/pilots/fg/vaultkeeper/vaultkeeper-fg.webp",
       "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "combatOnly": true,
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [
@@ -110103,7 +110104,7 @@
       "name": "Vaultkeeper [P]",
       "description": "The creator himself, leading one extremely enthusiastic Sentai capture operation. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Rogue completionist reward: collect every required title and claim the Rogue title."
+        "Combat-only: appears as a story boss or guest. It cannot be recruited, recovered or evolved."
       ],
       "evidence": [
         "constants.ts",
@@ -110127,6 +110128,7 @@
       "rating": 54,
       "image": "assets/pilots/fg/vaultkeeper/vaultkeeper-p-fg.webp",
       "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "combatOnly": true,
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [
@@ -110222,7 +110224,7 @@
       "name": "Vaultkeeper [SP]",
       "description": "The creator himself, leading one extremely enthusiastic Sentai capture operation. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
       "sources": [
-        "Rogue completionist reward: collect every required title and claim the Rogue title."
+        "Combat-only: appears as a story boss or guest. It cannot be recruited, recovered or evolved."
       ],
       "evidence": [
         "constants.ts",
@@ -110246,6 +110248,7 @@
       "rating": 81,
       "image": "assets/pilots/fg/vaultkeeper/vaultkeeper-sp-fg.webp",
       "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "combatOnly": true,
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [
@@ -122462,7 +122465,7 @@
       "id": "bulwark-60902ee",
       "category": "warmachines",
       "name": "Bulwark",
-      "description": "Kenji's personal frame, patched and requalified more times than command can count. Unglamorous, unkillable.",
+      "description": "A common defensive frame used in planetary militias. Slow, but incredibly sturdy for its class.",
       "sources": [
         "Scout: any base-game banner. Ownership and duplicate limits apply."
       ],
@@ -122472,18 +122475,18 @@
         "utils/assetPaths.ts"
       ],
       "family": "Bulwark",
-      "rarity": "Rare",
+      "rarity": "Common",
       "type": "Guardian",
-      "faction": "Republic of Horizon",
+      "faction": "Aegis Alliance",
       "spoiler": false,
       "tier": "Base",
       "stats": {
-        "HP": 140,
-        "Attack": 16,
-        "Defense": 12,
+        "HP": 125,
+        "Attack": 7,
+        "Defense": 9,
         "Shield": 40
       },
-      "rating": 119,
+      "rating": 47,
       "image": "assets/warmachines/fg/bulwark/bulwark-fg.webp",
       "background": "assets/warmachines/bg/bulwark-bg.webp",
       "pilotSlots": 1,
@@ -122501,90 +122504,90 @@
         "independent-contracts-9156f40"
       ],
       "abilityIds": [
-        "suppressive-array-59d612a",
-        "entrenched-formation-cedd328"
+        "interdiction-field-897181b",
+        "guardian-protocols-b2c3b77"
       ],
       "relatedIds": [],
       "upgrades": [
         {
           "rank": 1,
           "multiplier": 1.07,
-          "nanites": 150,
+          "nanites": 60,
           "resources": {
-            "alloy": 350,
-            "dataFragments": 140
+            "alloy": 150,
+            "dataFragments": 60
           },
           "duplicates": 1
         },
         {
           "rank": 2,
           "multiplier": 1.1400000000000001,
-          "nanites": 203,
+          "nanites": 81,
           "resources": {
-            "alloy": 525,
-            "dataFragments": 210
+            "alloy": 225,
+            "dataFragments": 90
           },
           "duplicates": 1
         },
         {
           "rank": 3,
           "multiplier": 1.21,
-          "nanites": 255,
+          "nanites": 102,
           "resources": {
-            "alloy": 700,
-            "dataFragments": 280
+            "alloy": 300,
+            "dataFragments": 120
           },
           "duplicates": 1
         },
         {
           "rank": 4,
           "multiplier": 1.28,
-          "nanites": 308,
+          "nanites": 123,
           "resources": {
-            "alloy": 875,
-            "dataFragments": 350
+            "alloy": 375,
+            "dataFragments": 150
           },
           "duplicates": 1
         },
         {
           "rank": 5,
           "multiplier": 1.42,
-          "nanites": 792,
+          "nanites": 317,
           "resources": null,
           "duplicates": 2
         },
         {
           "rank": 6,
           "multiplier": 1.56,
-          "nanites": 908,
+          "nanites": 363,
           "resources": null,
           "duplicates": 2
         },
         {
           "rank": 7,
           "multiplier": 1.7000000000000002,
-          "nanites": 1023,
+          "nanites": 409,
           "resources": null,
           "duplicates": 2
         },
         {
           "rank": 8,
           "multiplier": 1.84,
-          "nanites": 1139,
+          "nanites": 455,
           "resources": null,
           "duplicates": 2
         },
         {
           "rank": 9,
           "multiplier": 1.98,
-          "nanites": 1254,
+          "nanites": 502,
           "resources": null,
           "duplicates": 2
         }
       ],
       "productionCost": {
-        "alloy": 1000,
-        "nanites": 500,
+        "alloy": 400,
+        "nanites": 200,
         "dataFragments": 0
       }
     },
@@ -168342,7 +168345,7 @@
       "id": "phalanx-1736310",
       "category": "warmachines",
       "name": "Phalanx",
-      "description": "A mobile shield generator, projecting hardlight barriers to protect itself and nearby allies.",
+      "description": "A cutting-edge defensive frame that uses hardlight projections to fortify its position.",
       "sources": [
         "Scout: any base-game banner. Ownership and duplicate limits apply."
       ],
@@ -168354,16 +168357,16 @@
       "family": "Phalanx",
       "rarity": "Epic",
       "type": "Guardian",
-      "faction": "The Zenith Concord",
+      "faction": "Republic of Horizon",
       "spoiler": false,
       "tier": "Base",
       "stats": {
-        "HP": 140,
-        "Attack": 12,
-        "Defense": 16,
-        "Shield": 100
+        "HP": 145,
+        "Attack": 14,
+        "Defense": 18,
+        "Shield": 110
       },
-      "rating": 162,
+      "rating": 183,
       "image": "assets/warmachines/fg/phalanx/phalanx-fg.webp",
       "background": "assets/warmachines/bg/phalanx-bg.webp",
       "pilotSlots": 1,
@@ -168381,8 +168384,8 @@
         "independent-contracts-9156f40"
       ],
       "abilityIds": [
-        "resonance-link-88adb3b",
-        "harmonic-phase-f9c963e"
+        "suppressive-array-59d612a",
+        "entrenched-formation-cedd328"
       ],
       "relatedIds": [],
       "upgrades": [
@@ -190590,7 +190593,7 @@
       "id": "v-x-excalivault-hsp-d7c68b0",
       "category": "warmachines",
       "name": "V-X Excalivault [HSP]",
-      "description": "Vaultkeeper's personal frame, deployed for the galaxy's most overproduced rabbit chase.",
+      "description": "Vaultkeeper's personal frame, built with none of the balance constraints he put on everything else. Try not to scratch it.",
       "sources": [
         "Rogue completionist reward: collect every required title and claim the Rogue title."
       ],
@@ -190611,6 +190614,8 @@
         "Defense": 34,
         "Evasion": 16,
         "Shield": 130,
+        "Energy": 160,
+        "Energy regen": 45,
         "Shield regen": 22
       },
       "rating": 744,

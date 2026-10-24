@@ -10,7 +10,7 @@ const ranks=power.rankPower(db.entries);
 const named=(category,name)=>db.entries.find(e=>e.category===category&&e.name===name);
 
 test('every frame, pilot and equipment card gets exactly one power rank',()=>{
-  const cards=db.entries.filter(e=>['warmachines','pilots','items'].includes(e.category));
+  const cards=db.entries.filter(e=>['warmachines','pilots','items'].includes(e.category)&&!e.combatOnly);
   assert.equal(ranks.size,cards.length);
   for(const card of cards)assert.ok(power.powerRanks.includes(ranks.get(card.id).rank),card.name);
 });
@@ -34,4 +34,13 @@ test('equal scores share a position and rank',()=>{
   const result=power.rankScores([{id:'a',score:5},{id:'b',score:5},{id:'c',score:1}]);
   assert.equal(result.get('a').position,1);assert.equal(result.get('b').position,1);
   assert.equal(result.get('a').rank,result.get('b').rank);
+});
+test('combat-only guests are not ranked and every higher tier ranks at or above the tier below it',()=>{
+  assert.ok(db.entries.filter(e=>e.combatOnly).every(e=>!ranks.has(e.id)));
+  const order={Base:0,P:1,SP:2,HSP:3};const families={};
+  for(const e of db.entries)if(ranks.has(e.id)&&e.family)(families[`${e.category}:${e.family}`]??=[]).push(e);
+  for(const family of Object.values(families)){
+    const scores=family.sort((a,b)=>order[a.tier]-order[b.tier]).map(e=>ranks.get(e.id).score);
+    assert.deepEqual(scores,[...scores].sort((a,b)=>a-b),family[0].family);
+  }
 });

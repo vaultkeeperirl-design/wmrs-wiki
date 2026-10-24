@@ -1,7 +1,7 @@
 import {getCatalog,node,link,art,url,type SearchEntry,type Catalog} from './catalog';
 import {readState,writeState,refreshState,toast} from './global';
 import {fitsSlot,totalStats,validateTeam,slots,type Loadout} from '../lib/planner';
-import {createTierBadge} from '../lib/tier-icons';
+import {createTierBadge,createTierName} from '../lib/tier-icons';
 import '../styles/tier-icons.css';
 const compare=document.querySelector<HTMLElement>('#compare-tool');
 const teamTool=document.querySelector('#team-tool');
@@ -22,7 +22,7 @@ function initCompare(c:Catalog){
     const selected=selects.map(s=>c.entries.find(e=>e.id===s.value)).filter((e):e is SearchEntry=>!!e);
     const output=document.querySelector('#comparison-output')!;output.replaceChildren();if(!selected.length){output.append(node('p','Choose at least one card.','tool-note'));return;}
     const table=node('table',undefined,'comparison-table');const head=node('thead');const row=node('tr');row.append(node('th','Property'));
-    for(const e of selected){const cell=node('th');const image=art(e);image.style.width='110px';cell.append(image,link(e.name,e.url));if(e.tier){const tier=node('div',undefined,'comparison-tier');tier.append(createTierBadge(e.tier,url));cell.append(tier);}row.append(cell);}head.append(row);table.append(head);const body=node('tbody');
+    for(const e of selected){const cell=node('th');const image=art(e);image.style.width='110px';const nameLink=link('',e.url);nameLink.append(createTierName(e.name,url));cell.append(image,nameLink);if(e.tier){const tier=node('div',undefined,'comparison-tier');tier.append(createTierBadge(e.tier,url));cell.append(tier);}row.append(cell);}head.append(row);table.append(head);const body=node('tbody');
     const textRow=(label:string,get:(e:SearchEntry)=>string)=>{const r=node('tr');r.append(node('th',label));for(const e of selected)r.append(node('td',get(e)));body.append(r);};
     textRow('Type',e=>e.type??'—');textRow('Rarity',e=>e.rarity??'—');textRow('Faction',e=>e.faction??'—');
     if(selected.some(e=>e.tier)){const tierRow=node('tr');tierRow.append(node('th','Template tier'));for(const e of selected){const cell=node('td',undefined,'tier-comparison-cell');if(e.tier)cell.append(createTierBadge(e.tier,url));else cell.textContent='—';tierRow.append(cell);}body.append(tierRow);}

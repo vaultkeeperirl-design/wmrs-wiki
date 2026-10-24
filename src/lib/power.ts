@@ -35,7 +35,8 @@ function crewedScore(stats: Record<string,number> = {}) {
 }
 
 export const powerGroup = (e: Entry) => e.category === 'items' ? `items:${e.type}` : e.category;
-export const isRankable = (e: Entry) => ['warmachines','pilots','items'].includes(e.category) && !!e.stats;
+// Combat-only boss/guest templates can never be owned, so they are not ranked.
+export const isRankable = (e: Entry) => ['warmachines','pilots','items'].includes(e.category) && !!e.stats && !e.combatOnly;
 export const powerScore = (e: Entry) => e.category === 'items' ? (e.rating ?? 0) : e.category === 'pilots' ? crewedScore(e.stats) : combatScore(e.stats);
 
 export interface PowerResult {score: number; rank: PowerRank; position: number; of: number;}

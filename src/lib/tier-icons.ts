@@ -33,3 +33,28 @@ export function createTierBadge(tier: string | undefined, pathFor: (path: string
   badge.append(image, label);
   return badge;
 }
+
+/** "Aegis [SP]" → {base: "Aegis", tier: "SP"}; names without a card-tier suffix are returned whole. */
+export function splitTierName(name: string) {
+  const match = /^(.*\S)\s\[(P|SP|HSP)\]$/.exec(name);
+  return match ? {base: match[1], tier: match[2] as CardTier} : {base: name, tier: undefined};
+}
+
+/** Client counterpart to TierName.astro: the name with its [P]/[SP]/[HSP] suffix drawn as game art. */
+export function createTierName(name: string, pathFor: (path: string) => string, tag: keyof HTMLElementTagNameMap = 'span', className = '') {
+  const {base, tier} = splitTierName(name);
+  const element = document.createElement(tag);
+  element.className = ['tier-name', className].filter(Boolean).join(' ');
+  element.append(base);
+  const asset = getTierAsset(tier);
+  if (asset) {
+    const image = document.createElement('img');
+    image.src = pathFor(asset.image);
+    image.alt = `[${asset.label}]`;
+    image.title = asset.name;
+    image.className = 'tier-name-icon';
+    image.dataset.tier = asset.label;
+    element.append(' ', image);
+  }
+  return element;
+}

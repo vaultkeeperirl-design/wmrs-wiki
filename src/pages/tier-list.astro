@@ -4,6 +4,7 @@ import PowerBadge from '../components/PowerBadge.astro';
 import {entries,href,entryHref} from '../lib/data';
 import {categoryIcons} from '../content/game-icons';
 import {powerRanks,powerRankInfo,referenceFrame} from '../lib/power';
+import {acquisitionRoutes} from '../lib/acquisition';
 import '../styles/power.css';
 import '../styles/tier-list.css';
 const views=[
@@ -19,7 +20,7 @@ const fallback=entries.filter(e=>e.category==='warmachines'&&e.power&&!e.spoiler
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span>Tier list</nav>
 <div class="tier-list-page" data-tier-list>
   <header class="tl-header">
-    <div><p class="eyebrow">PLAYER TOOLS / POWER RANKINGS</p><h1>Tier list</h1><p>Who is worth building, and who is salvage. Every card ranked <b>S</b> to <b>D</b> against the others you are viewing.</p></div>
+    <div><p class="eyebrow">PLAYER TOOLS / POWER RANKINGS</p><h1>Tier list</h1><p>Who is worth building, and who is salvage. Every card ranked <b>S</b> to <b>D</b> against the others you are viewing. Secret rewards are marked <b>SPOILER</b> and show as <b>?</b> until you click them.</p></div>
     <details class="tl-method"><summary>How ranks are worked out</summary>
       <p><b>War Machines</b> are scored on durability × damage using the game’s combat rules: defense cuts damage by DEF ÷ (DEF + 100), shields absorb first, evasion is a dodge roll capped at 60%.</p>
       <p><b>Pilots</b> are scored by how much they add to an average frame (HP {referenceFrame.HP}, ATK {referenceFrame.Attack}, DEF {referenceFrame.Defense}), including melee/ranged bonuses.</p>
@@ -32,8 +33,9 @@ const fallback=entries.filter(e=>e.category==='warmachines'&&e.power&&!e.spoiler
     <div class="field"><label for="tl-tier">CARD TIER</label><select id="tl-tier"><option value="">All tiers</option><option value="Base">Base only</option><option value="P">P · Prototype only</option><option value="SP">SP · Secret Prototype only</option><option value="HSP">HSP only (spoilers)</option></select></div>
     <div class="field"><label for="tl-faction">FACTION</label><select id="tl-faction"><option value="">All factions</option>{factions.map(f=><option>{f}</option>)}</select></div>
     <div class="field" data-frames-only><label for="tl-class">CHASSIS CLASS</label><select id="tl-class"><option value="">All classes</option>{chassis.map(c=><option>{c}</option>)}</select></div>
+    <div class="field"><label for="tl-route">HOW TO GET</label><select id="tl-route"><option value="">Any route</option>{acquisitionRoutes.map(route=><option value={route.value}>{route.label}</option>)}</select></div>
     <div class="field wide"><label for="tl-query">FIND A CARD</label><input id="tl-query" type="search" placeholder="Name…" autocomplete="off" /></div>
-    <div class="tl-toggles"><label><input type="checkbox" id="tl-family" /> Best version per card only</label><label><input type="checkbox" id="tl-spoilers" /> Reveal spoilers</label></div>
+    <div class="tl-toggles"><label><input type="checkbox" id="tl-family" /> Best version per card only</label><label><input type="checkbox" id="tl-spoilers" /> Reveal all hidden cards</label></div>
   </div>
   <p class="tl-count" id="tl-count" role="status" aria-live="polite">Loading rankings…</p>
   <div class="tl-board" id="tl-board">{powerRanks.map(rank=><section class="tl-row" data-rank-row={rank}>

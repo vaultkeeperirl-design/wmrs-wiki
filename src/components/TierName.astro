@@ -1,0 +1,9 @@
+---
+import { href } from '../lib/data';
+import { getTierAsset, splitTierName } from '../lib/tier-icons';
+import '../styles/tier-icons.css';
+interface Props { name: string; }
+const {base, tier} = splitTierName(Astro.props.name);
+const asset = getTierAsset(tier);
+---
+{base}{asset && <> <img class="tier-name-icon" data-tier={asset.label} src={href(asset.image)} alt={`[${asset.label}]`} title={asset.name} /></>}

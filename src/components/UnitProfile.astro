@@ -2,6 +2,7 @@
 import Art from './Art.astro';
 import TierBadge from './TierBadge.astro';
 import PowerBadge from './PowerBadge.astro';
+import TierName from './TierName.astro';
 import {powerRankInfo} from '../lib/power';
 import {entries,related,entryHref,href,rarityColor,database,type Entry} from '../lib/data';
 import '../styles/unit-profile.css';
@@ -42,7 +43,7 @@ const panelId=(id:string)=>`unit-${e.id}-${id}`;
   <div class="unit-information">
     <header class="unit-heading">
       <div class="unit-classification"><span style={`--unit-rarity:${rarityColor(e.rarity)}`}>{e.rarity}</span><span>{e.type}</span><span>{e.faction}</span></div>
-      <div class="unit-title-row"><h2 class="unit-name">{e.name}</h2>{e.power&&<a class="unit-power" href={href(`tier-list/?category=${e.category}`)} title="How power ranks work"><PowerBadge power={e.power} class="power-badge--lg" /><span><b>{e.power.rank} rank · {powerRankInfo[e.power.rank].label}</b><small>#{e.power.position} of {e.power.of} {isFrame?'War Machines':'pilots'}{e.rating!==undefined&&` · iLvl ${e.rating}`}</small></span></a>}</div>
+      <div class="unit-title-row"><h2 class="unit-name"><TierName name={e.name} /></h2>{e.power&&<a class="unit-power" href={href(`tier-list/?category=${e.category}`)} title="How power ranks work"><PowerBadge power={e.power} class="power-badge--lg" /><span><b>{e.power.rank} rank · {powerRankInfo[e.power.rank].label}</b><small>#{e.power.position} of {e.power.of} {isFrame?'War Machines':'pilots'}{e.rating!==undefined&&` · iLvl ${e.rating}`}</small></span></a>}</div>
       <nav class="unit-tier-selector" aria-label={`${e.family} card tiers`}>
         {tiers.map(tier=>{const variant=family.find(v=>v.tier===tier);return variant?variant.id===e.id?<span class="unit-tier-option selected" aria-current="page"><TierBadge tier={tier}/><small>Selected</small></span>:variant.spoiler&&!e.spoiler?<details class="unit-tier-reveal"><summary aria-label={`Reveal ${tier} variant link`}><TierBadge tier={tier}/><small>Reveal spoiler</small></summary><a href={entryHref(variant)}>Open {tier} profile →</a></details>:<a class="unit-tier-option" href={entryHref(variant)} aria-label={`Open ${tier} variant of ${e.family}`}><TierBadge tier={tier}/><small>View stats</small></a>:<span class="unit-tier-option unavailable" aria-disabled="true"><TierBadge tier={tier}/><small>No template</small></span>;})}
       </nav>

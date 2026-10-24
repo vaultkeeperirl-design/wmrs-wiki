@@ -56,6 +56,9 @@ for (const reward of C.DAILY_LOGIN_REWARDS) if (reward.type === 'item' && reward
 const all = [...C.FULL_UNIVERSE_OF_ITEMS, ...Object.values(G.PremiumPilots.PREMIUM_PILOT_FAMILIES).flat(), ...Object.values(G.PremiumFrames.PREMIUM_WARMACHINE_FAMILIES).flat(), ...Object.values(G.Founders.FOUNDERS_PACK_PILOTS).flat(), ...Object.values(G.Founders.FOUNDERS_PACK_WARMACHINES).flat(), ...Object.values(G.Twitch.TWITCH_DROP_PILOTS).flat(), ...Object.values(G.Twitch.TWITCH_DROP_WARMACHINES).flat(), ...G.Referrals.REFERRAL_WARMACHINES, G.Sorties.SORTIE_EXCLUSIVE_VAGRANT_STAR, G.Sorties.SORTIE_EXCLUSIVE_MIRA].filter(Boolean);
 const publicFamilies = new Set(all.filter(i => sources.has(`${categoryOf(i)}:${i.name}`)).map(i => `${categoryOf(i)}:${familyOf(i.name)}`));
 const publicItems = new Map();
+// Boss and guest templates the player can never own. They keep their own key and never replace a real card that shares the name.
+const combatOnly = new Set();
+const addCombatOnly = i => { const key = `${categoryOf(i)}:${i.name}`; if (!publicItems.has(key)) { publicItems.set(key, i); combatOnly.add(key); } };
 for (const i of all) {
   if (i.dlcPackId || i.bannerOnly) { omitted.push({ name: i.name, reason: 'Unreleased DLC not approved' }); continue; }
   const key = `${categoryOf(i)}:${i.name}`;
@@ -65,20 +68,27 @@ for (const i of all) {
 for (const enemy of G.ENEMY_CODEX_ENTRIES) {
   const i = G.createEnemyBlueprint(enemy);
   note(i, `Enemy dossier: defeat ${enemy.name} in ${enemy.source}. ${(G.ENEMY_DOSSIER_DROP_CHANCE[enemy.rarity] * 100).toFixed(0)}% per defeat; unlocks base Workshop production.`);
-  publicItems.set(`${categoryOf(i)}:${i.name}`, i);
+  addCombatOnly(i);
+  combatOnly.delete(`${categoryOf(i)}:${i.name}`);
 }
 for (const c of C.STORY_CAMPAIGNS.filter(c => !c.dlcPackId)) for (const chapter of c.chapters) {
   note(chapter.reward, `Story reward: ${c.name}, Chapter ${c.chapters.indexOf(chapter) + 1}.`);
-  for (const boss of chapter.bosses ?? []) for (const i of [boss.warmachine, boss.pilot].filter(Boolean)) if (!i.dlcPackId) publicItems.set(`${categoryOf(i)}:${i.name}`, i);
-  for (const i of [chapter.guestLoadout?.warmachine, chapter.guestLoadout?.pilot].filter(Boolean)) if (!i.dlcPackId) publicItems.set(`${categoryOf(i)}:${i.name}`, i);
+  for (const boss of chapter.bosses ?? []) for (const i of [boss.warmachine, boss.pilot].filter(Boolean)) if (!i.dlcPackId) addCombatOnly(i);
+  for (const i of [chapter.guestLoadout?.warmachine, chapter.guestLoadout?.pilot].filter(Boolean)) if (!i.dlcPackId) addCombatOnly(i);
 }
 for (const i of [...publicItems.values()].filter(i => !i.isHsp && !i.name.includes(' [P]') && !i.name.includes(' [SP]'))) {
   const variants = G.createRecoveryVariants(i);
-  for (const variant of [variants.prototype, variants.secretPrototype]) if (!publicItems.has(`${categoryOf(variant)}:${variant.name}`)) publicItems.set(`${categoryOf(variant)}:${variant.name}`, variant);
+  for (const variant of [variants.prototype, variants.secretPrototype]) if (!publicItems.has(`${categoryOf(variant)}:${variant.name}`)) {
+    publicItems.set(`${categoryOf(variant)}:${variant.name}`, variant);
+    if (combatOnly.has(`${categoryOf(i)}:${i.name}`)) combatOnly.add(`${categoryOf(variant)}:${variant.name}`);
+  }
 }
 for (const i of [...publicItems.values()].filter(i => i.name.endsWith(' [SP]') && categoryOf(i) !== 'items')) {
   const hsp = categoryOf(i) === 'warmachines' ? G.evolveWarmachineToHsp(i, 0) : G.evolvePilotToHsp(i, 0);
-  if (!publicItems.has(`${categoryOf(hsp)}:${hsp.name}`)) { publicItems.set(`${categoryOf(hsp)}:${hsp.name}`, hsp); note(hsp, 'Workshop HSP Evolution: complete the mastery objectives for this exact SP card.'); }
+  if (publicItems.has(`${categoryOf(hsp)}:${hsp.name}`)) continue;
+  publicItems.set(`${categoryOf(hsp)}:${hsp.name}`, hsp);
+  if (combatOnly.has(`${categoryOf(i)}:${i.name}`)) combatOnly.add(`${categoryOf(hsp)}:${hsp.name}`);
+  else note(hsp, 'Workshop HSP Evolution: complete the mastery objectives for this exact SP card.');
 }
 const statMap = { baseHp: 'HP', baseAttack: 'Attack', baseDefense: 'Defense', baseEvasion: 'Evasion', baseShield: 'Shield', baseMaxEnergy: 'Energy', baseEnergyRegen: 'Energy regen', baseShieldRegen: 'Shield regen', hp: 'HP', attack: 'Attack', defense: 'Defense', evasion: 'Evasion', shield: 'Shield', maxEnergy: 'Energy', energyRegen: 'Energy regen', shieldRegen: 'Shield regen', hpRegen: 'Hull regen', rangedBonus: 'Ranged bonus', meleeBonus: 'Melee bonus' };
 const itemId = i => entries.get(idFor(categoryOf(i), i.name))?.id;
@@ -86,7 +96,9 @@ for (const i of publicItems.values()) {
   const category = categoryOf(i);
   let route = sources.get(`${category}:${i.name}`);
   if (!route && i.isHsp && Object.values(C.HSP_REWARDS).some(r => r.name === i.name)) route = [`Faction Red Book completion reward: unlock all ${i.faction} lore entries.`];
-  if (!route && /Vaultkeeper|Excalivault/i.test(i.name)) route = ['Rogue completionist reward: collect every required title and claim the Rogue title.'];
+  if (!route && /^(Vaultkeeper|V-X Excalivault) \[HSP\]$/.test(i.name)) route = ['Rogue completionist reward: collect every required title and claim the Rogue title.'];
+  const isCombatOnly = !route && combatOnly.has(`${category}:${i.name}`);
+  if (isCombatOnly) route = ['Combat-only: appears as a story boss or guest. It cannot be recruited, recovered or evolved.'];
   route ??= [Object.values(G.PremiumFrames.PREMIUM_WARMACHINE_FAMILIES).flat().some(p => p.name === i.name) ? 'Reference template only: the Premium Shop grants this family at SP. No direct Base/P acquisition is established.' : i.name.includes('[') ? `Workshop recovery/evolution of ${familyOf(i.name)}; this variant is not a direct Scout reward.` : 'Acquisition requires investigation. Combat/guest catalog inclusion alone does not establish recruitability.'];
   let image = await asset(G.getItemLayerAssetCandidates(i, 'fg').filter(p => !p.includes('placeholder')));
   let familyArtwork = false;
@@ -105,6 +117,7 @@ for (const i of publicItems.values()) {
     // The card's in-game iLvl at level 1, rank 0 (same helpers the Hangar uses).
     rating: category === 'pilots' ? G.getPilotItemLevel({ ...i, level: 1, upgradeRank: 0 }) : G.toCombatRating((i.itemLevel ?? 0) + G.getTierRatingBonus(i)),
     image, background, artworkNote: familyArtwork ? 'Official family artwork is shown; a distinct foreground for this tier is not available.' : image ? undefined : 'Official foreground artwork not found; faction background shown.',
+    combatOnly: isCombatOnly || undefined,
     pilotSlots: category === 'warmachines' ? C.getWarmachinePilotSlotCount(i) : undefined,
     prototypeAdvantages: i.prototypeAdvantages ?? [], chassisClass: i.chassisClass,
     sources: route, evidence: [sourceModule, 'utils/itemFactory.ts', 'utils/assetPaths.ts'],
@@ -120,8 +133,12 @@ for (const c of C.STORY_CAMPAIGNS.filter(c => !c.dlcPackId)) for (const chapter 
   const existing = entries.get(idFor('bosses', key));
   const source = `${c.name}, Chapter ${c.chapters.indexOf(chapter) + 1}. Authored boss card; encounter scaling can change combat stats.`;
   if (existing) { if (!existing.sources.includes(source)) existing.sources.push(source); continue; }
-  const frame = entries.get(itemId(i));
-  entry('bosses', key, { spoiler: true, description: i.description, type: i.chassisType, rarity: i.rarity, faction: i.faction, image: frame?.image, background: frame?.background, stats: frame?.stats, sources: [source], evidence: ['constants.ts', 'data/story/bossPools.ts'], relatedIds: frame ? [frame.id] : [], note: 'Boss encounter reference. Appearance does not establish recruitability or a direct drop.' });
+  // A same-named card can be a different template (e.g. Kenji's Bulwark vs the Aegis frame), so boss stats and art come from the boss itself.
+  const named = entries.get(itemId(i));
+  const frame = named && named.rarity === i.rarity && named.type === i.chassisType ? named : undefined;
+  const image = await asset(G.getItemLayerAssetCandidates(i, 'fg').filter(p => !p.includes('placeholder'))) ?? frame?.image;
+  const background = await asset(G.getItemLayerAssetCandidates(i, 'bg')) ?? frame?.background;
+  entry('bosses', key, { spoiler: true, description: i.description, type: i.chassisType, rarity: i.rarity, faction: i.faction, image, background, stats: Object.fromEntries(Object.entries(statMap).filter(([k]) => typeof i[k] === 'number').map(([k, label]) => [label, i[k]])), sources: [source], evidence: ['constants.ts', 'data/story/bossPools.ts'], relatedIds: frame ? [frame.id] : [], note: 'Boss encounter reference. Appearance does not establish recruitability or a direct drop.' });
 }
 for (const [faction, kinds] of Object.entries(G.FACTION_ABILITY_INFO)) for (const [kind, info] of Object.entries(kinds)) {
   const a = entry('abilities', `${info.name}`, { description: info.description, faction, type: kind === 'chassis' ? 'Chassis Special' : kind === 'pilot' ? 'Pilot passive' : 'Defend effect', stats: info.cooldownTurns ? { 'Cooldown (turns)': info.cooldownTurns } : {}, sources: [`${faction}: ${kind} ability.`], evidence: ['utils/factionAbilities.ts'] });
