@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "source": "output/v2-release-qa/v201-accuracy-0.png",
+      "destination": "assets/wiki-guides/card-abilities.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        218,
+        603,
+        479,
+        774
+      ],
+      "width": 600,
+      "height": 393,
+      "outputWidth": 261,
+      "outputHeight": 171,
+      "sourceHash": "8f8153ffba412a627dee78c83c7440fb4780cc51cbb7b9759be4e83dace61630",
+      "approvedHash": "d62368913300cd884ecedb0bc29f7dd8f484af9392adb6586c54335977968b16"
+    },
+    {
+      "source": "output/v2-release-qa/v201-accuracy-0.png",
+      "destination": "assets/wiki-guides/card-stats.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        218,
+        350,
+        479,
+        545
+      ],
+      "width": 600,
+      "height": 449,
+      "outputWidth": 261,
+      "outputHeight": 195,
+      "sourceHash": "8f8153ffba412a627dee78c83c7440fb4780cc51cbb7b9759be4e83dace61630",
+      "approvedHash": "8500f2566122b9eb2c5756e9be10bb0ecec59b4fb8993af9b7bc634a51dba73e"
+    },
+    {
+      "source": "output/v2-release-qa/v201-accuracy-0.png",
+      "destination": "assets/wiki-guides/card-tooltip.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        205,
+        235,
+        493,
+        795
+      ],
+      "width": 576,
+      "height": 1120,
+      "outputWidth": 288,
+      "outputHeight": 560,
+      "sourceHash": "8f8153ffba412a627dee78c83c7440fb4780cc51cbb7b9759be4e83dace61630",
+      "approvedHash": "5411d8b7aa174bba0fd07c2f48ac436283c1c041a85a988df5231c32b7740b8d"
+    },
+    {
+      "source": "output/sortie-art-qa/patrol-desktop.png",
+      "destination": "assets/wiki-guides/patrol-intel.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        46,
+        344,
+        616,
+        450
+      ],
+      "width": 800,
+      "height": 149,
+      "outputWidth": 570,
+      "outputHeight": 106,
+      "sourceHash": "981cf4cfc42263faddc86e2e47c85a5222740d3afb9a0de34c624efc5860b673",
+      "approvedHash": "1874e6836aa6b698ba1b0285ef956ed1796b07817c0bb3d6d2f0f1f05d177888"
+    },
+    {
+      "source": "output/sortie-art-qa/patrol-desktop.png",
+      "destination": "assets/wiki-guides/patrol-overview.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        0,
+        0,
+        1920,
+        1005
+      ],
+      "width": 1440,
+      "height": 754,
+      "outputWidth": 1440,
+      "outputHeight": 754,
+      "sourceHash": "981cf4cfc42263faddc86e2e47c85a5222740d3afb9a0de34c624efc5860b673",
+      "approvedHash": "31f4fbf05e59c8768d5ef16187a5740fd64892fd619d1812175f741054b6bfab"
+    },
+    {
+      "source": "output/sortie-art-qa/patrol-desktop.png",
+      "destination": "assets/wiki-guides/patrol-reward.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        212,
+        453,
+        456,
+        724
+      ],
+      "width": 488,
+      "height": 542,
+      "outputWidth": 244,
+      "outputHeight": 271,
+      "sourceHash": "981cf4cfc42263faddc86e2e47c85a5222740d3afb9a0de34c624efc5860b673",
+      "approvedHash": "c02b50921976f527236d6b3256e27dff961ddf2db33cfd5a00b299555588d7dd"
+    },
+    {
+      "source": "output/v2-release-qa/v201-bays-1.png",
+      "destination": "assets/wiki-guides/pits-formats.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        584,
+        216,
+        1338,
+        274
+      ],
+      "width": 1000,
+      "height": 78,
+      "outputWidth": 754,
+      "outputHeight": 58,
+      "sourceHash": "756785d724f3b91d10b2cc24571c3cc81b8004efda42be1994e0adc453ae387e",
+      "approvedHash": "13db454e236d782b76242adb08e23d1ecea9fde2dc6e8d86a9079c6dab4180e3"
+    },
+    {
+      "source": "output/v211-qa/scout-pity-odds.png",
+      "destination": "assets/wiki-guides/scout-base-rates.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        468,
+        298,
+        1450,
+        343
+      ],
+      "width": 1100,
+      "height": 100,
+      "outputWidth": 982,
+      "outputHeight": 45,
+      "sourceHash": "452334091a8afe7caa03866f17f89d25eb0e268e60410afaa2c95e96956eed83",
+      "approvedHash": "844c6ae96b98ccc93d9adfa2be06a2f1a36810573c2496ee5b142c57b3b02f4c"
+    },
+    {
+      "source": "output/v211-qa/scout-pity-odds.png",
+      "destination": "assets/wiki-guides/scout-odds.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        447,
+        220,
+        1473,
+        860
+      ],
+      "width": 1280,
+      "height": 800,
+      "outputWidth": 1026,
+      "outputHeight": 640,
+      "sourceHash": "452334091a8afe7caa03866f17f89d25eb0e268e60410afaa2c95e96956eed83",
+      "approvedHash": "6224cf35b33f96e25967294d46c28afebee7d69e7fb0eb9dd5107718e7edf141"
+    },
+    {
+      "source": "output/sortie-art-qa/assemble.png",
+      "destination": "assets/wiki-guides/sortie-assembly.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        191,
+        187,
+        1729,
+        891
+      ],
+      "width": 1280,
+      "height": 586,
+      "outputWidth": 1280,
+      "outputHeight": 586,
+      "sourceHash": "4c164bbe3f6363c1419165653792d324f527d3cbaa37b0d965c90a7e7bc3ee70",
+      "approvedHash": "495dbe443c087f4a785dc56ace5850f3529eee67037b54b637bd1b15cd1ee282"
+    },
+    {
+      "source": "output/sortie-art-qa/desktop.png",
+      "destination": "assets/wiki-guides/sortie-card.webp",
+      "kind": "reviewed-game-capture",
+      "crop": [
+        403,
+        210,
+        764,
+        544
+      ],
+      "width": 722,
+      "height": 668,
+      "outputWidth": 361,
+      "outputHeight": 334,
+      "sourceHash": "3b2ffcb4006e03dc0000ad377109a3001af5c735829eeda51ec450f19cf49181",
+      "approvedHash": "e440236bd20e73c2c47381560702d7da7236b099f1abf239546a149da7ffea96"
+    },
+    {
+      "destination": "assets/wiki-ui/achievements-tab.webp",
+      "source": "assets/icons/achievements-tab.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "f5d49c433dc38750a13d8c607c6bc83b472672d7f509d0bacfa57b50d3b10bc8",
+      "approvedHash": "7fcf31c54a32258b0b42b1ebf755a2bf3f5ef7ec3f29fdff42b1c7f3b566df6e"
+    },
+    {
+      "destination": "assets/wiki-ui/active-patrols.webp",
+      "source": "assets/icons/active-patrols.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "76062bd01c96c0594534130713db57e9171be1ad0f5751a2b9a9f768e6c1069f",
+      "approvedHash": "9506e8e201e006a343d7d631631e94caf2387b5b482032d2c0ce5dee9e184cfc"
+    },
+    {
+      "source": "assets/icons/alloy.png",
+      "destination": "assets/wiki-ui/alloy.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "b623730247eba132778a6d089be16b2e4ae6bedbc1cbfeac9d8fe76b49505775",
+      "approvedHash": "16f5fe40abf339403f3480d4e301b03934ac388c5c63eea9f94efd5a58c16e8f"
+    },
+    {
+      "source": "assets/chassis/assault.png",
+      "destination": "assets/wiki-ui/assault.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "57f456718f5d590b67608b99ebecec3840c09286f8e31551027d91190d959722",
+      "approvedHash": "fe1e2c7338e9409382a534f5836dac8e18ac3bf961633dfc4d1d14a403aece27"
+    },
+    {
+      "source": "assets/icons/attack.png",
+      "destination": "assets/wiki-ui/attack.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "d52c79fc612bad2aadeeae04ebbd864d752df330e838f8a1ef0539110d5fc5fd",
+      "approvedHash": "05b3eeafc2ad55415c55653038c0ce8546ed59b35b60a36af643242af86d82c6"
+    },
+    {
+      "destination": "assets/wiki-ui/collection.webp",
+      "source": "assets/icons/collection.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "ea01519f138f2633a8b50ac27e327a3121d5c2b87e54e2047f9f8960701568f2",
+      "approvedHash": "8bedd743d5e4aff92436a64018bda2dc8bea2dc88c7b5e8a2c727333fdf21013"
+    },
+    {
+      "source": "assets/icons/core.png",
+      "destination": "assets/wiki-ui/core.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "fbf3b630c2d2e6656d35d4b8f31959e1aa744d1612ed037ddfda1b4848204cb2",
+      "approvedHash": "745ba732431fce78244535392a7829467d15a9cc663c3b0b4e31903bf791f94b"
+    },
+    {
+      "source": "assets/icons/data-fragments.png",
+      "destination": "assets/wiki-ui/data-fragments.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "486f9f990a5dadc3b28ad8586d36375ef82a9c087d294cc8d83fe20cef317414",
+      "approvedHash": "e518c5cadea5994189190abc531fc96399076ff2a771b74e2737338a66ef4def"
+    },
+    {
+      "source": "assets/icons/defense.png",
+      "destination": "assets/wiki-ui/defense.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "66492ea1b125af931599ba907612e88765998f769c806b5ceb06e4addfc8e0b6",
+      "approvedHash": "e4a29b797638cf89b72c2801948e4d4b766780c1c6e800e04e250f41880d9463"
+    },
+    {
+      "destination": "assets/wiki-ui/enemies.webp",
+      "source": "assets/icons/enemies.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "382f71268a6a4aa79c846fafbe7e3ee0e7af60758b6a1c7da73d3d60889b2705",
+      "approvedHash": "b8fd3d2d9aee35dd3112b36561c69a31d89627233348d40b881936cc4068f78b"
+    },
+    {
+      "source": "assets/icons/energy.png",
+      "destination": "assets/wiki-ui/energy.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "35a27c50ca27a01158ac464099613c769c3093b9137fe3f1750b941f9115acfb",
+      "approvedHash": "1c92b78aca42bee03c10562270ad0fb8701b6d8e737620b9ff9ecdedd4e07bf8"
+    },
+    {
+      "source": "assets/icons/evasion.png",
+      "destination": "assets/wiki-ui/evasion.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "6927329b085e8b60cba56fddca0ce685593f90d05485ac90dc56ada95b3884a9",
+      "approvedHash": "d0c1cd1c2034d5ee76a6ac6ac27a36eba29f872ea50bba120a2ee3730828cf95"
+    },
+    {
+      "destination": "assets/wiki-ui/evolution.webp",
+      "source": "assets/workshop-tabs/evolution.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "4da1fe630a2e151fa6808f0c4d14396b553cc0e2cc774ef937bf99b4239d76a7",
+      "approvedHash": "063ddb6bbbaf2c85aead4255b1bb99fce548b645ef5cb403462182650fd5fb41"
+    },
+    {
+      "source": "assets/factions/aegis-alliance.png",
+      "destination": "assets/wiki-ui/faction-aegis-alliance.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "84b7eaf0547ab737378d3bc5e579d92a025f7753aa0dc3ce1c9567da79914ea6",
+      "approvedHash": "7a5e6233aeb0303e4063413e2a1809e1356fcdcd9fd102433a1f6c4b87709ce5"
+    },
+    {
+      "source": "assets/factions/cygnus-corporation.png",
+      "destination": "assets/wiki-ui/faction-cygnus-corporation.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "0ab55580968daca6be73e52d9c6edd470791989dcdeaecd6bfc069facf44925e",
+      "approvedHash": "548007d3264eac1f497408d9adaeb8f92398512f44a5410e7fde764ea46dd173"
+    },
+    {
+      "source": "assets/factions/kingdom-of-aurora.png",
+      "destination": "assets/wiki-ui/faction-kingdom-of-aurora.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "93d83b300743a2f2fdbd2ecce7caec10c34080b491dd927ad539db973fc0d119",
+      "approvedHash": "c922ca9b5e54b6c201ba6be2d145b3d373dd46ee0026ac32e716756e6829fe1c"
+    },
+    {
+      "source": "assets/factions/liberte.png",
+      "destination": "assets/wiki-ui/faction-liberte.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "d29f3a7f38270c92a3a847db1ee2d746047f684350f7806809fd0bcbdb329efe",
+      "approvedHash": "0c857736d2ccebad3103c0b7e56cc9206d64113842e03644a3d52b2a818b7932"
+    },
+    {
+      "destination": "assets/wiki-ui/faction-lore.webp",
+      "source": "assets/icons/faction-lore.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "5b76a94e46fd21289905ddaf6793664413f491aa77cd4025e2f5359784875a64",
+      "approvedHash": "0bbe46f53f8c7b41133765ab053e7594e8323e70f1cc49450bc14421ffefff29"
+    },
+    {
+      "source": "assets/factions/no-faction.png",
+      "destination": "assets/wiki-ui/faction-no-faction.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "ae2ddf85fc5f5a447cfeb2733f04f6e67c485745e0bfb4c73626b7eca121b63e",
+      "approvedHash": "f79660adc0aef498836b11322761484d8872aad5f11a4f1fe7c1985472a676f5"
+    },
+    {
+      "source": "assets/factions/red-wolves.png",
+      "destination": "assets/wiki-ui/faction-red-wolves.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "aa4405bff577e99aceaf8073cc2d1665087a7393db5fc2cacbc1d202f923bf0b",
+      "approvedHash": "1eb2faf4e370c97d9e4fc0118f2a302899c8212e49a03b67eb3ffc4d85946f82"
+    },
+    {
+      "source": "assets/factions/republic-of-horizon.png",
+      "destination": "assets/wiki-ui/faction-republic-of-horizon.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "0298f957bd82535ab45829ae5082ff49dc30090464827bed722b79c05d512ff5",
+      "approvedHash": "5619a205b939995646437aadedcf0686438f6730e10a6ee4012d0df62daf0e9b"
+    },
+    {
+      "source": "assets/factions/rustfang-clans.png",
+      "destination": "assets/wiki-ui/faction-rustfang-clans.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "c3505883e78fbef056b11448b256e75bc863cc49d3cd3264fd67f634cda1f55d",
+      "approvedHash": "bf50cfe6a6aacfd61d56015ea27ccdab88346f1a4537801b96b64548f09098ac"
+    },
+    {
+      "source": "assets/factions/zenith-concord.png",
+      "destination": "assets/wiki-ui/faction-zenith-concord.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "ea6402c211837149d23e7bfa8ea4e00aa914a3610713b8c8173ab4de42832f72",
+      "approvedHash": "d2cd62ee4b7454377ad30b3b3dd17370e5c01aff12e459c36f188c5294752ce9"
+    },
+    {
+      "destination": "assets/wiki-ui/gear.webp",
+      "source": "assets/icons/gear.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "dd9512e91da52433076acb8ecc3d544574599d1d96d0d863aed833a11b29f9f5",
+      "approvedHash": "d40ce28df5fcd503a7b5ab3894f4ea4f1f00b1c4fd679c9a50cf28783d1d9bb3"
+    },
+    {
+      "source": "assets/chassis/guardian.png",
+      "destination": "assets/wiki-ui/guardian.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "5e19ce0d8b2b26c7f3c75b8d4ad58a77d94f93c2ce24fff7f071940a52714b8c",
+      "approvedHash": "c1216b21a0dc9e924ef727e472260046e0b967c549d2483fd2ca8cb8364d7970"
+    },
+    {
+      "source": "assets/nav/hangar.png",
+      "destination": "assets/wiki-ui/hangar.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "e3060a32ff807fd298ca01f6c386f8d9d0164de0a397a3a4681a7148a291821c",
+      "approvedHash": "750bbfe0b0331545c072e8b0958cdd31e82df5b1cb51e786f70ef1fe318d2792"
+    },
+    {
+      "source": "assets/icons/health.png",
+      "destination": "assets/wiki-ui/health.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "d3dd73336b09f874100dd9e92d5778adf644360043ea06c29bf397d3bb35f6d1",
+      "approvedHash": "7457d6bc9dc75ac367c154b73d8b79c6cc0b3791c2264b72429b55b27a73fb25"
+    },
+    {
+      "destination": "assets/wiki-ui/logo.webp",
+      "source": "assets/branding/logo.png",
+      "crop": [
+        24,
+        90,
+        640,
+        280
+      ],
+      "width": 512,
+      "height": 158,
+      "outputWidth": 512,
+      "outputHeight": 158,
+      "sourceHash": "df15b1ee7c175bebb2f23c13bacf6c8eed6125cd83c4a0f11c420e2b185d60d6",
+      "approvedHash": "4ef50562b037a99c0d5d503a937efeb80b4f3d6a8999c6db10702f78798eb2eb"
+    },
+    {
+      "destination": "assets/wiki-ui/lookup.webp",
+      "source": "assets/icons/lookup.png",
+      "width": 96,
+      "height": 96,
+      "outputWidth": 96,
+      "outputHeight": 96,
+      "sourceHash": "fffbaa45c84283cbfeb9b35d7f78362ee6cda3da15ee17394f57994a320e3e4c",
+      "approvedHash": "9fcce24dc085ce9589abfd717cb435c73fb8210048b4f456ff76a33bc6bf1612"
+    },
+    {
+      "source": "assets/icons/nanites.png",
+      "destination": "assets/wiki-ui/nanites.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "4fb3df9cc27241b10aa625f93d43dfb7e23dd3293f588cb8a998eafa7eb8f1c2",
+      "approvedHash": "8e7a9ee584c55497aa5689b8ad70ae59e20e74927474acdbe8a4c0bdaad2dd36"
+    },
+    {
+      "source": "assets/nav/patrol.png",
+      "destination": "assets/wiki-ui/patrol.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "0ce60edd5408ff8e9335646e95c1e6b063ec50b592496238efa56555f81466a7",
+      "approvedHash": "e871bf09f703c6d65346790acbfe88c93e353b45870c18d32530fa19e77375a9"
+    },
+    {
+      "source": "assets/icons/pilot.png",
+      "destination": "assets/wiki-ui/pilot.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "b8f64c70ce21419d6e67d32c3fc40141c58877a0efe08c32643b565ca4a598f3",
+      "approvedHash": "b1ec0d6632c2a7fcac98c0686aa8125f22b5aab48b6fdb45961e3411601afca6"
+    },
+    {
+      "source": "assets/nav/pits.png",
+      "destination": "assets/wiki-ui/pits.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "3978f2cd37457a94dc0b5be646d47f2c72ef7a5449980fee3b91f80375c765ce",
+      "approvedHash": "3b5e5e94f912075a24e3503214d0676a5f8ee1ea138b5faecc012fda8450a479"
+    },
+    {
+      "source": "assets/workshop-tabs/production.png",
+      "destination": "assets/wiki-ui/production.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "036210d27fe26f8db730d8feb296305f97c5f8f559f24c9a6386adc57a990d1f",
+      "approvedHash": "9d0dae97803d3906606e36abaca65247b158947e9966585d5bd153675f13a2d7"
+    },
+    {
+      "source": "assets/icons/prototype-base.png",
+      "destination": "assets/wiki-ui/prototype-base.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 72,
+      "sourceHash": "6b74efa19ccb3bfb4bf0bf5ba87b7573b29532ae7a53455aa763f506a3cd9ae0",
+      "approvedHash": "a1d480d8f529e431c3404026db3ce0c1adfbf443baeac832eefa93ccdb9a1307"
+    },
+    {
+      "source": "assets/icons/prototype-hsp.png",
+      "destination": "assets/wiki-ui/prototype-hsp.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 72,
+      "sourceHash": "49bbf11d4bd850b2f172468ece3856f1ee9d70ce70e630949a55ed32bf818d5e",
+      "approvedHash": "6b94f4f22b57d850c9fc669870f704f1c30162c8710ffede9e0d9985c588b944"
+    },
+    {
+      "source": "assets/icons/prototype-p.png",
+      "destination": "assets/wiki-ui/prototype-p.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 85,
+      "sourceHash": "f467fc54c4be896ba616b7d8340b67e333ec8a9ecd9148b0279e5005e4451c37",
+      "approvedHash": "2b033d8018158b23cbb3638b6f9399dae5d950d4b225d930de2f7364b38522d5"
+    },
+    {
+      "source": "assets/icons/prototype-sp.png",
+      "destination": "assets/wiki-ui/prototype-sp.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 85,
+      "sourceHash": "eec40e4c3a24bd5f73374f8dcb0930dffe7622c95cf200bbfc26b37776d4c744",
+      "approvedHash": "37935599903a687c9edd3aeb5ab234b89ab7a98d87ae90b44f7dd21c82d4b327"
+    },
+    {
+      "source": "assets/workshop-tabs/recovery.png",
+      "destination": "assets/wiki-ui/recovery.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "200e1c8a3c5bc9e7dc0af2357fda96642ea3816f931d0c11018bc6f3853a6b80",
+      "approvedHash": "078d06c8f42678353a1994125dbfc61bb5fe95895210ee465553d0029d43838a"
+    },
+    {
+      "source": "assets/nav/red-book.png",
+      "destination": "assets/wiki-ui/red-book.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "15ea66865f4d58f49dd115975508173bbe8ebdd09806fe4d022a574ba81bb78b",
+      "approvedHash": "079bad9d63b5ba0caeac1581f6aed93243685d26fc99ff1c370087a686ebecb1"
+    },
+    {
+      "source": "assets/workshop-tabs/salvage.png",
+      "destination": "assets/wiki-ui/salvage.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "14f87793de33413d569e650a015e34602e16ec2f73fa0b83d6c30acb02636ee0",
+      "approvedHash": "f4c2f89b2fc19a460596ae1b562e81014d24d55d0a6132acb9df8da930d10ed0"
+    },
+    {
+      "source": "assets/nav/scout.png",
+      "destination": "assets/wiki-ui/scout.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "e417c6634feaac5b5796546ab55e2d54576024842584afa5edf5171d28b99fa6",
+      "approvedHash": "384ed03a4d862b310afad01ee760d499c85358cb6d7e335e4b41458e157ab596"
+    },
+    {
+      "source": "assets/icons/shield.png",
+      "destination": "assets/wiki-ui/shield.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "dd7af61923ff6773084fc73c3589236e239e551cc8a1f363e5b047dcd81b643e",
+      "approvedHash": "6a0892e9e6ba6b9296d8d9d939a02c6ff9d41f97bea9ef36b97c7801d4fc970d"
+    },
+    {
+      "source": "assets/nav/shop.png",
+      "destination": "assets/wiki-ui/shop.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "eea803190e92e325335c32eb3a314f09702db2dd1343a466a160da32342d0429",
+      "approvedHash": "a45bb07762d7e30275689cff67e7ec6ffb0269348e94f7d3710f62959674571a"
+    },
+    {
+      "source": "assets/chassis/siege.png",
+      "destination": "assets/wiki-ui/siege.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "e9ee43346a11676ff6b1deddf06700d2d06e5f2f0d9626cc8ce8b41ccce9913a",
+      "approvedHash": "1fc387537a75eca5280dbe7253e9f426b6f25ce5cdc473253edd1e235fea7fac"
+    },
+    {
+      "source": "assets/chassis/skirmisher.png",
+      "destination": "assets/wiki-ui/skirmisher.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "2ef1b37b93a752a519340a400498b36d8c5bc8f81c6f5a8bc786728309cc56bf",
+      "approvedHash": "055a99be0c8b5aeb507b0da8971a73a49d8760f8906660c48c3ea329e8e716f9"
+    },
+    {
+      "source": "assets/icons/sorties.png",
+      "destination": "assets/wiki-ui/sorties.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "5a8a674cf325c9d8094beb9e2dc113862cbe229e12465fb496958f000761a704",
+      "approvedHash": "687d7fb8e068d844ff123c002c7a88bd9f889b875fb9ec8d642507c43dc762a5"
+    },
+    {
+      "source": "assets/nav/story.png",
+      "destination": "assets/wiki-ui/story.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "31b58616445796672f1912d9a22b74c383adcadaadc7ce065049b766e147aea3",
+      "approvedHash": "b929de3b74b6df8d670ac09623ae5091c02d03a0630b67c5b0a60901f22368e7"
+    },
+    {
+      "source": "assets/workshop-tabs/upgrade.png",
+      "destination": "assets/wiki-ui/upgrade.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "8e8264948f362eee9755890d36a8583fa7e90e90cb65d7ef6c9936abc2625a02",
+      "approvedHash": "043f3601b118d50219cdbe5b2321c08a169e3c5b7e9f151a093a6d816d0d0a29"
+    },
+    {
+      "source": "assets/icons/warmachines.png",
+      "destination": "assets/wiki-ui/warmachines.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "ad80d4e033e597396ff33691f2839f80c68aafa68975d37a5ab83404eb605643",
+      "approvedHash": "f3bdee8a21cff5329767994b027abe2f94c9685fd306119c6d32e2d40caa141f"
+    },
+    {
+      "source": "assets/nav/workshop.png",
+      "destination": "assets/wiki-ui/workshop.webp",
+      "width": 128,
+      "height": 128,
+      "outputWidth": 128,
+      "outputHeight": 128,
+      "sourceHash": "5efc8f87c88ad70811e87d73dcc8d0deb30b8e37174f5ce0fe765977d1ca3e65",
+      "approvedHash": "43faa4af76cd74390448949b4e72f0ca94ded06f42b9e5e2ee22e058cfc1f434"
+    }
+  ]
+}

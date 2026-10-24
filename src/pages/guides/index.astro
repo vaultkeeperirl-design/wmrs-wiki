@@ -1,6 +1,42 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import '../../styles/guide-hub.css';
 import {guides} from '../../content/guides';
+import {gameIcons,categoryIcons} from '../../content/game-icons';
 import {href} from '../../lib/data';
+const findGuide = (slug: string) => guides.find(guide=>guide.slug===slug)!;
+const journeySteps = [
+  {slug:'start-here',title:'Start Here',description:'Learn the game loop, choose a starter and prepare for your first deployment.',icon:gameIcons.guides},
+  {slug:'first-battle',title:'First Battle',description:'Read hull and shields, understand turns, and learn when to use your controls.',icon:'assets/wiki-ui/attack.webp'},
+  {slug:'first-team',title:'First Team',description:'Choose a frame, assign your crew and fill the right equipment slots.',icon:gameIcons.teamBuilder},
+  {slug:'upgrades',title:'Upgrades & Recovery',description:'Understand stars, duplicates, blueprints and how to recover lost cards.',icon:categoryIcons.upgrades},
+  {slug:'packs',title:'Packs & Rewards',description:'See what is random, what is guaranteed, and how Scout recruitment works.',icon:gameIcons.packExplorer},
+  {slug:'advanced-strategy',title:'Advanced Strategy',description:'Put chassis matchups, pilot bonuses and equipment sets together.',icon:categoryIcons.missions},
+];
+const referenceGuides = [
+  {slug:'equipment',title:'Equipment',description:'Weapons, armor, cores, thrusters and shields: what fits and how the bonuses work.',icon:categoryIcons.items},
+  {slug:'economy',title:'Economy & Progression',description:'Understand Nanites, Alloy, Data Fragments, experience and optional purchases.',icon:'assets/wiki-ui/nanites.webp'},
+  {slug:'status-effects',title:'Combat & Abilities',description:'Look up faction Specials, pilot passives, targeting and temporary effects.',icon:categoryIcons.abilities},
+  {slug:'campaign-progression',title:'Campaigns & Missions',description:'Follow the campaign order, check prerequisites and prepare for the next chapter.',icon:categoryIcons.campaigns},
+  {slug:'modes',title:'Game Modes',description:'Find the rules for Patrols, Story, Fighting Pits, Sorties and multiplayer.',icon:categoryIcons.bosses},
+  {slug:'faq',title:'Common Questions',description:'Quick answers about pilots, packs, stats, purchases and collection tracking.',icon:gameIcons.search},
+];
 ---
-<Layout title="WMRS guides & game mechanics"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span>Guides</nav><div class="page-heading"><p class="eyebrow">FROM ROOKIE TO COMMANDER</p><h1>Understand the game.</h1><p>Progressive explanations grounded in the actual implementation. Start with your first deployment, then learn the systems behind every decision.</p></div><div class="guide-cards">{guides.map(g => <a class="guide-card" href={href(`guides/${g.slug}/`)}><span>{g.level}</span><h3>{g.title} ↗</h3><p>{g.summary}</p></a>)}</div></Layout>
+<Layout title="WMRS guides & game mechanics" description="Learn Warmachine Rogue Scout with a clear six-step beginner journey, then look up equipment, combat, currencies, campaigns and game modes.">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span><span>Guides</span></nav>
+  <div class="guide-hub">
+    <header class="hub-heading"><p class="eyebrow">YOUR WMRS FIELD MANUAL</p><h1>Learn the game, one step at a time.</h1><p>New to the cockpit? Follow the beginner journey. Already playing? Jump straight to the game system you need.</p></header>
+    <section class="hub-start" aria-labelledby="hub-start-title">
+      <div class="hub-start-copy"><span class="hub-label">NEW PLAYER? BEGIN HERE</span><h2 id="hub-start-title">Your first deployment starts here.</h2><p>Learn what to do in the Hangar, how to prepare a squad, and what to watch during your first mission.</p><a class="hub-primary-link" href={href('guides/start-here/')}>Start the beginner guide <span aria-hidden="true">→</span></a><a class="hub-skip-link" href="#game-systems">I’m looking for a game system <span aria-hidden="true">↓</span></a></div>
+      <div class="hub-start-art"><img src={href('assets/title/base/ares-full-title.webp')} width="1280" height="1280" alt="Official Ares starter War Machine artwork" fetchpriority="high" /><span>ARES / STARTER ASSAULT FRAME</span></div>
+    </section>
+    <section class="hub-journey" aria-labelledby="hub-journey-title">
+      <div class="hub-section-heading"><div><p class="eyebrow">LEARN IN ORDER</p><h2 id="hub-journey-title">The New Player Journey</h2><p>Six practical guides, from your first mission to confident squad planning.</p></div><div class="hub-progress"><span id="journey-count">0 / 6 COMPLETE</span><div class="journey-progress"><div id="journey-bar" style="width:0%"></div></div><small>Progress stays in this browser.</small></div></div>
+      <div class="hub-journey-grid">{journeySteps.map((step,index)=><article class="hub-step-card" data-step={step.slug}>
+        <div class="hub-step-top"><span class="hub-step-number">STEP {String(index+1).padStart(2,'0')}</span><img src={href(step.icon)} width="64" height="64" alt="" aria-hidden="true" /></div><h3><a href={href(`guides/${step.slug}/`)}>{step.title}</a></h3><p>{step.description}</p><div class="hub-step-actions"><a href={href(`guides/${step.slug}/`)} aria-label={`Read ${findGuide(step.slug).title}`}>Read guide <span aria-hidden="true">→</span></a><button type="button" data-journey={step.slug} aria-pressed="false">○ Mark complete</button></div>
+      </article>)}</div>
+    </section>
+    <section class="hub-reference" id="game-systems" aria-labelledby="hub-reference-title"><div class="hub-section-heading"><div><p class="eyebrow">FIND AN ANSWER</p><h2 id="hub-reference-title">Look up a game system</h2><p>Use these references when a particular mechanic or screen needs explaining.</p></div></div><div class="hub-reference-grid">{referenceGuides.map(guide=><a class="hub-reference-card" href={href(`guides/${guide.slug}/`)}><img src={href(guide.icon)} width="58" height="58" alt="" aria-hidden="true" /><div><h3>{guide.title}</h3><p>{guide.description}</p><span>Read reference <b aria-hidden="true">→</b></span></div></a>)}</div></section>
+    <div class="hub-tools-note"><img src={href(gameIcons.teamBuilder)} width="56" height="56" alt="" aria-hidden="true" /><div><h2>Ready to put a guide into practice?</h2><p><a href={href('tools/team-builder/')}>Plan a team</a>, <a href={href('tools/compare/')}>compare cards</a>, or <a href={href('tools/pack-explorer/')}>explore pack rewards</a> while you read.</p></div></div>
+  </div>
+</Layout>

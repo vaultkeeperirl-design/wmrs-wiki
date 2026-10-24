@@ -26,59 +26,9039 @@
     "removed": [],
     "changed": [
       {
+        "id": "joie-de-vivre-core-5488771",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "joie-de-vivre-core-p-9a849af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "joie-de-vivre-core-sp-363baaa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ablative-shell-1bebc1c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ablative-shell-p-1e061ce",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ablative-shell-sp-57b5e6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "advanced-thrusters-675a9d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "advanced-thrusters-p-2e4c8e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "advanced-thrusters-sp-2ea9599",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-command-core-aada3df",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-command-core-p-7399472",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-command-core-sp-41f1109",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "anomaly-lens-631cf8b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "anomaly-lens-p-3f9296e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "anomaly-lens-sp-e41d81a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-greatsword-de935af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-greatsword-p-e3eecd5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-greatsword-sp-026d912",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-longsword-03a5b91",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-longsword-p-db5af33",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auroran-longsword-sp-23d3576",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auto-cannon-a9361b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auto-cannon-p-f004f10",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "auto-cannon-sp-0626b0e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "autogun-583ade6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "autogun-p-bb056ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "autogun-sp-17dc05b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banner-of-valor-149ca54",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banner-of-valor-p-3d77c0b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banner-of-valor-sp-364cb95",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "barricade-shield-7d1cc83",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "barricade-shield-p-4352ef2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "barricade-shield-sp-66307fb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-gate-shield-50c8f6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-gate-shield-p-c56215a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-gate-shield-sp-b35bc5d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "beam-pistol-53a0446",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "beam-pistol-p-76a040c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "beam-pistol-sp-a392840",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "black-site-data-core-5e77e97",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "black-site-data-core-p-5ffda9f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "black-site-data-core-sp-aa67ca2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blood-gorged-riveter-9afbc98",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blood-gorged-riveter-p-43baa60",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blood-gorged-riveter-sp-38f0df2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boilerplate-armor-448e97d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boilerplate-armor-p-db06749",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boilerplate-armor-sp-a68259d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boombastick-e74f4b4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boombastick-p-14f0435",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "boombastick-sp-bd5d1c7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "booster-pack-4f55777",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "booster-pack-p-7d9c051",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "booster-pack-sp-9111a7b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bounty-breaker-3991d36",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bounty-breaker-p-fb3924e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bounty-breaker-sp-e5a02b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "broken-banner-thrusters-bffde99",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "broken-banner-thrusters-p-7e21e40",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "broken-banner-thrusters-sp-57858c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-08-disruptor-beac1d4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-08-disruptor-p-36f5ea4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-08-disruptor-sp-650e2f5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-12-litigator-0c53cf2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-12-litigator-p-556cc3f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "c-12-litigator-sp-11270d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "captured-phase-shield-6f2ba17",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "captured-phase-shield-p-3fb4cf8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "captured-phase-shield-sp-a0a14e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ceasefire-charm-db47d98",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ceasefire-charm-p-81e095f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ceasefire-charm-sp-a14b7df",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "choir-echo-fragment-56e8a14",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "choir-echo-fragment-p-1ce16b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "choir-echo-fragment-sp-71e094a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chosen-anchor-61f07d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chosen-anchor-p-19ad01d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chosen-anchor-sp-1a9428d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cinderfall-cell-e8a3080",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cinderfall-cell-p-29b218b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cinderfall-cell-sp-617f9f3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coalition-linked-battery-d2c5ab9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coalition-linked-battery-p-0d9a99d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coalition-linked-battery-sp-c02c5de",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "composite-armor-2995a7a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "composite-armor-p-e1300ff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "composite-armor-sp-410358e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "conscript-s-cleaver-7347879",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "conscript-s-cleaver-p-3fd3cfc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "conscript-s-cleaver-sp-430ad33",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "continuum-drive-c115ee0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "continuum-drive-p-9e6574e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "continuum-drive-sp-61c576f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coronation-blade-0aeb2a2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coronation-blade-p-9145614",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "coronation-blade-sp-ade96f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corporate-sidearm-604fe9f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corporate-sidearm-p-47a9e10",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corporate-sidearm-sp-b2438f3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "courier-s-step-dd3cdb9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "courier-s-step-p-a9aa6fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "courier-s-step-sp-7876e19",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crimson-blade-d09f5b3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crimson-blade-p-ed36a3e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crimson-blade-sp-a860821",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-acquisition-relay-f0261b7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-acquisition-relay-p-72c4ac9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-acquisition-relay-sp-566caba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dancer-s-grace-02d58dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dancer-s-grace-p-eb343c3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dancer-s-grace-sp-79b63f7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "data-spike-274fc52",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "data-spike-p-1efe9af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "data-spike-sp-bb6a110",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "deepshell-plating-32f43aa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "deepshell-plating-p-f3d8119",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "deepshell-plating-sp-edf72f7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "defector-s-edge-ad098ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "defector-s-edge-p-363e782",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "defector-s-edge-sp-d5c02a5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dozer-blade-a97133f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dozer-blade-p-708b1af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dozer-blade-sp-c4dc735",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "drillmaster-s-plating-eb34b1d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "drillmaster-s-plating-p-16de815",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "drillmaster-s-plating-sp-efdd486",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dyson-core-fragment-0681c74",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dyson-core-fragment-p-6976724",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "dyson-core-fragment-sp-d33645d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ecm-suite-52c3ef3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ecm-suite-p-2e3239c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ecm-suite-sp-22cd7b0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "elder-s-wind-charm-d7ef3ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "elder-s-wind-charm-p-0426792",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "elder-s-wind-charm-sp-52c7c9e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "emp-schematic-d552151",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "emp-schematic-p-d1ce32c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "emp-schematic-sp-96922b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-cell-d7afdfb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-cell-p-b9d9aa0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-cell-sp-5e50133",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-pack-02f78c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-pack-p-deb136c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-pack-sp-df35472",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-shield-1c8f5de",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-shield-p-b67abbd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "energy-shield-sp-06278b3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "evasive-plating-734e93d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "evasive-plating-p-f0f2f48",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "evasive-plating-sp-9f9c321",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "eventide-phase-drives-7e54b25",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "eventide-phase-drives-p-3cf0f4b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "eventide-phase-drives-sp-d7fae40",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fracture-skim-stabilizers-76b2123",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fracture-skim-stabilizers-p-7029f82",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fracture-skim-stabilizers-sp-5560415",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-lattice-2591b28",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-lattice-p-4ac1319",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-lattice-sp-c8556e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-uplink-node-cd17a22",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-uplink-node-p-af38134",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fractured-uplink-node-sp-3de1a2c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-of-the-choir-1faf1c9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-of-the-choir-p-d20d18c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-of-the-choir-sp-0a81a06",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-resonance-core-3ebb2b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-resonance-core-p-1275fe3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fragment-resonance-core-sp-5df3035",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "furnace-core-a99aa20",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "furnace-core-p-1e4546d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "furnace-core-sp-da1f7ca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatebreaker-lance-0171d53",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatebreaker-lance-p-2b0597e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatebreaker-lance-sp-222ab76",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glassmaker-rifle-6e3e859",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glassmaker-rifle-p-f8e18ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glassmaker-rifle-sp-423daad",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hardlight-shield-5961ec9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hardlight-shield-p-634c555",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hardlight-shield-sp-6d5c8fc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heartbreaker-maul-b9caa8a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heartbreaker-maul-p-1e71a88",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heartbreaker-maul-sp-09a1e5b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heater-shield-34066c7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heater-shield-p-d6924b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heater-shield-sp-a11be08",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heavy-plating-ee0f2d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heavy-plating-p-b52bc65",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heavy-plating-sp-2681eab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helios-railgun-1e41f7a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helios-railgun-p-f36bf80",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helios-railgun-sp-d24af6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hellfire-engine-c3537e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hellfire-engine-p-07e72f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hellfire-engine-sp-b730b41",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "holdout-reactor-7738029",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "holdout-reactor-p-06b7661",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "holdout-reactor-sp-464ecb5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-mantle-fd78f65",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-mantle-p-f756191",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-mantle-sp-f27f944",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-barrier-bf9dcbe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-barrier-p-c9e60ca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-barrier-sp-032c66f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-plates-89ac956",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-plates-p-9ad22b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kinetic-plates-sp-a92b3ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kite-shield-dafc714",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kite-shield-p-ba63a5c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kite-shield-sp-87c4c6d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-bloodied-tag-c93c50c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-bloodied-tag-p-ec0c787",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-bloodied-tag-sp-28078db",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-calling-card-c916a9e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-calling-card-p-6b2c067",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-calling-card-sp-651d964",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-smoke-seal-2c33d0d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-smoke-seal-p-8ec9c33",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-s-smoke-seal-sp-fa34816",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lance-cannon-e60a534",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lance-cannon-p-069ba92",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lance-cannon-sp-c6661d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "laser-cutter-76796cc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "laser-cutter-p-86e4cf8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "laser-cutter-sp-bba5487",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "last-stand-armor-d35b63e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "last-stand-armor-p-c0a4127",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "last-stand-armor-sp-39841b8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lead-pipe-5800b5b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lead-pipe-p-e226d38",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lead-pipe-sp-145452a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "legion-s-aegis-plate-47390a0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "legion-s-aegis-plate-p-502d67d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "legion-s-aegis-plate-sp-8cd04c0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "libertas-47bdc64",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "libertas-p-966c51d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "libertas-sp-90b456f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "liberte-standard-rifle-0fe99fd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "liberte-standard-rifle-p-7513a96",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "liberte-standard-rifle-sp-2345d1e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "light-composite-plating-2bffe4a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "light-composite-plating-p-baa8d05",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "light-composite-plating-sp-8e832a9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "long-watch-array-4556efd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "long-watch-array-p-8f09e84",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "long-watch-array-sp-6849a6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "many-world-weave-caed6b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "many-world-weave-p-32ea6d0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "many-world-weave-sp-e5df88a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "masterless-horizon-add3062",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "masterless-horizon-p-b489011",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "masterless-horizon-sp-9e08840",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-s-lucky-latch-e844748",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-s-lucky-latch-p-087e916",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-s-lucky-latch-sp-ca58650",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neural-scrambler-0f5d9af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neural-scrambler-p-7c10e38",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neural-scrambler-sp-4825dc6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nitro-boosters-9895ca6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nitro-boosters-p-310c28e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nitro-boosters-sp-c60548f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "norio-s-lucky-lid-55ba389",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "norio-s-lucky-lid-p-f637d24",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "norio-s-lucky-lid-sp-a5ad770",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "omni-link-core-ce57b38",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "omni-link-core-p-5178480",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "omni-link-core-sp-934a44a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "overcharged-core-96b4f59",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "overcharged-core-p-c38c2a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "overcharged-core-sp-070ed1f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pain-engine-905e19f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pain-engine-p-a4198a2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pain-engine-sp-ebf1191",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "particle-cannon-929f032",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "particle-cannon-p-a947afb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "particle-cannon-sp-e95ee33",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-armor-e7e0271",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-armor-p-fe68b2b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-armor-sp-80ed4bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-carapace-4375b81",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-carapace-p-7c69cff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "patchwork-carapace-sp-a218ef3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "peacekeeper-armor-27eec6e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "peacekeeper-armor-p-1f19b68",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "peacekeeper-armor-sp-bf00b18",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pegasus-wings-bc47c69",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pegasus-wings-p-12c3655",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pegasus-wings-sp-bd33b70",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-blade-dee45b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-blade-p-b108af5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-blade-sp-81d20dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-shroud-plating-43c64e8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-shroud-plating-p-da35e68",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-shroud-plating-sp-a93a635",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "plasma-screen-projector-320799e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "plasma-screen-projector-p-72a45b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "plasma-screen-projector-sp-fda04be",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "psychic-resonance-core-c73b8dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "psychic-resonance-core-p-07e1b52",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "psychic-resonance-core-sp-7faf7c7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-rifle-98fe012",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-rifle-p-c1da3a4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-rifle-sp-428f784",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-bastion-shield-5d3c3bd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-bastion-shield-p-f91b103",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-bastion-shield-sp-fd8c595",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-lance-e668e45",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-lance-p-0f830ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "purifier-lance-sp-4b34fa9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rail-rifle-6858024",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rail-rifle-p-d0af123",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rail-rifle-sp-8d10d5a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reactive-weave-8d2a0f2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reactive-weave-p-7dedf8e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reactive-weave-sp-9e76285",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reclaimer-s-ward-c9ee315",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reclaimer-s-ward-p-f1b2838",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reclaimer-s-ward-sp-31d28de",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-moon-edge-8653dfd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-moon-edge-p-69c11fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-moon-edge-sp-1580182",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-eye-mist-cloak-07db397",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-eye-mist-cloak-p-5ead529",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-eye-mist-cloak-sp-6ab0c11",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "riot-shield-ee0295f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "riot-shield-p-a28d780",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "riot-shield-sp-3bd64ba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-aegis-b461494",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-aegis-p-56c43e0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-aegis-sp-ad7f16c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-firebrand-70ce7b6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-firebrand-p-beea9bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-firebrand-sp-3090e6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-overhaul-rig-ead5aa6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-overhaul-rig-p-60a5803",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rustfang-overhaul-rig-sp-619c8d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusty-thrusters-668d833",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusty-thrusters-p-d79a24b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusty-thrusters-sp-55938b5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "safeguard-boosters-fe863c3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "safeguard-boosters-p-cb72748",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "safeguard-boosters-sp-b49f294",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-core-a21d472",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-core-p-7754593",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-core-sp-63ff317",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-cannon-da88039",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-cannon-p-f9378f6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-cannon-sp-8d4452c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-shield-1bef977",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-shield-p-c974387",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-shield-sp-4b84085",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shiv-28f088f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shiv-p-07701ac",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shiv-sp-14ed0bc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shock-harpoon-a71ed4c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shock-harpoon-p-43ed6f8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shock-harpoon-sp-74c19cb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-lens-f969c06",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-lens-p-9598c4b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-lens-sp-656edd0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "six-s-lucky-hopper-03acda2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "six-s-lucky-hopper-p-a50c07d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "six-s-lucky-hopper-sp-8e1a23f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "slag-forged-plating-d776390",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "slag-forged-plating-p-04d2346",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "slag-forged-plating-sp-6907881",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "smokescreen-launcher-0cf14f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "smokescreen-launcher-p-406770e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "smokescreen-launcher-sp-20bb407",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spike-plating-74f0494",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spike-plating-p-1cf7a2c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spike-plating-sp-5012e53",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "standard-reactor-9557902",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "standard-reactor-p-2d8cd3e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "standard-reactor-sp-6fcd6e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starfall-vector-jets-f8c44a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starfall-vector-jets-p-3601ed0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starfall-vector-jets-sp-0966476",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starlight-deflector-522a9b0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starlight-deflector-p-a5a70d8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "starlight-deflector-sp-b2196f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-weave-4a1409a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-weave-p-685693f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-weave-sp-7622267",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stormfront-core-067096f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stormfront-core-p-a22e918",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stormfront-core-sp-03a7b22",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sunstone-fusion-core-f42f0e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sunstone-fusion-core-p-97acf10",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sunstone-fusion-core-sp-a6bd65d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "targeting-computer-70e6e01",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "targeting-computer-p-9950918",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "targeting-computer-sp-9a0e075",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-first-name-672de79",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-first-name-p-3051e9c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-first-name-sp-4a81896",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-furnace-658d798",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-furnace-p-ea3b150",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-furnace-sp-2b2011e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "throne-line-bulwark-3d36b24",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "throne-line-bulwark-p-b855328",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "throne-line-bulwark-sp-488c9c6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tire-pauldron-3de3c31",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tire-pauldron-p-8f7df9c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tire-pauldron-sp-fec2d06",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "unwritten-mantle-bea8c21",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "unwritten-mantle-p-7ebc775",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "unwritten-mantle-sp-0d812e5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-plating-d76e4f6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-plating-p-31a2bbc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-plating-sp-0a2d4b4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "welded-plates-3a34f5d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "welded-plates-p-31c7884",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "welded-plates-sp-a49d8b7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "witness-beacon-bac59e3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "witness-beacon-p-24cda80",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "witness-beacon-sp-cc4cca3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "zenith-fragment-3d21922",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "zenith-fragment-p-ab690cb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "zenith-fragment-sp-c3b3eab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cupid-559ed96",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cupid-hsp-b4ae839",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cupid-p-c33139b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cupid-sp-8eece2b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ghost-6ad2946",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ghost-hsp-8be90f9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ghost-p-310eb90",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ghost-sp-70aebe5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-0981d87",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-hsp-3e85dca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-p-e30d726",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nail-sp-7c66d94",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-164b10f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-hsp-ac03b79",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-p-de0f0e5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-sp-967fb35",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ronin-6a4805e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ronin-hsp-add1904",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ronin-p-0ef763b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ronin-sp-dfe57d6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stardust-sylvia-82c28b8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stardust-sylvia-hsp-0ce7067",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stardust-sylvia-p-389f201",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stardust-sylvia-sp-5ee6cde",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ace-striker-d6309ff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ace-striker-hsp-93043a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ace-striker-p-1273d58",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ace-striker-sp-738b29c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-guardian-4a75370",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-guardian-hsp-ea1173b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-guardian-p-ca141a0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-guardian-sp-97d06c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-militia-f476520",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-militia-hsp-12e3d53",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-militia-p-a44fbf9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-militia-sp-7721cb2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "akira-awakened-1f3dac3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "akira-awakened-hsp-0b3f168",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "akira-awakened-p-6806692",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "akira-awakened-sp-3d0dc3f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alliance-diplomat-ee80d19",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alliance-diplomat-hsp-d06c9f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alliance-diplomat-p-e32154c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alliance-diplomat-sp-620943b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "amor-da51a3f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "amor-hsp-38ffe83",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "amor-p-aec3e5b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "amor-sp-7a4be81",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-af13873",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-hsp-4eaacfc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-p-d15daf7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-sp-aa94fe5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-4573985",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-hsp-a6b8835",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-p-a9d9a16",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-pilot-sp-eef70e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-b4301f6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-hsp-2eb4227",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-p-270abf4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-sp-8ce3700",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-idol-342ee0b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-idol-hsp-f8e4454",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-idol-p-e7ab572",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-idol-sp-629dfe2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banneret-050b527",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banneret-hsp-a45bee2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banneret-p-82acdff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "banneret-sp-94a56de",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chief-engineer-elena-a0a1916",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chief-engineer-elena-hsp-7918455",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chief-engineer-elena-p-29f9a80",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chief-engineer-elena-sp-c17fd64",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-gearhead-05a5c99",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-gearhead-hsp-627f432",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-gearhead-p-f0fc68f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-gearhead-sp-c0ca9a9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-scrapper-bc05421",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-scrapper-hsp-f8dfe72",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-scrapper-p-2d06493",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-scrapper-sp-d6ff437",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-warchief-2f66d46",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-warchief-hsp-51c4a26",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-warchief-p-bbb27e8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "clan-warchief-sp-42fbdd8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-agent-467cd74",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-agent-hsp-b542f31",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-agent-p-6225ded",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-agent-sp-520c5da",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-analyst-a963d52",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-analyst-hsp-b939246",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-analyst-p-f4bff9c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-analyst-sp-176c4fb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-handler-40f3a7f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-handler-hsp-e74e4b4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-handler-p-6183046",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cygnus-handler-sp-1d5c943",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "danger-cbd2a7b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "danger-hsp-fd8598f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "danger-p-6b71e43",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "danger-sp-47e418c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "echo-vale-6724fca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "echo-vale-hsp-47ccb53",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "echo-vale-p-5c1177d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "echo-vale-sp-6a007e9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empress-vespa-b86e2c8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empress-vespa-hsp-cac068d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empress-vespa-p-5b34415",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empress-vespa-sp-57e1e07",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-asami-5370184",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-asami-hsp-b1f1d55",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-asami-p-8b61178",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-asami-sp-df0bfe8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-kaito-4017e3a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-kaito-hsp-7e33113",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-kaito-p-80d3677",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-kaito-sp-e733554",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-rika-jones-5da795d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-rika-jones-hsp-dd359dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-rika-jones-p-1be57fd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ensign-rika-jones-sp-26a0896",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "eros-56fcea9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
         "id": "eros-hsp-3a23d50",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "eros-p-9bf7b13",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "eros-sp-1fda9c5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenris-vance-13aeaa4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenris-vance-hsp-1eabe1e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenris-vance-p-47e19bd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenris-vance-sp-e98999f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freeholder-8b256a2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freeholder-hsp-29e0f00",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freeholder-p-923c391",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freeholder-sp-fd597e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freelancer-07aa636",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freelancer-hsp-b41219b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freelancer-p-e74cde5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freelancer-sp-7a2772a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "half-0733c78",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "half-hsp-157ab4a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "half-p-3f6f8bd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "half-sp-23adb8b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-415a907",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-hsp-d50954f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-p-0638e75",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-sp-666648a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helmsman-609fb30",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helmsman-hsp-3d8a478",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helmsman-p-67d213f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "helmsman-sp-e046d7d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "infiltrator-4464fcd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "infiltrator-hsp-8113c55",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "infiltrator-p-23cb78b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "infiltrator-sp-38fcfff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jane-doe-35fefc6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jane-doe-hsp-e3ddf3e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jane-doe-p-749a1fc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jane-doe-sp-78b0982",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jett-nitro-0c5a265",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jett-nitro-hsp-f356056",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jett-nitro-p-373acd3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jett-nitro-sp-ba560eb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kaelen-drake-51245f0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kaelen-drake-hsp-8419695",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kaelen-drake-p-343fc72",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kaelen-drake-sp-de933f7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-violet-e60a71c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-violet-hsp-ed3abab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-violet-p-5defc66",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-violet-sp-0427685",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "knight-captain-2256df3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "knight-captain-hsp-0bb4703",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "knight-captain-p-a035379",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "knight-captain-sp-f5b066a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-duelist-cb67f26",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-duelist-hsp-1d532b5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-duelist-p-a1d5805",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-duelist-sp-81c0211",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-knight-5b8b3cf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-knight-hsp-48c7fcb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-knight-p-4bcd1e9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-knight-sp-24370d3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-squire-d49334e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-squire-hsp-2a2f3bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-squire-p-dc1c3d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "koa-squire-sp-c752c58",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-841ee04",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-hsp-b7bed26",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-p-2a809e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kuro-sp-450a945",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-amphitrite-bb7fbae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-amphitrite-hsp-0e030dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-amphitrite-p-544a428",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-amphitrite-sp-9d4bcaf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-sakuya-559e0d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-sakuya-hsp-aac09d6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-sakuya-p-2740583",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lady-sakuya-sp-9230bb3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-akira-839f88d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-akira-hsp-38f3f0e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-akira-p-768520e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-akira-sp-e55bb42",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-hikari-80cd6ad",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-hikari-hsp-36a9584",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-hikari-p-073ae55",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-hikari-sp-6727196",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-nakamura-6cc129e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-nakamura-hsp-ef6380a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-nakamura-p-fe8cf9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-nakamura-sp-1794c60",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-taro-ef1da6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-taro-hsp-5cbd775",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-taro-p-3e0fb02",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-taro-sp-1d9c4dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-yamamoto-15e2ff5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-yamamoto-hsp-21b9979",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-yamamoto-p-6d79bbe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lieutenant-yamamoto-sp-e3cd832",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-bomb-ai-da80a50",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-bomb-ai-hsp-8b7cdfd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-bomb-ai-p-8f07108",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-bomb-ai-sp-d294724",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-core-ai-08c81f8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-core-ai-hsp-5e49e33",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-core-ai-p-869f48e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-core-ai-sp-94bda66",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lord-commander-valerius-39696d0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lord-commander-valerius-hsp-4b9e106",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lord-commander-valerius-p-9b26a8c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lord-commander-valerius-sp-b137fdd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lucy-3b08f40",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lucy-hsp-8167221",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lucy-p-947217c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lucy-sp-f82a191",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lumina-caelis-9b49b9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lumina-caelis-hsp-246fd0c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lumina-caelis-p-2596909",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lumina-caelis-sp-287fa28",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "major-kenji-4a1e71e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "major-kenji-hsp-bff12ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "major-kenji-p-d05e1f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "major-kenji-sp-ea88daf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "marianne-aad16fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "marianne-hsp-da6c46c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "marianne-p-20abce3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "marianne-sp-2a83d2b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "matsuo-cacc34a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "matsuo-hsp-d08b016",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "matsuo-p-e9061c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "matsuo-sp-16b9573",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mercenary-66f4feb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mercenary-hsp-f1beb1e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mercenary-p-16fc821",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mercenary-sp-6da812c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-6c369ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-hsp-299c844",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-p-1597374",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-sp-b1af225",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-3dca9bb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-hsp-b1d1490",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-p-a4c7671",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-sp-5bac277",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-23bdd8d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-hsp-821946f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-p-a1f86a8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-sp-73508fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "oracle-ai-e27eed3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "oracle-ai-hsp-783195b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "oracle-ai-p-54479fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "oracle-ai-sp-9e4e369",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-weaver-dfeef85",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-weaver-hsp-4aa1281",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-weaver-p-aa11f92",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phase-weaver-sp-5340f71",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "professor-fujimoto-84d522f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "professor-fujimoto-hsp-2615b06",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "professor-fujimoto-p-bb561a0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "professor-fujimoto-sp-3f8bcc4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-b0d88da",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-hsp-847c743",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-p-1aff8ea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pulse-sp-b4e0447",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-maw-ce0b82b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-maw-hsp-8e0128e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-maw-p-96fbdb9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-maw-sp-7e898d2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-berserker-dcfde89",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-berserker-hsp-deedc30",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-berserker-p-2a062b8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-berserker-sp-c761f7c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pit-crew-ec98608",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pit-crew-hsp-12db46f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pit-crew-p-499dabd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pit-crew-sp-6424678",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pup-9769351",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pup-hsp-32383c8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pup-p-5d57da0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-pup-sp-95138c5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-scavenger-ed5cf94",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-scavenger-hsp-9f30042",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-scavenger-p-a7efbf7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-wolf-scavenger-sp-222058f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "renji-c116d1d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "renji-hsp-570ae88",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "renji-p-b64ea9d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "renji-sp-b7ff4bc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-b58e8d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-hsp-ac8a90e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-p-6123275",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-sp-d36adbb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-ace-951d35a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-ace-hsp-39ab35c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-ace-p-fbb0f8b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-ace-sp-10a923e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-cadet-2f04046",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-cadet-hsp-a96fb12",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-cadet-p-ec83be7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-cadet-sp-28f263a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-marksman-ec0a7b3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-marksman-hsp-848c224",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-marksman-p-a5cbdb6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-marksman-sp-fddfd98",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-technician-9ed541b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-technician-hsp-d076e82",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-technician-p-5c87100",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "roh-technician-sp-3f509be",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rookie-pilot-5ac9037",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rookie-pilot-hsp-cf82b88",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rookie-pilot-p-31a8117",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rookie-pilot-sp-17ff6ed",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-guard-e81f345",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-guard-hsp-aa49980",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-guard-p-9b6a52c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "royal-guard-sp-4ec8a81",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-queen-mira-8f1a557",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-queen-mira-hsp-ade497d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-queen-mira-p-a285c13",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "salvage-queen-mira-sp-8717fd4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-sakura-9a67c99",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-sakura-hsp-0f3e4dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-sakura-p-66a9fe9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-sakura-sp-12e5a8d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-yuki-c65c4a4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-yuki-hsp-7519914",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-yuki-p-c5841ec",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sergeant-yuki-sp-cd619d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shaper-ai-8646b52",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shaper-ai-hsp-714e952",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shaper-ai-p-367eedb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "shaper-ai-sp-d770911",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "silent-correction-f8b2da3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "silent-correction-hsp-bf61595",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "silent-correction-p-b7db743",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "silent-correction-sp-ac039ef",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "swarm-diver-recruit-96fe7e0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "swarm-diver-recruit-hsp-39c8263",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "swarm-diver-recruit-p-d7b2103",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "swarm-diver-recruit-sp-39f8551",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tar-0561329",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "tar-hsp-873da1f",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "tar-p-07ad6ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tar-sp-90da79a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-architect-fragmented-1cf9030",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-architect-fragmented-hsp-21d27d6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-architect-fragmented-p-5c86828",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-architect-fragmented-sp-969fbf3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-asset-9b01734",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-asset-hsp-11a09ad",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-asset-p-bac0475",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-asset-sp-6e50337",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-construct-ffe5038",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-construct-hsp-80c273b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-construct-p-502ca70",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-construct-sp-8e97190",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-hoarder-aae7175",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-hoarder-hsp-9f2cc22",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-hoarder-p-b7b7fed",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-hoarder-sp-441342f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-idealist-7257642",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-idealist-hsp-0a3698f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-idealist-p-0f406fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-idealist-sp-9504e42",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-survivor-5c41b26",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-survivor-hsp-93c7f6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-survivor-p-cb73c31",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-survivor-sp-287150d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tiamat-f9198e1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tiamat-hsp-f4e08f9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tiamat-p-8dad15c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "tiamat-sp-ed3c4bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vaultkeeper-2845f61",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vaultkeeper-hsp-d136fe3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vaultkeeper-p-c5485c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vaultkeeper-sp-d8f7716",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "veteran-f2fd9d4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "veteran-hsp-24f0025",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "veteran-p-d94ac19",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "veteran-sp-690805c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warden-commander-e6f773d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warden-commander-hsp-4b8e579",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warden-commander-p-e0e9d41",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warden-commander-sp-c24707e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warlord-grim-00cd49c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warlord-grim-hsp-84df938",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warlord-grim-p-13e85e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warlord-grim-sp-11519a8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "xavier-nexus-c6239c7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "xavier-nexus-hsp-2a79f91",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "xavier-nexus-p-6471de2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "xavier-nexus-sp-0d49c17",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-hsp-8c6b50b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-p-12968c1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-sp-698b7cd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-custom-1b0f7ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-custom-hsp-1a3f8ff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-custom-p-9c77e6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aegis-custom-sp-0e98f74",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aetherwind-6186c34",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aetherwind-hsp-315fb6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aetherwind-p-abe7e4f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aetherwind-sp-f12adb0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alpha-fenris-de64350",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alpha-fenris-hsp-c6f5d3d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alpha-fenris-p-03fd205",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "alpha-fenris-sp-5edfdf1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-frame-hsp-60c1b00",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-predator-ab739d4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-predator-hsp-93afded",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-predator-p-cc15c16",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "apex-predator-sp-2d1aa97",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "arena-stalker-932050c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "arena-stalker-hsp-d9cfa42",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "arena-stalker-p-3b5486c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "arena-stalker-sp-ba1581c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-hsp-e4ca42d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-p-5a0733c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-sp-7ba07fc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-custom-f717fdd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-custom-hsp-70c1334",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-custom-p-730ec76",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ares-custom-sp-d53bd01",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-s-pearl-7c6e295",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "aria-s-pearl-hsp-7e49f60",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-s-pearl-p-df5a472",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "aria-s-pearl-sp-2bd552c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "artillery-c147b75",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "artillery-hsp-2543d7e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "artillery-p-eb6eaad",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "artillery-sp-42c44e8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-emerald-idol-7199754",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "asami-emerald-idol-hsp-a0bd163",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-emerald-idol-p-b382a9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "asami-emerald-idol-sp-40f46bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastille-0359a60",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastille-hsp-05fde1d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastille-p-4f503d4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastille-sp-fa80ec0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-hauler-096cd20",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-hauler-hsp-98677f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-hauler-p-a0e6889",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bastion-hauler-sp-ec246b5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "behemoth-1622be4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "behemoth-hsp-987205b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "behemoth-p-4768fa0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "behemoth-sp-7e928af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "big-rig-77c30d7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "big-rig-hsp-f007ff0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "big-rig-p-cadd462",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "big-rig-sp-ccca537",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackguard-b3f4fc3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackguard-hsp-497c4ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackguard-p-27ffe7e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackguard-sp-58fe4ef",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackout-ff408b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackout-hsp-c1fcf12",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackout-p-c4130e1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blackout-sp-15a88b9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blade-of-the-dawn-c0c4012",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blade-of-the-dawn-hsp-3765b39",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blade-of-the-dawn-p-b500f8f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blade-of-the-dawn-sp-415ba42",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blue-shark-3d8b65a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blue-shark-hsp-f30dc2f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blue-shark-p-ca5f373",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "blue-shark-sp-f94155f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "brawler-660e035",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "brawler-hsp-fcfef68",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "brawler-p-a8a7009",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "brawler-sp-af42687",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulldozer-goliath-8108223",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulldozer-goliath-hsp-321a6d8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulldozer-goliath-p-cf47dea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulldozer-goliath-sp-d6d0f7d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulwark-60902ee",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulwark-hsp-273c723",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulwark-p-80b0eef",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "bulwark-sp-f8f0f8a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "catapult-f1303fd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "catapult-hsp-6172bdd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "catapult-p-3deb7ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "catapult-sp-17fe8cc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "celestial-04ea543",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "celestial-hsp-dd76002",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "celestial-p-62ac232",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "celestial-sp-b470518",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cerberus-frame-a41f2af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cerberus-frame-hsp-7653314",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cerberus-frame-p-b16aee3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cerberus-frame-sp-d28bd8c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "charlemagne-7dde39d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "charlemagne-hsp-63db08f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "charlemagne-p-4e0a8e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "charlemagne-sp-8a9ffdc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chevalier-9b7e2a5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chevalier-hsp-ee146f4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chevalier-p-dca0b78",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chevalier-sp-6f35c1f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chimera-frame-fdf9108",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chimera-frame-hsp-8d4f0a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chimera-frame-p-7475f60",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "chimera-frame-sp-285216c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cipher-9-atlas-9b6fb64",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cipher-9-atlas-hsp-7cdf8e6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cipher-9-atlas-p-f2f1828",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "cipher-9-atlas-sp-54a90c2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "colossus-76b5aff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "colossus-hsp-1a37814",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "colossus-p-74f2600",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "colossus-sp-ec5a145",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-annihilator-8cb8cbd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-annihilator-hsp-7bbb8bc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-annihilator-p-67e35b4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-annihilator-sp-3dde17d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-behemoth-f5cf275",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-behemoth-hsp-15547a5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-behemoth-p-555352d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-behemoth-sp-0f0f421",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-drone-5659a89",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-drone-hsp-391ed95",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-drone-p-42672e3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-drone-sp-139ddf7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-leviathan-25bc260",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-leviathan-hsp-a6fdd3b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-leviathan-p-07b4d7b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-leviathan-sp-9a5d9e9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-marauder-fe2da29",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-marauder-hsp-4f1067e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-marauder-p-e3b7f6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-marauder-sp-ce92af9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-scout-1b825fb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-scout-hsp-ebe1b11",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-scout-p-3c9fb28",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-scout-sp-4b7ddf1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-sentry-d5d3035",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-sentry-hsp-286766a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-sentry-p-751c944",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-sentry-sp-4e6fa04",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-striker-aaa17a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-striker-hsp-3fd88c4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-striker-p-3eb6a90",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-striker-sp-295fefd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-warden-b753373",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-warden-hsp-c588cb4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-warden-p-fc3371e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corrupted-warden-sp-0a48dc9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corsair-7f2dccb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corsair-hsp-e619e4b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corsair-p-c8a74c1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "corsair-sp-7e7ea2d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-annihilator-71bfb2e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-annihilator-hsp-a13a071",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-annihilator-p-fa93877",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-annihilator-sp-b657728",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-behemoth-7fd2308",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-behemoth-hsp-ce5b995",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-behemoth-p-868af0c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-behemoth-sp-654a0d1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-drone-583a61d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-drone-hsp-0b1dc74",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-drone-p-ee4b553",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-drone-sp-d93c4a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-marauder-ce33713",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-marauder-hsp-b16e28c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-marauder-p-7027411",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-marauder-sp-af2ecc6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-scout-a03ce21",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-scout-hsp-636fb63",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-scout-p-0567f4d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-scout-sp-cbbec14",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-sentry-9db70e3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-sentry-hsp-f5c035d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-sentry-p-01d35d5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-sentry-sp-2654a50",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-striker-287aa9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-striker-hsp-807d334",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-striker-p-26bf3f9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-striker-sp-eb2ed09",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-warden-f4f618e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-warden-hsp-ae5d9a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-warden-p-d2e10c8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "crystalline-warden-sp-1750ea3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "demolisher-ff5f29e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "demolisher-hsp-cb132c1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "demolisher-p-c1f9a7f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "demolisher-sp-893744c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empyrean-guard-93d894e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empyrean-guard-hsp-5c09b10",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empyrean-guard-p-6700b1d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "empyrean-guard-sp-52b426f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "event-horizon-aba4be6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "event-horizon-hsp-2d587a9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "event-horizon-p-7965f4d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "event-horizon-sp-690e681",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excalibur-e94576f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excalibur-hsp-0608bad",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excalibur-p-5d70720",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excalibur-sp-6905fa0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excavated-sentinel-5e5459d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excavated-sentinel-hsp-8fd98b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excavated-sentinel-p-45cc2e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "excavated-sentinel-sp-8809e88",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fallback-drone-9dab51e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fallback-drone-hsp-7048189",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fallback-drone-p-64a5829",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fallback-drone-sp-db4a81a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenrir-2e45ac1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenrir-hsp-2843795",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenrir-p-1c6393d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "fenrir-sp-93aa9e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freebooter-147a304",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freebooter-hsp-e352b4c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freebooter-p-5d164a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "freebooter-sp-501937a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatekeeper-ffbc8b6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatekeeper-hsp-5b48068",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatekeeper-p-978888c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gatekeeper-sp-298c661",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "genesis-hsp-60c746e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-annihilator-f88c76d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-annihilator-hsp-01676d5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-annihilator-p-6d33f26",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-annihilator-sp-9a02b79",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-behemoth-218f031",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-behemoth-hsp-041e9b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-behemoth-p-aff063a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-behemoth-sp-395a588",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-drone-2bc4512",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-drone-hsp-fd03bf0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-drone-p-7e82404",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-drone-sp-e517c80",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-frame-e95fd38",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-frame-hsp-07b2a97",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-frame-p-07e1abb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-frame-sp-f520dbe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-marauder-d4d2d0e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-marauder-hsp-528ab49",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-marauder-p-fbfe57c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-marauder-sp-07fdcef",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-scout-a24928a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-scout-hsp-9a23190",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-scout-p-a9e41cb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-scout-sp-c8ca2a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-sentry-70fc89e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-sentry-hsp-16817e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-sentry-p-5e5a845",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-sentry-sp-a94dbd3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-striker-d8c6dc5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-striker-hsp-b0847c1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-striker-p-0e8521a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-striker-sp-a0f416f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-warden-459d0fa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-warden-hsp-69af71f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-warden-p-4e188b1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gladiator-warden-sp-b03d70b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glory-seeker-eddc57e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glory-seeker-hsp-66897ee",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glory-seeker-p-ec1a582",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "glory-seeker-sp-9b8605b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "goliath-db267cf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "goliath-hsp-1b5c3dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "goliath-p-acdf29c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "goliath-sp-994fa1e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gryphon-579c399",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gryphon-hsp-bae15a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gryphon-p-3e470a1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "gryphon-sp-f394e79",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hauler-frame-a5d5c91",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hauler-frame-hsp-26bfa76",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hauler-frame-p-dfc68e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hauler-frame-sp-9232dd3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-s-pink-bunny-medic-35f971c",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "heart-s-pink-bunny-medic-hsp-64abc7a",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-s-pink-bunny-medic-p-d9263ca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "heart-s-pink-bunny-medic-sp-56f39a5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hound-371cdb6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hound-hsp-2e36269",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hound-p-d38e89e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hound-sp-665e8f6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "howler-0856b6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "howler-hsp-2a9dd84",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "howler-p-0de6b01",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "howler-sp-e11fd68",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hunter-frame-03c9919",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hunter-frame-hsp-95cab1c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hunter-frame-p-4855534",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "hunter-frame-sp-16dab22",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-aegis-f2dbd49",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-aegis-hsp-57177c9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-aegis-p-ce3774f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "imperial-aegis-sp-75b97b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "interceptor-frame-12d3767",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "interceptor-frame-hsp-61d9201",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "interceptor-frame-p-badf4f2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "interceptor-frame-sp-0b85ddc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "izanagi-6d5661b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "izanagi-hsp-efe7bef",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "izanagi-p-b78c464",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "izanagi-sp-f895f15",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jormungandr-f525d55",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jormungandr-hsp-d2fb17f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jormungandr-p-8bc0956",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jormungandr-sp-a36020e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "juggernaut-hsp-b65d302",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "juggernaut-p-c954f0d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "juggernaut-sp-d8402f2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "junker-6c46d01",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "junker-hsp-f57ac50",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "junker-p-8e8f588",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "junker-sp-8e9fd04",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-annihilator-29ebe69",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-annihilator-hsp-7a58b23",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-annihilator-p-d14c6db",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-annihilator-sp-091207c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-behemoth-6ea8eec",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-behemoth-hsp-0a89fac",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-behemoth-p-bb8b3d5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-behemoth-sp-c74b652",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-drone-274cb72",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-drone-hsp-a4dae1a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-drone-p-0d02dde",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-drone-sp-48e24f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-marauder-4e5ef50",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-marauder-hsp-6dafa64",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-marauder-p-94b1916",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-marauder-sp-7f8222b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-scout-80f5476",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-scout-hsp-a645768",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-scout-p-c10ccd1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-scout-sp-b9aa894",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-sentry-55e7572",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-sentry-hsp-9019a4f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-sentry-p-37f233d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-sentry-sp-232cf60",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-striker-9a77bf1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-striker-hsp-c85a6b9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-striker-p-ad63483",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-striker-sp-647d01b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-warden-4ca0c98",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-warden-hsp-0436ba2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-warden-p-d4cc836",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "jury-rigged-warden-sp-403a08a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-089ee13",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-hsp-7b55a05",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-p-0a6ae11",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-sp-bf842ed",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-custom-5c329f0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-custom-hsp-1479d1b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-custom-p-6e3b346",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "k-type-7-gekkou-custom-sp-19a1798",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-v-neon-ronin-5cf6d94",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-v-neon-ronin-hsp-91df7f9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-v-neon-ronin-p-f523848",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "kage-v-neon-ronin-sp-80c611a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "king-s-guard-hsp-2763935",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "l-6678-thunderbird-97f17ea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "l-6678-thunderbird-hsp-aed3121",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "l-6678-thunderbird-p-80484af",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "l-6678-thunderbird-sp-c3009e2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lancer-17d6306",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lancer-hsp-35688b4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lancer-p-7fd8219",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lancer-sp-a33fbe9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "le-spectre-c49ebe0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "le-spectre-hsp-abc1e0b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "le-spectre-p-ed15aca",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "le-spectre-sp-cbae9f1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-drone-b5ca5d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-drone-hsp-31d0f39",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-drone-p-36a195e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "logic-drone-sp-39804cf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "longbow-bb0330e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "longbow-hsp-4e493e7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "longbow-p-9777806",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "longbow-sp-11d447e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lux-7-nightwing-243eaf7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lux-7-nightwing-hsp-aece071",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lux-7-nightwing-p-eb56814",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "lux-7-nightwing-sp-7439658",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mangler-067d002",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mangler-hsp-533f068",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mangler-p-50c5a44",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mangler-sp-fcbdcba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mauler-fb414e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mauler-hsp-79503a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mauler-p-719e583",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mauler-sp-3276514",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-annihilator-2058989",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-annihilator-hsp-27fba47",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-annihilator-p-f220781",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-annihilator-sp-b9c2db4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-behemoth-cfc1ff8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-behemoth-hsp-39e2f1e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-behemoth-p-6c41f5e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-behemoth-sp-ebdd9e8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-drone-9434944",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-drone-hsp-f700c19",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-drone-p-e057271",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-drone-sp-63d928e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-marauder-34dfb52",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-marauder-hsp-dcc46e5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-marauder-p-ee0ecae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-marauder-sp-6508ebb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-scout-86e7eb8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-scout-hsp-5a825e4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-scout-p-cda3eb2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-scout-sp-7745166",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-sentry-b956edf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-sentry-hsp-dca68c7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-sentry-p-0acfb7d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-sentry-sp-bb93215",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-striker-ed5ae3c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-striker-hsp-b3c4906",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-striker-p-74ed377",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-striker-sp-16dea7e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-warden-ebc5b7d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-warden-hsp-691e2e9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-warden-p-276c63e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mining-warden-sp-0266e46",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-s-beat-booster-7d6115c",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "momo-s-beat-booster-hsp-dcf1a75",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-s-beat-booster-p-ef12f3c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "momo-s-beat-booster-sp-5cd6533",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "muster-line-cruiser-170368a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "muster-line-cruiser-hsp-fd1958f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "muster-line-cruiser-p-a7e7d05",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "muster-line-cruiser-sp-fe3ce19",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-dragon-aa47d44",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-dragon-hsp-91c6cdb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-dragon-p-7b15b82",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "mystic-dragon-sp-77df1fc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neon-jackal-drift-frame-736fb9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neon-jackal-drift-frame-hsp-a3e3b9b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neon-jackal-drift-frame-p-618728d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "neon-jackal-drift-frame-sp-4c9a4d6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nexus-frame-aa713ba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nexus-frame-hsp-5582942",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nexus-frame-p-3bbc19b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nexus-frame-sp-2dfeb8f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-s-cosmic-dj-befe91c",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "nova-s-cosmic-dj-hsp-5d593fa",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-s-cosmic-dj-p-023cfb4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "nova-s-cosmic-dj-sp-f088896",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "null-sector-hsp-2e06a7b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-drone-8651161",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-drone-hsp-6f2b072",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-drone-p-65cc353",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "observer-drone-sp-0d5b040",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ouroboros-hsp-407e243",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-1736310",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-hsp-efb64ba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-p-1fcf0ce",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-sp-6c0cc9e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-mk-ii-3608beb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-mk-ii-hsp-d1503dc",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-mk-ii-p-cde0059",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "phalanx-mk-ii-sp-4bf5c40",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pit-enforcer-d528af4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pit-enforcer-hsp-e55fe41",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pit-enforcer-p-143f446",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "pit-enforcer-sp-3f63bd1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "praetorian-aea680a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "praetorian-hsp-0e32113",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "praetorian-p-8644519",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "praetorian-sp-0116756",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "project-chimera-4ca0d8b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "project-chimera-hsp-3a1999b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "project-chimera-p-285a6ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "project-chimera-sp-aa7953a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ragnarok-hsp-be7cc8d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reaver-e488b93",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reaver-hsp-0621474",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reaver-p-0637146",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "reaver-sp-bcb1399",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-rescue-e9631be",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-rescue-hsp-f464d54",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-rescue-p-b408f38",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "red-rescue-sp-338fdd1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "relay-7-beacon-c349f30",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "relay-7-beacon-hsp-77bfce9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "relay-7-beacon-p-df55a9f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "relay-7-beacon-sp-e25faea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "retaliator-1e330b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "retaliator-hsp-5ac304e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "retaliator-p-4be6d68",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "retaliator-sp-285f878",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "revolution-hsp-beccf03",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rift-walker-354c00a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rift-walker-hsp-5767e1c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rift-walker-p-2ad3a72",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rift-walker-sp-65bb473",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-s-crimson-rock-5ba6091",
+        "fields": [
+          "rating"
         ]
       },
       {
         "id": "rin-s-crimson-rock-hsp-1642a1f",
         "fields": [
-          "image",
-          "artworkNote"
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-s-crimson-rock-p-d977b41",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rin-s-crimson-rock-sp-cb8cfe1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rust-baron-fad1822",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rust-baron-hsp-bda7987",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rust-baron-p-5d7b620",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rust-baron-sp-e70d5e0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-annihilator-e514153",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-annihilator-hsp-f1be2f7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-annihilator-p-7d42ce1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-annihilator-sp-bc0ade8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-behemoth-b26f231",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-behemoth-hsp-f9061f2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-behemoth-p-cff824f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-behemoth-sp-9229198",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-drone-43a923e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-drone-hsp-f5172c5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-drone-p-35dadc4",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-drone-sp-d4e5369",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-marauder-666bc6f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-marauder-hsp-6c987a8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-marauder-p-919dde2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-marauder-sp-9bb60a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-scout-4df1123",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-scout-hsp-77495a3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-scout-p-acbcef9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-scout-sp-41ebcff",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-sentry-296e0f9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-sentry-hsp-d0833b8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-sentry-p-b84a6e5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-sentry-sp-0f646e5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-striker-8672bae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-striker-hsp-e6d7165",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-striker-p-48ac379",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-striker-sp-d2429b0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-warden-71f1280",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-warden-hsp-e004cd0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-warden-p-eb840a0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "rusted-warden-sp-19bedc0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ryujin-hsp-3d5e2f2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ryujin-p-69728c2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "ryujin-sp-66df4be",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sans-culotte-bc78a44",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sans-culotte-hsp-f00fbcd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sans-culotte-p-fb188ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sans-culotte-sp-8dc8e42",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scout-frame-692eea6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scout-frame-hsp-e45af50",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scout-frame-p-decbaba",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scout-frame-sp-d214320",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-king-d183188",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-king-hsp-769c912",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-king-p-2e44632",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "scrap-king-sp-fc9ca48",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sentinel-d05b5e6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sentinel-hsp-fee4321",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sentinel-p-7f3935e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "sentinel-sp-690bdf2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "seraph-9-aegis-monarch-73d0395",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "seraph-9-aegis-monarch-hsp-3cc456e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "seraph-9-aegis-monarch-p-cfc62b7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "seraph-9-aegis-monarch-sp-6abbe05",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-cfa6e98",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-hsp-ac58080",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-p-d7e4bcb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "singularity-sp-becc1b3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spectre-1b652c6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spectre-hsp-cd68874",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spectre-p-86255b8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "spectre-sp-07aa7ae",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stageguard-lux-7-8dfdfea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stageguard-lux-7-hsp-95bdbd9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stageguard-lux-7-p-fb56c6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stageguard-lux-7-sp-e3bb2b3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-v-core-b69744a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-v-core-hsp-e20fb40",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-v-core-p-a74fb34",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "stealth-v-core-sp-66b77a6",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "striker-frame-ba08aea",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "striker-frame-hsp-40f9cbb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "striker-frame-p-873ccb5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "striker-frame-sp-7b6d059",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "t8-breaker-f6bc9d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "t8-breaker-hsp-49cc44f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "t8-breaker-p-672ead9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "t8-breaker-sp-e26900d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-butcher-e11bfaf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-butcher-hsp-064adb0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-butcher-p-98a87dd",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-butcher-sp-111f665",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-crimson-knight-d0e5b86",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-crimson-knight-hsp-b1ae708",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-crimson-knight-p-95d5167",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-crimson-knight-sp-e94255a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-juggernaut-prime-3ed6141",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-juggernaut-prime-hsp-7f25d70",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-juggernaut-prime-p-70844ab",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-juggernaut-prime-sp-afa4797",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-last-bastion-hsp-20c99b2",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-masterless-blade-78c28b9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-masterless-blade-hsp-674650d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-masterless-blade-p-418b972",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-masterless-blade-sp-31a1190",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-unchained-e34529b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-unchained-hsp-b341558",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-unchained-p-25fddc7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "the-unchained-sp-fab7291",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "trebuchet-31b6c92",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "trebuchet-hsp-8500344",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "trebuchet-p-b428c81",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "trebuchet-sp-e3a8c44",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-102-ballista-3752584",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-102-ballista-hsp-fb36891",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-102-ballista-p-69da807",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-102-ballista-sp-a4f11e0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-12-paladin-2f5a0d9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-12-paladin-hsp-3106f55",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-12-paladin-p-c7b13c3",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-12-paladin-sp-9de641d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-4-conscript-789d98f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-4-conscript-hsp-bf7a6b9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-4-conscript-p-980ed9a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-4-conscript-sp-5eaa642",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-6-ronin-178ee8e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-6-ronin-hsp-55cd27e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-6-ronin-p-b02a1e9",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-6-ronin-sp-a1ccae5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-77-grunt-1151fac",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-77-grunt-hsp-6f3fedb",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-77-grunt-p-964561f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-77-grunt-sp-626a8bf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-88-legion-99b7313",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-88-legion-hsp-abbf046",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-88-legion-p-476f514",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-88-legion-sp-f94cb08",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-95-shrike-1fafb7b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-95-shrike-hsp-508a019",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-95-shrike-p-dcf15fa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "type-95-shrike-sp-6711182",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "v-x-excalivault-hsp-d7c68b0",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagabond-e4a6b78",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagabond-hsp-b45c849",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagabond-p-9bdba32",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagabond-sp-285b4fe",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagrant-star-447e097",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagrant-star-hsp-b498c6c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagrant-star-p-bff87fa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vagrant-star-sp-87eeb4c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-interceptor-52432a5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-interceptor-hsp-b9b262b",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-interceptor-p-c2a04f8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vanguard-interceptor-sp-57de711",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vent-strider-cf94b1d",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vent-strider-hsp-9e77978",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vent-strider-p-18dd7e8",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vent-strider-sp-9e07d1f",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vespid-crown-artillerist-b68684e",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vespid-crown-artillerist-hsp-1b30421",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vespid-crown-artillerist-p-97a2e08",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "vespid-crown-artillerist-sp-9850b34",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-blue-2702d94",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-blue-hsp-057e0cf",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-blue-p-99d4285",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-blue-sp-6250eb5",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-red-e49171a",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-red-hsp-083cd14",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-red-p-0d7f062",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbear-red-sp-b194b64",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbound-juggernaut-8f87a57",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbound-juggernaut-hsp-0e698a7",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbound-juggernaut-p-7f2591c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "warbound-juggernaut-sp-c195caa",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "world-eater-hsp-47fc464",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "wraith-8f5fca1",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "wraith-hsp-03e6147",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "wraith-p-e8cd16c",
+        "fields": [
+          "rating"
+        ]
+      },
+      {
+        "id": "wraith-sp-1c55cbf",
+        "fields": [
+          "rating"
         ]
       }
     ]

@@ -1,4 +1,5 @@
 import raw from '../data/database.json';
+import {rankPower,type PowerResult} from './power';
 export interface Entry {
   id: string; category: string; name: string; description: string;
   type?: string; family?: string; faction?: string; rarity?: string; tier?: string;
@@ -8,7 +9,7 @@ export interface Entry {
   stats?: Record<string, number>; sources: string[]; evidence: string[];
   packIds?: string[]; rewardIds?: string[]; abilityIds?: string[]; relatedIds?: string[]; missionIds?: string[];
   campaignId?: string; chapterNumber?: number; floorCount?: number; difficulty?: string | number;
-  pilotSlots?: number; prototypeAdvantages?: string[]; chassisClass?: string;
+  rating?: number; power?: PowerResult; pilotSlots?: number; prototypeAdvantages?: string[]; chassisClass?: string;
   guaranteed?: boolean; cost?: string; acquisition?: string;
   rarityRates?: Record<string, number>; favoredFactions?: string[]; probabilityNote?: string;
   currencyRewards?: { name: string; amount: number }[]; dossierRate?: number;
@@ -19,6 +20,7 @@ export interface Entry {
 export const database = raw as unknown as { entries: Entry[]; gameVersion: string; rules: {chassisCounters: Record<string,string>; [key: string]: unknown} };
 export const entries = database.entries;
 export const byId = new Map(entries.map(e => [e.id, e]));
+for (const [id, result] of rankPower(entries)) byId.get(id)!.power = result;
 export const categories: Record<string, {label: string; short: string; description: string}> = {
   warmachines: {label: 'War Machines', short: 'WM', description: 'Find your next frame. Browse chassis, compare base stats and trace every acquisition route.'},
   pilots: {label: 'Pilots', short: 'PL', description: 'Meet your crew. Explore pilot bonuses, faction passives and signature pairings.'},

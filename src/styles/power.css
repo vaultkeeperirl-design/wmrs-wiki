@@ -1,0 +1,11 @@
+.power-badge{--rank:#8fe8d3;display:inline-grid;place-items:center;width:30px;height:30px;flex:none;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);background:linear-gradient(145deg,var(--rank),color-mix(in srgb,var(--rank) 45%,#071016));color:#071016;font:800 15px/1 Orbitron,sans-serif;text-shadow:0 1px 0 #fff4;box-shadow:inset 0 0 0 1px #fff3}
+.power-badge[data-rank=S]{--rank:#ff8a5c}.power-badge[data-rank=A]{--rank:#edbf70}.power-badge[data-rank=B]{--rank:#8fe8d3}.power-badge[data-rank=C]{--rank:#6dbaff}.power-badge[data-rank=D]{--rank:#8d9aa5}
+.power-badge--lg{width:52px;height:52px;font-size:26px}
+.card-power{position:absolute;top:10px;left:10px;z-index:2;filter:drop-shadow(0 3px 6px #000a)}
+.entry-card{position:relative}
+.unit-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;margin:10px 0 17px}
+.unit-title-row .unit-name{margin:0}
+.unit-power{display:flex;align-items:center;gap:12px;padding:6px 14px 6px 6px;border:1px solid #2f444d;background:#0f1b23;transition:border-color .2s}
+.unit-power:hover{border-color:var(--signal)}
+.unit-power b{display:block;font:700 13px var(--display);color:#eef4f2}
+.unit-power small{display:block;font:10px var(--mono);color:#93a3b4;margin-top:4px}

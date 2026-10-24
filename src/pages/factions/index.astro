@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {factions,factionHref} from '../../lib/lore';
+import {entries,href} from '../../lib/data';
+import '../../styles/lore.css';
+const countFamilies=(faction:string,category:string)=>new Set(entries.filter(e=>e.category===category&&e.faction===faction).map(e=>e.family)).size;
+---
+<Layout title="WMRS factions & lore" description="Explore all nine Warmachine Rogue Scout factions: official emblems, identities, abilities, cards and complete opt-in lore."><nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span>Factions</nav><div class="page-heading"><p class="eyebrow">FACTION INTELLIGENCE</p><h1>Choose your allegiance.</h1><p>Meet the nine base-game factions. Their public identities and combat effects are visible here; the complete lore is available only when you choose to reveal it.</p></div><div class="faction-hub-grid">{factions.map(f=><a class="faction-hub-card" href={factionHref(f)}><img src={href(f.emblem)} alt={`${f.name} official faction emblem`} width="128" height="128" loading="lazy" /><h2>{f.name}</h2><p>{f.description}</p><div><span>{countFamilies(f.faction,'warmachines')} War Machines</span><span>{countFamilies(f.faction,'pilots')} Pilots</span><span>{f.pages.length} lore pages</span></div><strong>Open faction record →</strong></a>)}</div></Layout>

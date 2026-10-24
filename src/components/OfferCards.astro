@@ -1,0 +1,12 @@
+---
+import {related,entryHref,type Entry} from '../lib/data';
+import TierBadge from './TierBadge.astro';
+interface Props {entry:Entry;}
+const {entry}=Astro.props;
+const cards=related(entry.rewardIds).filter(e=>['warmachines','pilots'].includes(e.category));
+const compact=entry.guaranteed&&cards.length>0&&cards.length<=8;
+---
+{compact&&<section class="offer-card-preview" aria-label="Included cards and their statistics"><p class="offer-card-heading">THIS IS A SHOP OFFER · OPEN A CARD FOR ITS FULL PROFILE</p>{cards.map(card=><a class="offer-included-card" href={entryHref(card)}><span><strong>{card.name}</strong><small>{card.type} · {card.category==='warmachines'?'War Machine':'Pilot'}</small></span><TierBadge tier={card.tier}/><span class="offer-mini-stats"><b>{card.stats?.HP??0}<small>HP</small></b><b>{card.stats?.Attack??0}<small>ATK</small></b><b>{card.stats?.Defense??0}<small>DEF</small></b></span><span class="offer-open-profile">Full statistics →</span></a>)}</section>}
+<style>
+.offer-card-preview{border:1px solid #3d685a;background:#132b27;margin:20px 0;padding:15px}.offer-card-heading{font:9px var(--mono);letter-spacing:1px;color:var(--signal);margin:0 0 13px}.offer-included-card{display:flex;align-items:center;gap:16px;padding:12px 0;border-top:1px solid #325047}.offer-included-card>span:first-child{flex:1;min-width:0}.offer-included-card strong{display:block;color:#e7f2ef;font-size:14px}.offer-included-card small{display:block;font-size:10px;color:#9db8b0;margin-top:5px}.offer-mini-stats{display:flex;gap:16px}.offer-mini-stats b{font:600 18px Arial,sans-serif;color:#e0efeb;text-align:center}.offer-mini-stats small{font-size:8px;font-weight:400;color:#9db8b0}.offer-open-profile{color:var(--signal);font-size:11px;text-decoration:underline;text-underline-offset:3px}@media(max-width:650px){.offer-included-card{flex-wrap:wrap;gap:12px}.offer-included-card>span:first-child{flex-basis:calc(100% - 110px)}.offer-mini-stats{margin-left:0}.offer-open-profile{margin-left:auto}}
+</style>

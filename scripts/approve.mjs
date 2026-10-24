@@ -21,13 +21,33 @@ for (const relative of manifest) {
   assetHashes[relative] = digest(content.toString('base64'));
 }
 // Asset copying is allowlisted. Build validation rejects any stale/unapproved files.
+// Hand-authored tutorial art is independent of the generated game-data snapshot.
+let editorial = {assets: []};
+try { editorial = await read('data/editorial-assets.json'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+for (const item of editorial.assets) {
+  assertSafePath(item.destination);
+  if (!/^assets\/wiki-(ui|guides)\//.test(item.destination)) throw new Error('Editorial asset namespace is not approved.');
+  const content = await fs.readFile(path.join(root, 'public', item.destination));
+  const actual = digest(content.toString('base64'));
+  if (actual !== item.approvedHash) throw new Error(`Editorial asset changed without review: ${item.destination}`);
+  assetHashes[item.destination] = actual;
+}
+let preservedLore = {};
+try {
+  const previousApproval = await read('data/approved.json');
+  if (previousApproval.loreHash) {
+    const lore = await read('src/data/lore.json');
+    if (digest(lore) !== previousApproval.loreHash) throw new Error('Lore changed without review; review and approve its hash first.');
+    preservedLore = {loreHash: previousApproval.loreHash};
+  }
+} catch (error) { if (error.code !== 'ENOENT') throw error; }
 await fs.mkdir(path.join(root, 'src/data'), { recursive: true });
 await fs.mkdir(path.join(root, 'data'), { recursive: true });
 await fs.mkdir(path.join(root, 'reports'), { recursive: true });
 await fs.writeFile(path.join(root, 'src/data/database.json'), JSON.stringify(db, null, 2) + '\n');
 await fs.copyFile(path.join(root, '.review/identity.json'), path.join(root, 'data/identity.json'));
 await fs.copyFile(path.join(root, '.review/planner-fixtures.json'), path.join(root, 'data/planner-fixtures.json'));
-await fs.writeFile(path.join(root, 'data/approved.json'), JSON.stringify({ schemaVersion: 1, gameVersion: db.gameVersion, databaseHash: hash, assetHashes }, null, 2) + '\n');
+await fs.writeFile(path.join(root, 'data/approved.json'), JSON.stringify({ schemaVersion: 1, gameVersion: db.gameVersion, databaseHash: hash, ...preservedLore, assetHashes }, null, 2) + '\n');
 const coverage = {
   ...report.coverage, gameVersion: db.gameVersion,
   withheldCount: report.withheld.length, missingArt: report.missingArt,

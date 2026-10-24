@@ -2,13 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import {guides,journey} from '../../content/guides';
 import {href} from '../../lib/data';
+import GuideVisuals from '../../components/GuideVisuals.astro';
 export function getStaticPaths(){return guides.map(guide => ({params:{slug:guide.slug},props:{guide}}));}
 const {guide} = Astro.props;
 const journeyIndex = journey.findIndex(j => j.slug === guide.slug);
 const next = journey[journeyIndex + 1];
 ---
 <Layout title={guide.title} description={guide.summary}><nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span><a href={href('guides/')}>Guides</a><span>/</span>{guide.title}</nav><div class="page-heading"><p class="eyebrow">{guide.level}</p><h1>{guide.title}</h1><p>{guide.summary}</p><span class="badge">SOURCE-VERIFIED MECHANICS / REASONED GUIDANCE</span></div>
-{guide.slug === 'first-team' && <div class="flow" aria-label="Chassis advantage cycle"><span>Assault</span><b>→</b><span>Skirmisher</span><b>→</b><span>Siege</span><b>→</b><span>Guardian</span><b>→ Assault · +30% damage</b></div>}
-<div class="guide-layout"><article class="prose">{guide.sections.map((s,index) => <section id={`section-${index+1}`}><h2>{s.title}</h2>{s.paragraphs.map(p => <p>{p}</p>)}{s.bullets && <ul>{s.bullets.map(b => <li>{b}</li>)}</ul>}</section>)}
+<div class="guide-layout"><article class="prose">{guide.sections.map((s,index) => <section id={`section-${index+1}`}><h2>{s.title}</h2>{s.paragraphs.map(p => <p>{p}</p>)}{s.bullets && <ul>{s.bullets.map(b => <li>{b}</li>)}</ul>}<GuideVisuals guide={guide.slug} section={index+1} /></section>)}
 {journeyIndex >= 0 && <div class="panel"><h2>Your learning journey</h2><button type="button" class="button" data-journey={guide.slug} aria-pressed="false">○ Mark complete</button>{next && <p class="mt-4"><a href={href(`guides/${next.slug}/`)}>Next: {next.label} →</a></p>}</div>}
 <h2>Continue reading</h2><ul>{guide.related.map(slug => <li><a href={href(`guides/${slug}/`)}>{guides.find(g => g.slug === slug)?.title}</a></li>)}</ul><details class="panel"><summary>Implementation sources</summary><p>Guide explanations are maintained separately from the extracted database. This version was checked against:</p><ul>{guide.sources.map(s => <li><code>{s}</code></li>)}</ul></details></article><nav class="toc" aria-label="On this page"><strong>ON THIS PAGE</strong>{guide.sections.map((s,index) => <a href={`#section-${index+1}`}>{s.title}</a>)}<a href={href('tools/team-builder/')}>Open team builder ↗</a><a href={href('tools/pack-explorer/')}>Open pack explorer ↗</a></nav></div></Layout>

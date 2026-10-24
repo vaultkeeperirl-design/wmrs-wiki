@@ -1,6 +1,8 @@
-import {getCatalog,node,link,art,type SearchEntry,type Catalog} from './catalog';
+import {getCatalog,node,link,art,url,type SearchEntry,type Catalog} from './catalog';
 import {readState,writeState,refreshState,toast} from './global';
 import {fitsSlot,totalStats,validateTeam,slots,type Loadout} from '../lib/planner';
+import {createTierBadge} from '../lib/tier-icons';
+import '../styles/tier-icons.css';
 const compare=document.querySelector<HTMLElement>('#compare-tool');
 const teamTool=document.querySelector('#team-tool');
 if(compare||teamTool||document.querySelector('#collection-export'))getCatalog().then(c=>{if(compare)initCompare(c);if(teamTool)initTeam(c);if(document.querySelector('#collection-export'))initCollection(c);}).catch(e=>toast(e.message));
@@ -20,9 +22,10 @@ function initCompare(c:Catalog){
     const selected=selects.map(s=>c.entries.find(e=>e.id===s.value)).filter((e):e is SearchEntry=>!!e);
     const output=document.querySelector('#comparison-output')!;output.replaceChildren();if(!selected.length){output.append(node('p','Choose at least one card.','tool-note'));return;}
     const table=node('table',undefined,'comparison-table');const head=node('thead');const row=node('tr');row.append(node('th','Property'));
-    for(const e of selected){const cell=node('th');const image=art(e);image.style.width='110px';cell.append(image,link(e.name,e.url));row.append(cell);}head.append(row);table.append(head);const body=node('tbody');
+    for(const e of selected){const cell=node('th');const image=art(e);image.style.width='110px';cell.append(image,link(e.name,e.url));if(e.tier){const tier=node('div',undefined,'comparison-tier');tier.append(createTierBadge(e.tier,url));cell.append(tier);}row.append(cell);}head.append(row);table.append(head);const body=node('tbody');
     const textRow=(label:string,get:(e:SearchEntry)=>string)=>{const r=node('tr');r.append(node('th',label));for(const e of selected)r.append(node('td',get(e)));body.append(r);};
     textRow('Type',e=>e.type??'—');textRow('Rarity',e=>e.rarity??'—');textRow('Faction',e=>e.faction??'—');
+    if(selected.some(e=>e.tier)){const tierRow=node('tr');tierRow.append(node('th','Template tier'));for(const e of selected){const cell=node('td',undefined,'tier-comparison-cell');if(e.tier)cell.append(createTierBadge(e.tier,url));else cell.textContent='—';tierRow.append(cell);}body.append(tierRow);}
     for(const stat of [...new Set(selected.flatMap(e=>Object.keys(e.stats??{})))]){const r=node('tr');r.append(node('th',stat));const max=Math.max(...selected.map(e=>e.stats?.[stat]??-Infinity));for(const e of selected){const v=e.stats?.[stat];r.append(node('td',v===undefined?'—':String(v),v===max?'best':''));}body.append(r);}
     if(category.value==='packs'){textRow('Reward rule',e=>e.guaranteed?'Guaranteed listed rewards':'One random eligible reward');textRow('Cost',e=>e.cost??'Not specified');textRow('Eligible / guaranteed cards',e=>String(e.rewardIds?.length??0));textRow('Currency',e=>e.currencyRewards?.map(r=>`${r.amount.toLocaleString()} ${r.name}`).join(', ')??'None listed');for(const rewardCategory of ['warmachines','pilots','items'])textRow(rewardCategory,e=>String(e.rewardIds?.filter(id=>c.entries.find(r=>r.id===id)?.category===rewardCategory).length??0));textRow('Rates',e=>e.rarityRates?Object.entries(e.rarityRates).map(([r,p])=>`${r} ${Math.round(p*100)}%`).join(' · '):'Not random');}
     if(category.value==='warmachines'){textRow('Pilot slots',e=>String(e.pilotSlots??1));textRow('Equipment',()=> '2 weapons · armor · core · thrusters · shield');}
@@ -50,7 +53,7 @@ function initTeam(c:Catalog){
       select.append(...items.map(e=>new Option(e.name,e.id)));select.value=team[active][slot]??'';select.disabled=slot!=='warmachine'&&!frame;
       select.addEventListener('change',()=>{const previous=structuredClone(team);team[active][slot]=select.value;if(slot==='warmachine'&&!select.value)team[active]={};if(slot==='warmachine'&&lookup.get(select.value)?.pilotSlots!==2)delete team[active].copilot;
         const errors=validateTeam(team,lookup,c.rules).filter(s=>!s.includes('assign a primary pilot'));
-        if(errors.length){team=previous;toast(errors[0]);}else {const state=readState();state.team=team;writeState(state);}render();});field.append(label,select);fields.append(field);
+        if(errors.length){team=previous;toast(errors[0]);}else {const state=readState();state.team=team;writeState(state);}render();});field.append(label,select);const equipped=lookup.get(team[active][slot]);if(equipped?.tier){const tierPreview=node('div',undefined,'team-tier-preview');tierPreview.append(createTierBadge(equipped.tier,url),node('span','Selected template'));field.append(tierPreview);}fields.append(field);
     }
     const stats=totalStats(team[active],lookup,c.rules);const output=document.querySelector('#team-stats')!;output.replaceChildren(...Object.entries(stats).map(([key,value])=>{const cell=node('div',undefined,'stat-cell');cell.append(node('span',key),node('strong',String(value)));return cell;}));
     const errors=validateTeam(team,lookup,c.rules);document.querySelector('#team-errors')!.textContent=errors.length?errors.join(' '):team.some(b=>b.warmachine)?'Selected loadouts satisfy the modeled base-game rules. Check owned copies, activity locks and mode limits in-game.':'Choose a frame to begin.';

@@ -1,0 +1,15 @@
+.tier-badge{display:inline-flex;align-items:center;justify-content:center;gap:6px;vertical-align:middle;color:#cbd9e3;font:10px var(--mono);white-space:nowrap;line-height:1.2}
+.tier-badge .tier-icon{display:block;width:54px;height:32px;max-width:100%;flex:none;object-fit:contain;filter:drop-shadow(0 2px 3px #0008)}
+.tier-badge .tier-label{display:inline;font:inherit;letter-spacing:.4px}
+.tier-badge[data-tier=P]{color:#8fc6ff}.tier-badge[data-tier=SP]{color:#d8b4ff}.tier-badge[data-tier=HSP]{color:#f3d394}
+.card-meta{align-items:center;min-height:32px}.card-meta .tier-badge{font-size:9px;gap:3px}.card-meta .tier-icon{width:50px;height:29px}
+.variant-tabs .tier-badge{display:flex;flex-direction:column;gap:3px;font-size:9px;min-width:0}.variant-tabs .tier-icon{width:42px;height:26px}
+.variant-tabs button,.variant-tabs a{display:flex;align-items:center;justify-content:center;gap:3px;min-height:60px}
+.variant-tabs .tier-spoiler-mark{align-self:flex-start;color:var(--amber);font:10px var(--mono)}
+.variant-tabs .selected .tier-label{color:var(--signal)}
+.tier-badge--detail{padding:4px 10px 4px 5px;border:1px solid #3b5855;background:#172a27;gap:8px;font-size:11px}.tier-badge--detail .tier-icon{width:68px;height:40px}
+.button .tier-badge{color:inherit}.button .tier-icon{width:54px;height:32px}.hidden-variant-link{display:inline-flex;align-items:center;gap:10px}
+.comparison-table .comparison-tier{margin-top:10px;display:flex;justify-content:flex-start;gap:8px}.comparison-table .comparison-tier .tier-icon{width:72px;height:42px;max-width:none}.comparison-table .comparison-tier .tier-badge{font-size:11px}
+.comparison-table .tier-comparison-cell .tier-badge{font-size:11px}.comparison-table .tier-comparison-cell .tier-icon{width:64px;height:38px}
+.team-tier-preview{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:10px;color:var(--muted)}.team-tier-preview .tier-icon{width:48px;height:28px}
+@media(max-width:480px){.card-meta .tier-icon{width:42px;height:25px}.card-meta .tier-badge{font-size:8px}.variant-tabs .tier-icon{width:34px;height:24px}.variant-tabs .tier-badge{font-size:8px}.variant-tabs button,.variant-tabs a{min-height:54px;gap:1px}.tier-badge--detail .tier-icon{width:60px;height:36px}}

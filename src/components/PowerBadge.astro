@@ -1,0 +1,7 @@
+---
+import {powerRankInfo,type PowerResult} from '../lib/power';
+import '../styles/power.css';
+interface Props { power?: PowerResult; class?: string; }
+const {power, class: className = ''} = Astro.props;
+---
+{power && <span class:list={['power-badge',className]} data-rank={power.rank} title={`${power.rank} rank · ${powerRankInfo[power.rank].label}: #${power.position} of ${power.of}`}>{power.rank}</span>}

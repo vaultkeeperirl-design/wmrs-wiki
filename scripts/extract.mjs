@@ -102,6 +102,8 @@ for (const i of publicItems.values()) {
     spoiler: !!i.isHsp || !publicFamilies.has(`${category}:${familyOf(i.name)}`),
     tier: i.isHsp ? 'HSP' : i.name.endsWith(' [SP]') ? 'SP' : i.name.endsWith(' [P]') ? 'P' : 'Base',
     stats: Object.fromEntries(Object.entries(statMap).filter(([k]) => typeof i[k] === 'number').map(([k, label]) => [label, i[k]])),
+    // The card's in-game iLvl at level 1, rank 0 (same helpers the Hangar uses).
+    rating: category === 'pilots' ? G.getPilotItemLevel({ ...i, level: 1, upgradeRank: 0 }) : G.toCombatRating((i.itemLevel ?? 0) + G.getTierRatingBonus(i)),
     image, background, artworkNote: familyArtwork ? 'Official family artwork is shown; a distinct foreground for this tier is not available.' : image ? undefined : 'Official foreground artwork not found; faction background shown.',
     pilotSlots: category === 'warmachines' ? C.getWarmachinePilotSlotCount(i) : undefined,
     prototypeAdvantages: i.prototypeAdvantages ?? [], chassisClass: i.chassisClass,

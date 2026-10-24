@@ -6,6 +6,14 @@ export async function validate(root = process.cwd()) {
   const approved = JSON.parse(await fs.readFile(path.join(root, 'data/approved.json'), 'utf8'));
   const summary = validateDatabase(db);
   if (digest(db) !== approved.databaseHash) throw new Error('Unreviewed database changes. Run extraction and review promotion first.');
+  if (approved.loreHash) {
+    const lore=JSON.parse(await fs.readFile(path.join(root,'src/data/lore.json'),'utf8'));
+    if (digest(lore)!==approved.loreHash) throw new Error('Unreviewed faction/story snapshot changes.');
+  }
+  try {
+    const editorial = JSON.parse(await fs.readFile(path.join(root,'data/editorial-assets.json'),'utf8'));
+    for (const asset of editorial.assets) if (approved.assetHashes[asset.destination] !== asset.approvedHash) throw new Error(`Editorial review hash mismatch: ${asset.destination}`);
+  } catch (error) { if (error.code !== 'ENOENT') throw error; }
   const publicFiles = (await fs.readdir(path.join(root, 'public'), { recursive: true, withFileTypes: true })).filter(e => e.isFile());
   for (const f of publicFiles) {
     const relative = path.relative(path.join(root, 'public'), path.join(f.parentPath, f.name)).replaceAll('\\', '/');

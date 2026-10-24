@@ -46,7 +46,13 @@ Do not use the wiki ID as an in-game inventory ID. Template identities and owned
 
 ## Guides, evidence and tools
 
-Edit `src/content/guides.ts` manually when a mechanic changes; extraction does not overwrite it. Every guide records its source modules. Keep developer descriptions distinct from engine-verified behavior and inferred strategies. Never introduce a tier list or an optimal farming claim without evidence.
+### Original interface art and tutorial captures
+
+`data/editorial-assets.json` preserves reviewed icon and screenshot recipes, their exact source/crop dimensions and hashes. Assets under `assets/wiki-ui/` are resized original game artwork; assets under `assets/wiki-guides/` are exact-pixel crops from reviewed clean game captures. No game control, text or artwork is repainted. Screenshot values are examples and can differ from a player's current run.
+
+When an original image is available beside the game checkout, `python scripts/prepare-visual-assets.py --game-root PATH` can reproduce the tracked recipes (requires Pillow for authoring). New recipes are reviewed in `.review/*-assets.json` before this helper is run. Production does not require Python or the private game checkout. Ordinary data promotion verifies and preserves these editorial assets instead of discarding them.
+
+Edit `src/content/guides.ts` manually when a mechanic changes; extraction does not overwrite it. Every guide records its source modules. Keep developer descriptions distinct from engine-verified behavior and inferred strategies. Never introduce an optimal farming claim without evidence. The tier list (`src/lib/power.ts`) is derived only from extracted stats, the combat engine's defense/evasion rules and the game's iLvl rating (`rating`, exported by the extractor); keep its method note on `tier-list.astro` in step with any formula change.
 
 The planner models fresh level-1/rank-0 loadouts, primary and eligible secondary crew, signature pairs and class gear sets. The extraction pipeline calculates oracle fixtures with the game implementation; tests compare the browser model against those expected values. Expand those fixtures when the model adds support for new rules.
 

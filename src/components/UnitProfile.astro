@@ -1,0 +1,88 @@
+---
+import Art from './Art.astro';
+import TierBadge from './TierBadge.astro';
+import PowerBadge from './PowerBadge.astro';
+import {powerRankInfo} from '../lib/power';
+import {entries,related,entryHref,href,rarityColor,database,type Entry} from '../lib/data';
+import '../styles/unit-profile.css';
+interface Props {entry:Entry;}
+const {entry:e}=Astro.props;
+const isFrame=e.category==='warmachines';
+const family=entries.filter(v=>v.category===e.category&&v.family===e.family);
+const tiers=['Base','P','SP','HSP'];
+const abilities=related(e.abilityIds);
+const packs=related(e.packIds);
+const pairing=related(e.relatedIds);
+const visiblePairing=pairing.filter(p=>!p.spoiler||e.spoiler);
+const hiddenPairing=pairing.filter(p=>p.spoiler&&!e.spoiler);
+const counter=database.rules.chassisCounters[e.type??''];
+const weakness=Object.entries(database.rules.chassisCounters).find(([,target])=>target===e.type)?.[0];
+const coreStats=[
+  {key:'HP',label:'Hull / HP',icon:'health',hint:'Hull integrity before crew and equipment.'},
+  {key:'Attack',label:'Attack',icon:'attack',hint:'Damage before mitigation and combat multipliers.'},
+  {key:'Defense',label:'Defense',icon:'defense',hint:'Damage reduction follows the defense curve.'},
+  {key:'Evasion',label:'Evasion',icon:'evasion',hint:'Separate avoidance check; final combat evasion is capped at 60%.'},
+  {key:'Shield',label:'Shield',icon:'shield',hint:'Absorbs incoming damage before hull.'},
+  {key:'Energy',label:'Energy',icon:'energy',hint:'Energy capacity contributed by this card.'},
+  {key:'Energy regen',label:'Energy regen',icon:'energy',hint:'Energy regeneration contribution.'},
+  {key:'Shield regen',label:'Shield regen',icon:'shield',hint:'Shield regeneration contribution.'},
+  {key:'Hull regen',label:'Hull regen',icon:'health',hint:'Hull regeneration contribution.'},
+];
+const tabItems=[{id:'overview',label:'Overview'},{id:'abilities',label:'Abilities',count:abilities.length},{id:'acquisition',label:'Acquisition',count:packs.length||undefined},{id:'upgrades',label:'Upgrades'},{id:'sources',label:'Sources'}];
+const panelId=(id:string)=>`unit-${e.id}-${id}`;
+---
+<section class="unit-profile" data-unit-profile aria-label={`${e.name} card profile`}>
+  <aside class="unit-portrait-column">
+    <div class="unit-portrait"><Art entry={e} eager /><span class="unit-portrait-tag">{isFrame?'WAR MACHINE':'PILOT'} / {e.type}</span></div>
+    <div class="unit-portrait-actions"><button type="button" data-collect={e.id} aria-pressed="false">＋ Collection</button><a href={href(`tools/compare/?category=${e.category}`)}>Compare cards ⇄</a></div>
+    {isFrame&&<a class="unit-plan-link" href={href(`tools/team-builder/?frame=${e.id}`)}>Build a loadout with this frame →</a>}
+    <p class="unit-art-note">{e.artworkNote??'Official game artwork. Fresh template shown; your levels, upgrades and loadout change combat values.'}</p>
+    <a class="unit-guide-link" href={href(isFrame?'guides/first-team/':'guides/first-team/#section-2')}>{isFrame?'How frames, pilots and equipment work':'How pilots contribute to a loadout'} →</a>
+  </aside>
+  <div class="unit-information">
+    <header class="unit-heading">
+      <div class="unit-classification"><span style={`--unit-rarity:${rarityColor(e.rarity)}`}>{e.rarity}</span><span>{e.type}</span><span>{e.faction}</span></div>
+      <div class="unit-title-row"><h2 class="unit-name">{e.name}</h2>{e.power&&<a class="unit-power" href={href(`tier-list/?category=${e.category}`)} title="How power ranks work"><PowerBadge power={e.power} class="power-badge--lg" /><span><b>{e.power.rank} rank · {powerRankInfo[e.power.rank].label}</b><small>#{e.power.position} of {e.power.of} {isFrame?'War Machines':'pilots'}{e.rating!==undefined&&` · iLvl ${e.rating}`}</small></span></a>}</div>
+      <nav class="unit-tier-selector" aria-label={`${e.family} card tiers`}>
+        {tiers.map(tier=>{const variant=family.find(v=>v.tier===tier);return variant?variant.id===e.id?<span class="unit-tier-option selected" aria-current="page"><TierBadge tier={tier}/><small>Selected</small></span>:variant.spoiler&&!e.spoiler?<details class="unit-tier-reveal"><summary aria-label={`Reveal ${tier} variant link`}><TierBadge tier={tier}/><small>Reveal spoiler</small></summary><a href={entryHref(variant)}>Open {tier} profile →</a></details>:<a class="unit-tier-option" href={entryHref(variant)} aria-label={`Open ${tier} variant of ${e.family}`}><TierBadge tier={tier}/><small>View stats</small></a>:<span class="unit-tier-option unavailable" aria-disabled="true"><TierBadge tier={tier}/><small>No template</small></span>;})}
+      </nav>
+    </header>
+    <section class="unit-stat-section" aria-labelledby={`stats-${e.id}`}>
+      <div class="unit-stat-heading"><h3 id={`stats-${e.id}`}>{isFrame?'Chassis statistics':'Pilot stat contributions'}</h3><span>Level 1 · rank 0</span></div>
+      <dl class="unit-stat-grid">{coreStats.map(stat=><div class="unit-stat" title={stat.hint}><img src={href(`assets/wiki-ui/${stat.icon}.webp`)} alt="" width="44" height="44"/><dt>{stat.label}</dt><dd>{e.stats?.[stat.key]??0}{stat.key==='Evasion'&&<small>%</small>}</dd></div>)}</dl>
+      {!isFrame&&<div class="unit-weapon-bonuses"><span><img src={href('assets/wiki-ui/attack.webp')} alt="" width="28" height="28"/>Ranged bonus <b>{e.stats?.['Ranged bonus']??0}%</b></span><span><img src={href('assets/wiki-ui/attack.webp')} alt="" width="28" height="28"/>Melee bonus <b>{e.stats?.['Melee bonus']??0}%</b></span></div>}
+      <p class="unit-zero-note">0 means this template adds none of that stat. Crew, equipment, levels and combat effects are calculated separately.</p>
+    </section>
+    <div class="unit-tab-area">
+      <div class="unit-tabs" role="tablist" aria-label="Card information">{tabItems.map((tab,index)=><button type="button" role="tab" id={`${panelId(tab.id)}-tab`} aria-controls={panelId(tab.id)} aria-selected={index===0?'true':'false'} tabindex={index===0?0:-1} data-unit-tab={tab.id}>{tab.label}{tab.count!==undefined&&<span>{tab.count}</span>}</button>)}</div>
+      <section class="unit-tab-panel" role="tabpanel" id={panelId('overview')} aria-labelledby={`${panelId('overview')}-tab`} data-unit-panel="overview" tabindex="0">
+        <p class="unit-description">{e.description}</p>{e.note&&<p class="unit-inline-note">{e.note}</p>}
+        <div class="unit-overview-grid"><div><h3>{isFrame?'Chassis & equipment':'Crew compatibility'}</h3>{isFrame?<><p><b>{e.pilotSlots??1} pilot slot{e.pilotSlots===2?'s':''}</b> · two weapons, armor, core, thrusters and shield.</p><p>Any base-game pilot may crew this frame. Physical-copy and unique-family restrictions still apply.</p></>:<><p>Compatible with base-game War Machines. A co-pilot slot requires a dual-crew frame.</p><p>Main crew supplies full stats; co-pilot stats contribute 45%. Co-pilot ranged/melee specialization contributes 50% separately.</p></>}</div><div><h3>{isFrame?'Matchup reference':'Faction & bonuses'}</h3>{isFrame?<>{counter&&<p><span class="unit-matchup good">+30% damage → {counter}</span></p>}{weakness&&<p><span class="unit-matchup">Vulnerable to {weakness}</span></p>}{!!e.prototypeAdvantages?.length&&<p>Prototype edge: <b>1.5×</b> against {e.prototypeAdvantages.join(', ')}.</p>}</>:<p>{e.faction} supplies the pilot passive listed in Abilities. The War Machine’s faction supplies its own Special and Defend effect.</p>}</div></div>
+        {!!visiblePairing.length&&<div class="unit-pairing"><h3>Verified signature pairing · +8% HP / Attack / Defense</h3>{visiblePairing.map(p=><a href={entryHref(p)}>{p.name} →</a>)}</div>}
+        {!!hiddenPairing.length&&<details class="unit-inline-spoiler"><summary>Reveal hidden signature pairings</summary>{hiddenPairing.map(p=><a href={entryHref(p)}>{p.name} →</a>)}</details>}
+        <div class="unit-quick-source"><h3>Where to get it</h3><p>{e.sources[0]}</p><button type="button" data-unit-jump="acquisition">All acquisition routes & packs →</button></div>
+      </section>
+      <section class="unit-tab-panel" role="tabpanel" id={panelId('abilities')} aria-labelledby={`${panelId('abilities')}-tab`} data-unit-panel="abilities" tabindex="0" hidden>
+        <h3>Abilities & special effects</h3>{abilities.length?abilities.filter(a=>!a.spoiler||e.spoiler).map(a=><article class="unit-ability"><div><a href={entryHref(a)}>{a.name} →</a><span>{a.type}</span></div><p>{a.description}</p>{a.stats&&<dl>{Object.entries(a.stats).map(([key,value])=><div><dt>{key}</dt><dd>{value}</dd></div>)}</dl>}</article>):<p>No attached ability is defined for this template. The developer description remains above.</p>}
+        {abilities.some(a=>a.spoiler&&!e.spoiler)&&<details class="unit-inline-spoiler"><summary>Reveal hidden abilities</summary>{abilities.filter(a=>a.spoiler).map(a=><article class="unit-ability"><a href={entryHref(a)}>{a.name}</a><p>{a.description}</p></article>)}</details>}
+        <p class="unit-inline-note">Ability descriptions are developer-provided. Read the <a href={href('guides/first-battle/')}>combat guide</a> for implemented damage, accuracy and evasion rules.</p>
+      </section>
+      <section class="unit-tab-panel" role="tabpanel" id={panelId('acquisition')} aria-labelledby={`${panelId('acquisition')}-tab`} data-unit-panel="acquisition" tabindex="0" hidden>
+        <h3>Acquisition & unlock requirements</h3><ul class="unit-source-list">{e.sources.map(source=><li>{source}</li>)}</ul>
+        {!!packs.length&&<><h3>Found in these packs & offers</h3><div class="unit-pack-list">{packs.map(p=><a href={entryHref(p)}><span><b>{p.name}</b><small>{p.guaranteed?'Guaranteed listed card':'Eligible random reward'}</small></span><span>{p.cost??'View offer'} →</span></a>)}</div></>}
+        <p class="unit-inline-note">A catalog or combat preview is not automatically a direct drop. Follow the specific route stated above. <a href={href('guides/packs/')}>Understand random and guaranteed rewards →</a></p>
+      </section>
+      <section class="unit-tab-panel" role="tabpanel" id={panelId('upgrades')} aria-labelledby={`${panelId('upgrades')}-tab`} data-unit-panel="upgrades" tabindex="0" hidden>
+        <h3>Workshop rank costs</h3><p>Each row shows the cost of one rank step. Duplicate, Nanite and early resource payments are alternatives.</p>
+        {e.upgrades&&<div class="unit-cost-table"><table><thead><tr><th>To rank</th><th>Stat multiplier</th><th>Duplicates</th><th>Nanites</th><th>Alloy / Data alternative</th></tr></thead><tbody>{e.upgrades.map(u=><tr><td>{u.rank}</td><td>{u.multiplier.toFixed(2)}×</td><td>{u.duplicates}</td><td>{u.nanites.toLocaleString()}</td><td>{u.resources?`${u.resources.alloy.toLocaleString()} / ${u.resources.dataFragments.toLocaleString()}`:'Unavailable'}</td></tr>)}</tbody></table></div>}
+        {e.productionCost&&<><h3>Production cost reference</h3><p>Recipe calculation for this template; this does not establish that its blueprint or tier is directly producible.</p><div class="unit-production-costs">{e.productionCost.alloy>0&&<span>Alloy route <b>{e.productionCost.alloy.toLocaleString()}</b></span>}{e.productionCost.dataFragments>0&&<span>Data route <b>{e.productionCost.dataFragments.toLocaleString()}</b></span>}{e.productionCost.nanites>0&&<span>Nanite alternative <b>{e.productionCost.nanites.toLocaleString()}</b></span>}</div></>}
+        <a class="unit-guide-link" href={href('guides/upgrades/')}>Recovery, production, ranks and evolution explained →</a>
+      </section>
+      <section class="unit-tab-panel" role="tabpanel" id={panelId('sources')} aria-labelledby={`${panelId('sources')}-tab`} data-unit-panel="sources" tabindex="0" hidden>
+        <h3>Source & verification</h3><p>Game snapshot {database.gameVersion}. Statistics and catalog relationships are extracted from source. Card and ability descriptions are developer-provided; fresh card values exclude levels, rank, equipment rolls and temporary combat effects.</p><ul class="unit-source-list">{e.evidence.map(source=><li><code>{source}</code></li>)}</ul><p>Missing optional numeric contributions display as zero, matching the game’s loadout defaults. <a href={href('about/')}>Coverage, known limitations & privacy →</a></p>
+      </section>
+    </div>
+  </div>
+</section>
+<noscript><style>.unit-tab-panel[hidden]{display:block!important}.unit-tabs{display:none!important}.unit-tab-area{overflow:visible!important}.unit-profile,.unit-information{height:auto!important;overflow:visible!important}</style></noscript>
+<script>import '../scripts/unit-profile';</script>

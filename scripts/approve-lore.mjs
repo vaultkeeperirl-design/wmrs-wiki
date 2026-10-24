@@ -1,0 +1,18 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {digest} from './lib.mjs';
+const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const candidate=JSON.parse(await fs.readFile(path.join(root,'.review/lore-candidate.json'),'utf8'));
+const report=JSON.parse(await fs.readFile(path.join(root,'.review/lore-report.json'),'utf8'));
+const hash=process.argv[process.argv.indexOf('--reviewed-hash')+1];
+if(!process.argv.includes('--reviewed-hash')||hash!==digest(candidate)||hash!==report.candidateHash)throw new Error('Review the lore candidate and report, then pass its exact hash.');
+const approved=JSON.parse(await fs.readFile(path.join(root,'data/approved.json'),'utf8'));
+if(candidate.gameVersion!==approved.gameVersion||candidate.factions.length!==9||candidate.campaigns.length!==5)throw new Error('Lore release scope mismatch.');
+if(/green.sun|green-sun-demo|production\.env|STEAM_WEB_API_KEY/.test(JSON.stringify(candidate)))throw new Error('Restricted lore content.');
+await fs.writeFile(path.join(root,'src/data/lore.json'),JSON.stringify(candidate,null,2)+'\n');
+approved.loreHash=hash;
+await fs.writeFile(path.join(root,'data/approved.json'),JSON.stringify(approved,null,2)+'\n');
+await fs.mkdir(path.join(root,'reports'),{recursive:true});
+await fs.writeFile(path.join(root,'reports/lore-coverage.json'),JSON.stringify(report,null,2)+'\n');
+console.log(`Approved ${candidate.factions.length} factions and ${report.chapters} chapters of released story locally.`);

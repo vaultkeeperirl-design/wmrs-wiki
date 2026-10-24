@@ -1,0 +1,9 @@
+---
+import { href } from '../lib/data';
+import { getTierAsset } from '../lib/tier-icons';
+import '../styles/tier-icons.css';
+interface Props { tier?: string; class?: string; }
+const {tier, class: className = ''} = Astro.props;
+const asset = getTierAsset(tier);
+---
+{asset && <span class:list={['tier-badge',className]} data-tier={tier} title={asset.name}><img class="tier-icon" src={href(asset.image)} alt="" width="96" height="96" loading="lazy" decoding="async" /><span class="tier-label">{asset.label}</span></span>}
