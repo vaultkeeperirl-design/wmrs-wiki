@@ -703,6 +703,28 @@
       "outputHeight": 128,
       "sourceHash": "5efc8f87c88ad70811e87d73dcc8d0deb30b8e37174f5ce0fe765977d1ca3e65",
       "approvedHash": "43faa4af76cd74390448949b4e72f0ca94ded06f42b9e5e2ee22e058cfc1f434"
+    },
+    {
+      "destination": "assets/wiki-ui/favicon-32.png",
+      "source": "build/icon.png",
+      "kind": "game-app-icon",
+      "width": 500,
+      "height": 500,
+      "outputWidth": 32,
+      "outputHeight": 32,
+      "sourceHash": "e9e6d638ebb857b39bb831a31713f3b3e9e5137546bbcadb79c152715850e18c",
+      "approvedHash": "d031fdad8458aad2975c03a7416f69815b024a5ac7df3c7955a8264b0728dd8a"
+    },
+    {
+      "destination": "assets/wiki-ui/favicon-180.png",
+      "source": "build/icon.png",
+      "kind": "game-app-icon",
+      "width": 500,
+      "height": 500,
+      "outputWidth": 180,
+      "outputHeight": 180,
+      "sourceHash": "e9e6d638ebb857b39bb831a31713f3b3e9e5137546bbcadb79c152715850e18c",
+      "approvedHash": "1a7c629d0d6a08a2da448874cbd44984adac875bcd72b4e5c668508d70d9bb53"
     }
   ]
 }
