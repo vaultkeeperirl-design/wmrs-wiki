@@ -185,7 +185,7 @@
   },
   {
     "loadout": {
-      "warmachine": "red-rescue-sp-338fdd1",
+      "warmachine": "mystic-dragon-p-7b15b82",
       "pilot": "ronin-6a4805e",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -195,11 +195,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 275,
-      "Attack": 48,
-      "Defense": 36,
-      "Evasion": 13,
-      "Shield": 240,
+      "HP": 240,
+      "Attack": 55,
+      "Defense": 27,
+      "Evasion": 23,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -208,7 +208,7 @@
   },
   {
     "loadout": {
-      "warmachine": "warbear-red-e49171a",
+      "warmachine": "t8-breaker-sp-e26900d",
       "pilot": "ronin-p-0ef763b",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -218,11 +218,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 278,
-      "Attack": 49,
-      "Defense": 38,
+      "HP": 303,
+      "Attack": 63,
+      "Defense": 39,
       "Evasion": 14,
-      "Shield": 230,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -231,7 +231,7 @@
   },
   {
     "loadout": {
-      "warmachine": "crystalline-annihilator-71bfb2e",
+      "warmachine": "crystalline-striker-287aa9a",
       "pilot": "roh-cadet-2f04046",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -241,11 +241,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 118,
-      "Attack": 29,
-      "Defense": 12,
-      "Evasion": 10,
-      "Shield": 150,
+      "HP": 58,
+      "Attack": 26,
+      "Defense": 6,
+      "Evasion": 15,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -254,7 +254,7 @@
   },
   {
     "loadout": {
-      "warmachine": "mining-marauder-sp-6508ebb",
+      "warmachine": "mining-striker-sp-16dea7e",
       "pilot": "roh-cadet-p-ec83be7",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -264,11 +264,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 84,
-      "Attack": 26,
-      "Defense": 12,
-      "Evasion": 12,
-      "Shield": 137,
+      "HP": 65,
+      "Attack": 30,
+      "Defense": 7,
+      "Evasion": 18,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -277,7 +277,7 @@
   },
   {
     "loadout": {
-      "warmachine": "jury-rigged-warden-p-d4cc836",
+      "warmachine": "jury-rigged-behemoth-p-bb8b3d5",
       "pilot": "roh-marksman-ec0a7b3",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -287,11 +287,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 118,
-      "Attack": 29,
-      "Defense": 15,
+      "HP": 107,
+      "Attack": 28,
+      "Defense": 11,
       "Evasion": 7,
-      "Shield": 175,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -300,7 +300,7 @@
   },
   {
     "loadout": {
-      "warmachine": "gladiator-sentry-sp-a94dbd3",
+      "warmachine": "rusted-warden-sp-19bedc0",
       "pilot": "roh-marksman-p-a5cbdb6",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -310,11 +310,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 103,
-      "Attack": 27,
-      "Defense": 13,
+      "HP": 128,
+      "Attack": 33,
+      "Defense": 16,
       "Evasion": 7,
-      "Shield": 143,
+      "Shield": 180,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -323,7 +323,7 @@
   },
   {
     "loadout": {
-      "warmachine": "type-88-legion-hsp-abbf046",
+      "warmachine": "gladiator-frame-hsp-07b2a97",
       "pilot": "roh-technician-9ed541b",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -346,7 +346,7 @@
   },
   {
     "loadout": {
-      "warmachine": "celestial-hsp-dd76002",
+      "warmachine": "lancer-hsp-35688b4",
       "pilot": "roh-technician-p-5c87100",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -357,10 +357,10 @@
     },
     "expected": {
       "HP": 265,
-      "Attack": 53,
-      "Defense": 33,
-      "Evasion": 27,
-      "Shield": 274,
+      "Attack": 42,
+      "Defense": 29,
+      "Evasion": 13,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 9,
       "Shield regen": 9,
@@ -369,7 +369,7 @@
   },
   {
     "loadout": {
-      "warmachine": "vanguard-interceptor-hsp-b9b262b",
+      "warmachine": "bastion-hauler-hsp-98677f1",
       "pilot": "roh-ace-951d35a",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -380,10 +380,10 @@
     },
     "expected": {
       "HP": 341,
-      "Attack": 71,
-      "Defense": 34,
-      "Evasion": 30,
-      "Shield": 130,
+      "Attack": 49,
+      "Defense": 40,
+      "Evasion": 8,
+      "Shield": 210,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,
@@ -392,7 +392,7 @@
   },
   {
     "loadout": {
-      "warmachine": "mining-warden-hsp-691e2e9",
+      "warmachine": "mining-scout-hsp-5a825e4",
       "pilot": "roh-ace-p-fbb0f8b",
       "weapon1": "auto-cannon-a9361b1",
       "weapon2": "auto-cannon-a9361b1",
@@ -402,11 +402,11 @@
       "shield": "energy-shield-1c8f5de"
     },
     "expected": {
-      "HP": 320,
-      "Attack": 45,
-      "Defense": 39,
-      "Evasion": 8,
-      "Shield": 210,
+      "HP": 245,
+      "Attack": 50,
+      "Defense": 27,
+      "Evasion": 31,
+      "Shield": 130,
       "Energy": 50,
       "Energy regen": 5,
       "Shield regen": 6,

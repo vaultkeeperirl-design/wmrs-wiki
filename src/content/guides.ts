@@ -69,7 +69,7 @@ export const guides: Guide[] = [
     {title:'Patrol, Story and Fighting Pits',paragraphs:['Patrols are repeatable multi-floor missions with displayed rewards. Story missions progress through fixed campaign chapters with authored scenarios mixed with generated encounters. Fighting Pits are wave combat with Solo, Double and Triple formats.','The Pits introduce mini-boss waves and major boss waves. Actual enemy values scale with the encounter; enemy wiki pages show their base templates. Pits leaderboards and competitive standings need the multiplayer service.']},
     {title:'Sorties: timed assignments',paragraphs:['Sorties unlock at Player Level 10 after the tutorial. You assign available cards to timed missions; they are committed while deployed. The mission board shows duration, squad capacity, recommended rating, preferred chassis and rewards.','Completion calculation starts at 55%, adjusts for assigned squad power, preferred chassis, relevant pilot traits and faction bonuses, then clamps to 5–98%. A high displayed chance is therefore not a guarantee. Lucky and Scavenger influence rewards rather than directly adding completion chance.']},
     {title:'Competitive and social multiplayer',paragraphs:['Multiplayer includes ranked combat, leaderboards, allegiance features, comms, direct messages and mail. Access to connected features depends on account and service state. Wiki tools work offline after loading but do not replace live matchmaking.','Ranked divisions are Bronze, Silver, Gold, Platinum, Diamond, Master and Rogue. Tier reward definitions grant Nanites, Alloy and Data Fragments. Live standings, seasons and tournament availability are server-controlled, so the wiki does not announce an event just because its UI exists.']},
-    {title:'Faction War: Wave Assault',paragraphs:['The implemented Wave Assault definition deploys three of your frames alongside three from an allied operative against six opposing frames. Each player may select up to six, with reserves replacing destroyed units. The mode definition supports four to eight operatives.','It uses the same shared combat engine as other battles. An implemented mode definition is not a guarantee that a live lobby or tournament is available now; check the multiplayer screen.']},
+    {title:'Faction War: cooperative Titan raids',paragraphs:['In 2.2.0, every Vanguard or Unbound commander fights a separate squad battle against their allegiance’s shared Titan. Damage is pooled across the allegiance; players do not enter the same battle. Recent strikes and damage leaders show the contribution of other commanders.','The local Titan has up to 15,000 health and occupies two enemy bays. A strong squad can break its battle hull and survive. A wiped squad still reduces the shared 2,500,000-health pool. The weekly operation resets Monday at 00:00 UTC. Read the Titan raids guide for rewards, cooldowns and progression.']},
     {title:'Choose a mode for its job',paragraphs:['Use Story for campaign progression, Patrols for repeatable displayed rewards, Pits for wave challenges, and Sorties for timed assignments. Competitive modes and community systems add goals beyond the campaign.','Before a run, check how many bays the format allows and which cards are free from assignments. The six-bay team planner is for base Hangar planning; it does not grant eligibility for every multiplayer format.']},
   ]},
   {slug:'faq',title:'New player questions and common mistakes',summary:'Straight answers to the questions that cause expensive misunderstandings.',level:'BEGINNER REFERENCE',sources:['constants.ts','utils/scoutPool.ts','utils/gameLogic.ts','utils/squadEquipment.ts','dlc/steamCatalog.ts'],related:['start-here','packs','upgrades'],sections:[
@@ -80,6 +80,140 @@ export const guides: Guide[] = [
     {title:'Does collection tracking change my game?',paragraphs:['No. Collection, achievement and journey tracking stays in this browser’s local storage. It neither reads your save nor grants an item. Clearing browser data can remove the checklist; the collection tool provides export and import.']},
     {title:'Where are future expansions?',paragraphs:['The production Steam DLC catalog in this audited snapshot is empty. Unreleased expansion details are excluded. The expansion hub is ready to list approved releases when their public data is available.']},
   ]},
+
+{
+  "slug": "titan-raids",
+  "title": "Faction Titan raids: shared damage and repeatable rewards",
+  "summary": "Fight your own battle, wear down a shared allegiance boss, and earn multiplayer equipment, a frame and a pilot.",
+  "level": "2.2.0 / MULTIPLAYER",
+  "sources": [
+    "data/titanRaids.ts",
+    "data/titanRaidRewards.ts",
+    "utils/titanRaidCombat.ts",
+    "nakama-server/titanRaids.ts",
+    "utils/collectionEligibility.ts"
+  ],
+  "related": [
+    "modes",
+    "upgrades",
+    "packs",
+    "update-2-2-0"
+  ],
+  "sections": [
+    {
+      "title": "One allegiance target, separate battles",
+      "paragraphs": [
+        "Choose Vanguard or Unbound, then open Multiplayer → Faction War. Vanguard faces Oblivion Bastion; Unbound faces Riftmaw Colossus. Each side has its own 2,500,000-health weekly pool. Your allies contribute through their own battles; no synchronous party or shared battle is required.",
+        "The screen displays shared health, recent strike damage, local engagement victories and the leading contributors. A preview of what is coming."
+      ]
+    },
+    {
+      "title": "Win the engagement or make every hit count",
+      "paragraphs": [
+        "Deploy up to six occupied friendly bays against a Titan occupying two enemy bays. Its local hull is the smaller of 15,000 health and the shared hull remaining when your attempt starts. This makes a local win possible without requiring one squad to deal millions of damage.",
+        "Empty the battle hull to win and withdraw with surviving frames. A squad wipe still contributes its damage. The server recalculates the battle result and clamps contributions to the remaining shared health, so simultaneous finishing strikes cannot overdraw the pool.",
+        "The boss starts with 450 Attack and 120 Defense. Its attack increases 35% every three rounds, with the normal 20-round battle limit. Chassis specials are selected automatically. Raids do not permanently destroy your inventory or change your PvP/ranked results."
+      ]
+    },
+    {
+      "title": "Cooldown, resume and weekly reset",
+      "paragraphs": [
+        "Deployment has a 60-second server-time cooldown. An unfinished attempt can be resumed for 15 minutes, using its saved squad and random seed. Return and submit the result to record the contribution; submitting the same attempt twice does not award damage or rewards twice.",
+        "Each allegiance receives a fresh operation Monday at 00:00 UTC. Career damage milestones and cache Legendary pity persist across weeks. After the shared boss reaches zero, contributors with positive damage can claim a 500-Nanite clear cache."
+      ]
+    },
+    {
+      "title": "Three career salvage milestones",
+      "paragraphs": [
+        "At 1,000 cumulative accepted damage, earn Breachline Driver, a Legendary ranged weapon. At 10,000, earn Last Line Carapace, Legendary armor. At 30,000, earn Resonance Anchor, a Legendary core. Each milestone is awarded once through Comms Mail."
+      ]
+    },
+    {
+      "title": "A repeatable cache for contributing strikes",
+      "paragraphs": [
+        "A strike with at least 100 accepted damage earns one cache in Comms Mail. Rates are Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches. The item is selected uniformly within its rarity. Duplicate rewards can strengthen matching items through normal Workshop upgrades."
+      ],
+      "bullets": [
+        "Common: Field Patch Plating (armor), Signal Spool (core).",
+        "Rare: Anchorstep Jets (thrusters), Breach Hound (Guardian War Machine).",
+        "Epic: Colossus Breaker (melee weapon), Mira Flint (pilot).",
+        "Legendary: Nullwake Screen (shield), Siegeheart Dynamo (core)."
+      ]
+    },
+    {
+      "title": "Upgrade the units through HSP",
+      "paragraphs": [
+        "Breach Hound and Mira Flint use the existing duplicate upgrade, recovery and mastery evolution systems. Both progress Base → P → SP → HSP, with distinct artwork at every unit tier. Acquiring their Base cards is the raid route; their higher tiers use normal Workshop progression.",
+        "All raid rewards can be equipped in any mode. Multiplayer catalogue entries are optional for collection completion and do not change existing collection reward requirements. The wiki checklist is personal browser tracking and does not grant game rewards."
+      ]
+    },
+    {
+      "title": "Snapshot availability",
+      "paragraphs": [
+        "These rules and rewards describe the prepared 2.2.0 Steam build. The multiplayer backend is enabled, but access requires the matching game update. Steam publication may follow the wiki update; the wiki does not connect to or display live raid totals."
+      ]
+    }
+  ]
+},
+{
+  "slug": "update-2-2-0",
+  "title": "What changes in 2.2.0",
+  "summary": "Faction raids, repeatable multiplayer rewards and the expanded Scout bonus list.",
+  "level": "UPDATE / 2.2.0",
+  "sources": [
+    "data/changelog.ts",
+    "utils/scoutPool.ts",
+    "data/titanRaids.ts",
+    "data/titanRaidRewards.ts"
+  ],
+  "related": [
+    "titan-raids",
+    "packs",
+    "modes",
+    "upgrades"
+  ],
+  "sections": [
+    {
+      "title": "Prepared for Steam",
+      "paragraphs": [
+        "This wiki snapshot covers the 2.2.0 Windows base-game build. The package has passed its DLC exclusion audit. A prepared package does not independently confirm that Steam has published the update."
+      ]
+    },
+    {
+      "title": "Faction War becomes a cooperative raid",
+      "paragraphs": [
+        "Fight an allegiance-specific Titan in your own battle while every accepted strike reduces the side’s shared weekly health. A strong squad can win the local engagement; wiped squads still contribute. The operation screen includes recent strike damage and damage leaders."
+      ]
+    },
+    {
+      "title": "Eleven multiplayer reward families",
+      "paragraphs": [
+        "Three permanent career damage milestones join eight repeatable cache rewards spanning Common through Legendary. Breach Hound and Mira Flint support upgrades, recovery and HSP evolution. All multiplayer rewards remain optional for collection completion. See the Titan raids guide for the complete pool and rates."
+      ]
+    },
+    {
+      "title": "The 1% banner bonus list",
+      "paragraphs": [
+        "The four starter frames and five previously patrol-only prototypes are now eligible for a conditional 1% bonus list on every banner. The five prototypes are Corrupted Leviathan [P], Scrap Cannon [P], Welded Plates [P], Standard Reactor [P] and Rusty Thrusters [P].",
+        "Common/Rare pulls can select the starter frames or gear; Legendary can select Corrupted Leviathan. Epic has no bonus entries. Unowned bonus items are preferred and owned unique frames are never repeated. Drop Rates shows these entries with an amber 1% tag, banner counters include them, and Red Book acquisition sources distinguish their P cards from SP recovery variants."
+      ]
+    },
+    {
+      "title": "Earlier fixes included in this build",
+      "paragraphs": [
+        "Pits boss waves occur every 25 waves, so The Juggernaut Prime and Apex Predator dossiers can drop starting at wave 25. Apex Pilots cannot be lost in the Pits. Units revived by Second Wind or Fierce Loyalty no longer create duplicate Recovery entries, and units still standing at the end are kept out of Recovery.",
+        "V-X Excalivault [HSP] and the Vaultkeeper [HSP] pilot receive the strongest frame and pilot statistics, including automatic updates to owned copies. Pilot item level now uses the family’s original rarity, so a highly upgraded Common-family SP pilot does not outrate Legendary pilots merely because of the displayed SP rarity.",
+        "Renamed female Apex Pilots and their HSP evolutions count correctly in Scout collection displays. Shop, Founders Pack and Twitch Drop pilots use the normal P/SP recovery progression. Scout banners, Drop Rates and relevant menus are translated across all nine supported languages."
+      ]
+    },
+    {
+      "title": "Recruit rewards",
+      "paragraphs": [
+        "Referral milestones are unchanged. Five qualified recruits earn the second Warbear colour; two recruits do not. Existing and returning players can participate when the game’s qualification requirements are satisfied."
+      ]
+    }
+  ]
+}
 ];
 export const journey = [
   {slug:'start-here',label:'Start here',hint:'Learn the loop'}, {slug:'first-battle',label:'First battle',hint:'Read the battlefield'},

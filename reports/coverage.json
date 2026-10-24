@@ -1,19 +1,19 @@
 {
-  "entries": 1844,
+  "entries": 1885,
   "categories": {
     "abilities": 28,
     "achievements": 53,
-    "bosses": 55,
+    "bosses": 57,
     "campaigns": 5,
     "enemies": 50,
-    "items": 420,
+    "items": 447,
     "missions": 107,
-    "packs": 38,
-    "pilots": 408,
+    "packs": 42,
+    "pilots": 412,
     "upgrades": 2,
-    "warmachines": 678
+    "warmachines": 682
   },
-  "gameVersion": "2.1.7",
+  "gameVersion": "2.2.0",
   "withheldCount": 1,
   "missingArt": [
     "demolisher-ff5f29e",
@@ -26,54 +26,15 @@
     "removed": [],
     "changed": [
       {
-        "id": "vaultkeeper-2845f61",
+        "id": "oblivion-bastion-533906e",
         "fields": [
-          "sources",
-          "combatOnly"
+          "spoiler"
         ]
       },
       {
-        "id": "vaultkeeper-p-c5485c4",
+        "id": "riftmaw-colossus-750147a",
         "fields": [
-          "sources",
-          "combatOnly"
-        ]
-      },
-      {
-        "id": "vaultkeeper-sp-d8f7716",
-        "fields": [
-          "sources",
-          "combatOnly"
-        ]
-      },
-      {
-        "id": "bulwark-60902ee",
-        "fields": [
-          "description",
-          "rarity",
-          "faction",
-          "stats",
-          "rating",
-          "abilityIds",
-          "upgrades",
-          "productionCost"
-        ]
-      },
-      {
-        "id": "phalanx-1736310",
-        "fields": [
-          "description",
-          "faction",
-          "stats",
-          "rating",
-          "abilityIds"
-        ]
-      },
-      {
-        "id": "v-x-excalivault-hsp-d7c68b0",
-        "fields": [
-          "description",
-          "stats"
+          "spoiler"
         ]
       }
     ]

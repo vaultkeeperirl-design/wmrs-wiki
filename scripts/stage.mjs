@@ -4,7 +4,7 @@ import {validate} from './validate.mjs';
 const root=process.cwd();
 await validate(root);
 // A new directory every time: never move/delete the working game or an existing checkout.
-const stagingRoot=path.join(root,'.staging');await fs.mkdir(stagingRoot,{recursive:true});
+const stagingRoot=process.env.WIKI_STAGING_ROOT ? path.resolve(process.env.WIKI_STAGING_ROOT) : path.join(root,'.staging');await fs.mkdir(stagingRoot,{recursive:true});
 const destination=await fs.mkdtemp(path.join(stagingRoot,'wmrs-wiki-'));
 const allowed=['package.json','package-lock.json','astro.config.mjs','tsconfig.json','.gitignore','.github','README.md','MAINTENANCE.md','AUDIT.md','src','public','data','scripts'];
 for(const name of allowed)await fs.cp(path.join(root,name),path.join(destination,name),{recursive:true,dereference:false,errorOnExist:true});

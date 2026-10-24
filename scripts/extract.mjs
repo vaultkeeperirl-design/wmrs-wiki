@@ -15,7 +15,7 @@ const bundled = await build({ stdin: { contents: adapter, resolveDir: game, load
 const G = await import(`data:text/javascript;base64,${Buffer.from(bundled.outputFiles[0].text).toString('base64')}`);
 const C = G.C;
 const pkg = await read(path.join(game, 'package.json'));
-const releaseAudit = await read(path.join(game, 'release', pkg.version, 'PACKAGE-AUDIT.json'), null);
+const releaseAudit = await read(process.env.WMRS_RELEASE_AUDIT ?? path.join(game, 'release', pkg.version, 'PACKAGE-AUDIT.json'), null);
 if (!releaseAudit?.baseGameOnly || releaseAudit.developerDlcIncluded || releaseAudit.privateFilesIncluded) throw new Error('Require a base-game-only release audit with no developer DLC or private files.');
 const identity = await read(path.join(root, 'data/identity.json'), {});
 const entries = new Map();
@@ -40,8 +40,11 @@ function entry(category, key, fields) {
 }
 const sources = new Map();
 const note = (item, label) => { const key = `${categoryOf(item)}:${item.name}`; sources.set(key, [...new Set([...(sources.get(key) ?? []), label])]); };
-const scoutPool = [...C.WARMACHINE_POOL, ...C.SCOUT_PILOT_POOL, ...C.GEAR_POOL].filter(i => !i.dlcPackId && !i.bannerOnly);
+const scoutPool = [...C.WARMACHINE_POOL, ...C.SCOUT_PILOT_POOL, ...C.GEAR_POOL, ...G.ScoutBonus.BANNER_BONUS_POOL].filter(i => !i.dlcPackId && !i.bannerOnly);
 scoutPool.forEach(i => note(i, 'Scout: any base-game banner. Ownership and duplicate limits apply.'));
+G.ScoutBonus.BANNER_BONUS_POOL.forEach(i => note(i, 'Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded.'));
+G.RaidRewards.RAID_CACHE_LOOT.forEach(i => note(i, 'Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches.'));
+G.Raids.TITAN_RAID_GEAR.forEach((i, index) => note(i, `Faction War: one-time Titan salvage milestone at ${G.Raids.TITAN_GEAR_MILESTONES[index].toLocaleString('en-US')} cumulative accepted damage. Claim the item from Comms Mail.`));
 C.STARTER_PROTOTYPES.forEach(i => note(i, 'New-game starter selection: only your selected frame is granted.'));
 C.STARTER_GEAR_PACKAGE.gear.forEach(i => note(i, 'Starting equipment package.'));
 G.PremiumPilots.PREMIUM_PILOT_OFFERS.forEach(o => o.pilots.forEach(i => note(i, `Premium Shop: ${o.name} (guaranteed Base card).`)));
@@ -108,7 +111,7 @@ for (const i of publicItems.values()) {
     familyArtwork = !!image;
   }
   const background = await asset(G.getItemLayerAssetCandidates(i, 'bg'));
-  const sourceModule = i.name.includes('Warbear') ? 'data/referrals.ts' : i.id?.startsWith('premium-wm') ? 'data/premiumWarmachines.ts' : i.id?.startsWith('premium-pilot') ? 'data/premiumPilots.ts' : 'constants.ts';
+  const sourceModule = i.multiplayerOnly ? 'data/titanRaidRewards.ts / data/titanRaids.ts' : i.name.includes('Warbear') ? 'data/referrals.ts' : i.id?.startsWith('premium-wm') ? 'data/premiumWarmachines.ts' : i.id?.startsWith('premium-pilot') ? 'data/premiumPilots.ts' : 'constants.ts';
   entry(category, i.name, {
     family: familyOf(i.name), description: i.description, rarity: i.rarity, type: i.chassisType ?? i.type ?? (i.isAI ? 'AI pilot' : 'Pilot'), faction: i.faction,
     spoiler: !!i.isHsp || !publicFamilies.has(`${category}:${familyOf(i.name)}`),
@@ -118,6 +121,8 @@ for (const i of publicItems.values()) {
     rating: category === 'pilots' ? G.getPilotItemLevel({ ...i, level: 1, upgradeRank: 0 }) : G.toCombatRating((i.itemLevel ?? 0) + G.getTierRatingBonus(i)),
     image, background, artworkNote: familyArtwork ? 'Official family artwork is shown; a distinct foreground for this tier is not available.' : image ? undefined : 'Official foreground artwork not found; faction background shown.',
     combatOnly: isCombatOnly || undefined,
+    multiplayerOnly: i.multiplayerOnly || undefined,
+    note: i.multiplayerOnly ? 'Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.' : undefined,
     pilotSlots: category === 'warmachines' ? C.getWarmachinePilotSlotCount(i) : undefined,
     prototypeAdvantages: i.prototypeAdvantages ?? [], chassisClass: i.chassisClass,
     sources: route, evidence: [sourceModule, 'utils/itemFactory.ts', 'utils/assetPaths.ts'],
@@ -140,6 +145,15 @@ for (const c of C.STORY_CAMPAIGNS.filter(c => !c.dlcPackId)) for (const chapter 
   const background = await asset(G.getItemLayerAssetCandidates(i, 'bg')) ?? frame?.background;
   entry('bosses', key, { spoiler: true, description: i.description, type: i.chassisType, rarity: i.rarity, faction: i.faction, image, background, stats: Object.fromEntries(Object.entries(statMap).filter(([k]) => typeof i[k] === 'number').map(([k, label]) => [label, i[k]])), sources: [source], evidence: ['constants.ts', 'data/story/bossPools.ts'], relatedIds: frame ? [frame.id] : [], note: 'Boss encounter reference. Appearance does not establish recruitability or a direct drop.' });
 }
+for (const [allegiance, boss] of Object.entries(G.Raids.TITAN_BOSSES)) {
+  const battle = G.RaidCombat.simulateTitanRaid([{ maxHp: 1, maxShield: 0, attack: 0, defense: 0, evasion: 0, chassisType: boss.chassisType, faction: boss.faction }], allegiance, boss.baseHp, 1).initial.at(-1);
+  entry('bosses', boss.name, { description: boss.description, type: 'Faction Titan raid · ' + boss.chassisType, rarity: boss.rarity, faction: boss.faction, combatOnly: true, spoiler: true,
+    image: await asset(G.getItemLayerAssetCandidates(boss, 'fg')), background: await asset(G.getItemLayerAssetCandidates(boss, 'bg')),
+    stats: { HP: battle.maxHp, 'Shared HP': boss.baseHp, Attack: battle.attack, Defense: battle.defense, Evasion: battle.evasion, Shield: battle.maxShield, 'Deployment bays': 2 },
+    sources: ['Multiplayer → Faction War: ' + allegiance + ' allegiance. Separate player battles reduce this allegiance’s shared weekly hull.'],
+    evidence: ['data/titanRaids.ts', 'utils/titanRaidCombat.ts', 'nakama-server/titanRaids.ts'],
+    note: 'Boss encounter only; cannot be recruited. Local hull is capped at 15,000 and may be lower near the global kill. Attack rises 35% every three rounds; the strike lasts at most 20 rounds.' });
+}
 for (const [faction, kinds] of Object.entries(G.FACTION_ABILITY_INFO)) for (const [kind, info] of Object.entries(kinds)) {
   const a = entry('abilities', `${info.name}`, { description: info.description, faction, type: kind === 'chassis' ? 'Chassis Special' : kind === 'pilot' ? 'Pilot passive' : 'Defend effect', stats: info.cooldownTurns ? { 'Cooldown (turns)': info.cooldownTurns } : {}, sources: [`${faction}: ${kind} ability.`], evidence: ['utils/factionAbilities.ts'] });
   for (const e of entries.values()) if (e.faction === faction && ((e.category === 'warmachines' && kind !== 'pilot') || (e.category === 'pilots' && kind === 'pilot'))) e.abilityIds.push(a.id);
@@ -153,7 +167,11 @@ const pack = async (key, fields, rewards, imageCandidates) => {
   for (const id of p.rewardIds) entries.get(id).packIds.push(p.id);
   return p;
 };
-for (const b of C.SCOUT_BANNER_POOL.filter(b => !b.dlcPackId)) await pack(b.name, { description: b.description, type: 'Scout banner', acquisition: `${C.SCOUT_COST} Nanites per pull in Scout.`, cost: `${C.SCOUT_COST} Nanites / pull`, guaranteed: false, rarityRates: C.SCOUT_PROBABILITY, favoredFactions: b.rateUpFactions ?? [], probabilityNote: 'Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.', evidence: ['constants.ts', 'utils/scoutPool.ts', 'utils/scoutPity.ts'] }, scoutPool, [b.image]);
+await pack('Titan Raid Cache', { description: 'One repeatable reward for every strike with at least 100 accepted damage. Duplicates support normal upgrades. Raid units support Base, P, SP and HSP progression.', type: 'Multiplayer raid cache', acquisition: 'Multiplayer → Faction War; reward delivered through Comms Mail.', guaranteed: false,
+  rarityRates: Object.fromEntries(G.RaidRewards.RAID_CACHE_ODDS.map(r => [r.rarity, r.weight / 100])),
+  probabilityNote: 'Common 54%, Rare 28%, Epic 15%, Legendary 3%. A Legendary is guaranteed within 20 qualifying caches. One item is chosen uniformly within the rolled rarity. Pity persists across weeks and allegiance changes. All raid cards are optional for collection rewards.', evidence: ['data/titanRaidRewards.ts', 'nakama-server/titanRaids.ts'] }, G.RaidRewards.RAID_CACHE_LOOT, G.getItemLayerAssetCandidates(G.RaidRewards.RAID_CACHE_WARMACHINES[0], 'fg'));
+for (const [index, item] of G.Raids.TITAN_RAID_GEAR.entries()) await pack('Titan Salvage: ' + item.name, { description: 'A one-time career damage milestone. Optional equipment usable in any mode.', type: 'Multiplayer damage milestone', acquisition: G.Raids.TITAN_GEAR_MILESTONES[index].toLocaleString('en-US') + ' cumulative accepted Titan damage; claim through Comms Mail.', guaranteed: true, evidence: ['data/titanRaids.ts', 'nakama-server/titanRaids.ts'] }, [item], G.getItemLayerAssetCandidates(item, 'fg'));
+for (const b of C.SCOUT_BANNER_POOL.filter(b => !b.dlcPackId)) await pack(b.name, { description: b.description, type: 'Scout banner', acquisition: `${C.SCOUT_COST} Nanites per pull in Scout.`, cost: `${C.SCOUT_COST} Nanites / pull`, guaranteed: false, rarityRates: C.SCOUT_PROBABILITY, favoredFactions: b.rateUpFactions ?? [], probabilityNote: 'Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.', evidence: ['constants.ts', 'utils/scoutPool.ts', 'utils/scoutPity.ts'] }, scoutPool, [b.image]);
 for (const o of G.PremiumPilots.PREMIUM_PILOT_OFFERS) await pack(o.name, { description: o.description, type: o.kind === 'pack' ? 'Guaranteed pilot bundle' : 'Guaranteed pilot', acquisition: 'Premium Shop; Steam purchase. Check the in-game checkout for current regional pricing.', cost: `${o.priceLabel} USD (game catalog)`, guaranteed: true, evidence: ['data/premiumPilots.ts'] }, o.pilots, o.pilots.flatMap(i => G.getItemLayerAssetCandidates(i, 'fg')));
 for (const o of G.PremiumFrames.PREMIUM_WARMACHINE_OFFERS) await pack(o.name, { description: o.description, type: o.kind === 'pack' ? 'Guaranteed frame bundle' : 'Guaranteed frame', acquisition: 'Premium Shop; guaranteed SP frame(s). Check checkout for current regional pricing.', cost: `${o.priceLabel} USD (game catalog)`, guaranteed: true, evidence: ['data/premiumWarmachines.ts'] }, o.warmachines, o.warmachines.flatMap(i => G.getItemLayerAssetCandidates(i, 'fg')));
 const f = G.Founders.FOUNDERS_PACK;
@@ -185,7 +203,7 @@ for (const pair of G.SIGNATURE_PAIRS) {
 }
 for (const e of entries.values()) if (e.abilityIds) e.abilityIds = [...new Set(e.abilityIds)];
 for (const relative of ['assets/branding/logo.png', 'assets/title/base/ares-full-title.webp', 'assets/factions/republic-of-horizon.png', 'assets/placeholder-fg.png']) await asset([relative]);
-const database = { schemaVersion: 1, gameVersion: pkg.version, releasePolicy: 'base-game; released spoilers available behind reveal controls; deployment requires reviewed snapshot', entries: [...entries.values()].sort((a,b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name)), rules: { scoutCost: C.SCOUT_COST, rarityRates: C.SCOUT_PROBABILITY, chassisCounters: C.CHASSIS_TYPE_COUNTERS, chassisMultiplier: C.CHASSIS_TYPE_ADVANTAGE_MULTIPLIER, copilotContribution: C.COPILOT_STAT_CONTRIBUTION, pityThreshold: C.SCOUT_PITY_THRESHOLD, pityIncrease: C.SCOUT_PITY_INCREASE, recoveryCost: C.RECOVERY_ATTEMPT_COST, recoveryOdds: C.RECOVERY_ODDS, statDescriptions: C.STAT_DESCRIPTIONS, uniqueFamilies: [...C.UNIQUE_UNIT_NAMES], signaturePairs: G.SIGNATURE_PAIRS } };
+const database = { schemaVersion: 1, gameVersion: pkg.version, releasePolicy: 'base-game; released spoilers available behind reveal controls; deployment requires reviewed snapshot', entries: [...entries.values()].sort((a,b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name)), rules: { titanRaids: { sharedHealth: G.Raids.TITAN_RAID_HEALTH, battleHealth: G.Raids.TITAN_RAID_BATTLE_HEALTH, cooldownMs: G.Raids.TITAN_RAID_COOLDOWN_MS, cacheMinDamage: G.RaidRewards.RAID_CACHE_MIN_DAMAGE, legendaryPity: G.RaidRewards.RAID_CACHE_LEGENDARY_PITY, rewardFamilies: G.RaidRewards.RAID_CACHE_LOOT.length + G.Raids.TITAN_RAID_GEAR.length }, scoutCost: C.SCOUT_COST, rarityRates: C.SCOUT_PROBABILITY, chassisCounters: C.CHASSIS_TYPE_COUNTERS, chassisMultiplier: C.CHASSIS_TYPE_ADVANTAGE_MULTIPLIER, copilotContribution: C.COPILOT_STAT_CONTRIBUTION, pityThreshold: C.SCOUT_PITY_THRESHOLD, pityIncrease: C.SCOUT_PITY_INCREASE, recoveryCost: C.RECOVERY_ATTEMPT_COST, recoveryOdds: C.RECOVERY_ODDS, statDescriptions: C.STAT_DESCRIPTIONS, uniqueFamilies: [...C.UNIQUE_UNIT_NAMES], signaturePairs: G.SIGNATURE_PAIRS } };
 const coverage = validateDatabase(database);
 // Oracle fixtures are computed by the game itself; browser planner tests compare its model against these.
 const templates = [...publicItems.values()];

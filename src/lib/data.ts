@@ -9,7 +9,7 @@ export interface Entry {
   stats?: Record<string, number>; sources: string[]; evidence: string[];
   packIds?: string[]; rewardIds?: string[]; abilityIds?: string[]; relatedIds?: string[]; missionIds?: string[];
   campaignId?: string; chapterNumber?: number; floorCount?: number; difficulty?: string | number;
-  rating?: number; power?: PowerResult; combatOnly?: boolean; pilotSlots?: number; prototypeAdvantages?: string[]; chassisClass?: string;
+  rating?: number; power?: PowerResult; combatOnly?: boolean; multiplayerOnly?: boolean; pilotSlots?: number; prototypeAdvantages?: string[]; chassisClass?: string;
   guaranteed?: boolean; cost?: string; acquisition?: string;
   rarityRates?: Record<string, number>; favoredFactions?: string[]; probabilityNote?: string;
   currencyRewards?: { name: string; amount: number }[]; dossierRate?: number;

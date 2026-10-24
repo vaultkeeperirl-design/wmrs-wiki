@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "2.1.7",
+  "gameVersion": "2.2.0",
   "releasePolicy": "base-game; released spoilers available behind reveal controls; deployment requires reviewed snapshot",
   "entries": [
     {
@@ -1322,7 +1322,7 @@
       "name": "Apex Predator",
       "description": "A whisper in the arena, this Skirmisher is spoken of as a ghost that kills before it is ever seen. The master of the 100th wave.",
       "sources": [
-        "Fighting Pits boss waves (50, 100...)"
+        "Fighting Pits boss waves (25, 50, 75...)"
       ],
       "evidence": [
         "services/geminiService.ts",
@@ -2399,6 +2399,37 @@
       "note": "Boss encounter reference. Appearance does not establish recruitability or a direct drop."
     },
     {
+      "id": "oblivion-bastion-533906e",
+      "category": "bosses",
+      "name": "Oblivion Bastion",
+      "description": "A rogue fortress-scale siege machine advancing into Vanguard territory. Every Vanguard strike team fights its own engagement against the same shared hull. A preview of what is coming.",
+      "sources": [
+        "Multiplayer → Faction War: vanguard allegiance. Separate player battles reduce this allegiance’s shared weekly hull."
+      ],
+      "evidence": [
+        "data/titanRaids.ts",
+        "utils/titanRaidCombat.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Faction Titan raid · Siege",
+      "rarity": "Legendary",
+      "faction": "No Faction",
+      "combatOnly": true,
+      "spoiler": true,
+      "image": "assets/warmachines/fg/oblivion-bastion/oblivion-bastion-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "stats": {
+        "HP": 15000,
+        "Shared HP": 2500000,
+        "Attack": 450,
+        "Defense": 120,
+        "Evasion": 0,
+        "Shield": 0,
+        "Deployment bays": 2
+      },
+      "note": "Boss encounter only; cannot be recruited. Local hull is capped at 15,000 and may be lower near the global kill. Attack rises 35% every three rounds; the strike lasts at most 20 rounds."
+    },
+    {
       "id": "observer-drone-story-encounter-21b24bf",
       "category": "bosses",
       "name": "Observer Drone · story encounter",
@@ -2549,6 +2580,37 @@
         "red-rescue-sp-338fdd1"
       ],
       "note": "Boss encounter reference. Appearance does not establish recruitability or a direct drop."
+    },
+    {
+      "id": "riftmaw-colossus-750147a",
+      "category": "bosses",
+      "name": "Riftmaw Colossus",
+      "description": "An ancient kaiju with crystalline dorsal spines and a reactor-bright maw. Unbound strike teams wear it down in separate engagements. No single squad is expected to survive. A preview of what is coming.",
+      "sources": [
+        "Multiplayer → Faction War: unbound allegiance. Separate player battles reduce this allegiance’s shared weekly hull."
+      ],
+      "evidence": [
+        "data/titanRaids.ts",
+        "utils/titanRaidCombat.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Faction Titan raid · Assault",
+      "rarity": "Legendary",
+      "faction": "No Faction",
+      "combatOnly": true,
+      "spoiler": true,
+      "image": "assets/warmachines/fg/riftmaw-colossus/riftmaw-colossus-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "stats": {
+        "HP": 15000,
+        "Shared HP": 2500000,
+        "Attack": 450,
+        "Defense": 120,
+        "Evasion": 0,
+        "Shield": 0,
+        "Deployment bays": 2
+      },
+      "note": "Boss encounter only; cannot be recruited. Local hull is capped at 15,000 and may be lower near the global kill. Attack rises 35% every three rounds; the strike lasts at most 20 rounds."
     },
     {
       "id": "scout-frame-story-encounter-a039cf3",
@@ -2774,7 +2836,7 @@
       "name": "The Juggernaut Prime",
       "description": "The legendary warmachine that guards the 50th wave. A walking fortress of unimaginable durability.",
       "sources": [
-        "Fighting Pits boss waves (50, 100...)"
+        "Fighting Pits boss waves (25, 50, 75...)"
       ],
       "evidence": [
         "services/geminiService.ts",
@@ -5852,6 +5914,359 @@
       "rating": 361,
       "image": "assets/gear/fg/aegis-command-core/aegis-command-core-sp-fg.webp",
       "background": "assets/gear/bg/aegis-command-core-sp-bg.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "anchorstep-jets-d235204",
+      "category": "items",
+      "name": "Anchorstep Jets",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Anchorstep Jets",
+      "rarity": "Rare",
+      "type": "Thrusters",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 10,
+        "Attack": 0,
+        "Defense": 2,
+        "Evasion": 7
+      },
+      "rating": 128,
+      "image": "assets/gear/fg/anchorstep-jets/anchorstep-jets-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 375,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "anchorstep-jets-p-1b5fe8c",
+      "category": "items",
+      "name": "Anchorstep Jets [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Anchorstep Jets; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Anchorstep Jets",
+      "rarity": "Rare",
+      "type": "Thrusters",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 11,
+        "Attack": 0,
+        "Defense": 3,
+        "Evasion": 8
+      },
+      "rating": 170,
+      "image": "assets/gear/fg/anchorstep-jets/anchorstep-jets-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 375,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "anchorstep-jets-sp-7f12432",
+      "category": "items",
+      "name": "Anchorstep Jets [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Anchorstep Jets; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Anchorstep Jets",
+      "rarity": "Legendary",
+      "type": "Thrusters",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 13,
+        "Attack": 0,
+        "Defense": 4,
+        "Evasion": 9
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/anchorstep-jets/anchorstep-jets-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [],
@@ -11391,6 +11806,356 @@
       }
     },
     {
+      "id": "breachline-driver-bc08333",
+      "category": "items",
+      "name": "Breachline Driver",
+      "description": "Faction Titan raid salvage. A reinforced rail driver built to crack colossal armour. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards.",
+      "sources": [
+        "Faction War: one-time Titan salvage milestone at 1,000 cumulative accepted damage. Claim the item from Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breachline Driver",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 0,
+        "Attack": 24,
+        "Defense": 0
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/breachline-driver/breachline-driver-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-salvage-breachline-driver-65dd786"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "breachline-driver-p-5e7e5ef",
+      "category": "items",
+      "name": "Breachline Driver [P]",
+      "description": "Faction Titan raid salvage. A reinforced rail driver built to crack colossal armour. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Breachline Driver; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breachline Driver",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 0,
+        "Attack": 27,
+        "Defense": 0
+      },
+      "rating": 298,
+      "image": "assets/gear/fg/breachline-driver/breachline-driver-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "breachline-driver-sp-524fae6",
+      "category": "items",
+      "name": "Breachline Driver [SP]",
+      "description": "Faction Titan raid salvage. A reinforced rail driver built to crack colossal armour. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Breachline Driver; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breachline Driver",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 0,
+        "Attack": 30,
+        "Defense": 0
+      },
+      "rating": 383,
+      "image": "assets/gear/fg/breachline-driver/breachline-driver-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
       "id": "broken-banner-thrusters-bffde99",
       "category": "items",
       "name": "Broken Banner Thrusters",
@@ -14411,6 +15176,356 @@
       "rating": 361,
       "image": "assets/gear/fg/coalition-linked-battery/coalition-linked-battery-sp-fg.webp",
       "background": "assets/gear/bg/coalition-linked-battery-sp-bg.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "colossus-breaker-dc7129a",
+      "category": "items",
+      "name": "Colossus Breaker",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Colossus Breaker",
+      "rarity": "Epic",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 0,
+        "Attack": 20,
+        "Defense": 0
+      },
+      "rating": 191,
+      "image": "assets/gear/fg/colossus-breaker/colossus-breaker-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 350,
+          "resources": {
+            "alloy": 800,
+            "dataFragments": 320
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 473,
+          "resources": {
+            "alloy": 1200,
+            "dataFragments": 480
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 595,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 717,
+          "resources": {
+            "alloy": 2000,
+            "dataFragments": 800
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 1848,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 2118,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 2387,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 2657,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 2926,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 900,
+        "nanites": 1200,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "colossus-breaker-p-571c8dd",
+      "category": "items",
+      "name": "Colossus Breaker [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Colossus Breaker; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Colossus Breaker",
+      "rarity": "Epic",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 0,
+        "Attack": 22,
+        "Defense": 0
+      },
+      "rating": 234,
+      "image": "assets/gear/fg/colossus-breaker/colossus-breaker-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 350,
+          "resources": {
+            "alloy": 800,
+            "dataFragments": 320
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 473,
+          "resources": {
+            "alloy": 1200,
+            "dataFragments": 480
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 595,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 717,
+          "resources": {
+            "alloy": 2000,
+            "dataFragments": 800
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 1848,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 2118,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 2387,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 2657,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 2926,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 900,
+        "nanites": 1200,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "colossus-breaker-sp-ca9ebe9",
+      "category": "items",
+      "name": "Colossus Breaker [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Colossus Breaker; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Colossus Breaker",
+      "rarity": "Legendary",
+      "type": "Weapon",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 0,
+        "Attack": 25,
+        "Defense": 0
+      },
+      "rating": 319,
+      "image": "assets/gear/fg/colossus-breaker/colossus-breaker-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [],
@@ -22587,6 +23702,356 @@
       "rating": 438,
       "image": "assets/gear/fg/eventide-phase-drives/eventide-phase-drives-sp-fg.webp",
       "background": "assets/gear/bg/eventide-phase-drives-sp-bg.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "field-patch-plating-cb43a75",
+      "category": "items",
+      "name": "Field Patch Plating",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Field Patch Plating",
+      "rarity": "Common",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 18,
+        "Attack": 0,
+        "Defense": 3
+      },
+      "rating": 64,
+      "image": "assets/gear/fg/field-patch-plating/field-patch-plating-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 60,
+          "resources": {
+            "alloy": 150,
+            "dataFragments": 60
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 81,
+          "resources": {
+            "alloy": 225,
+            "dataFragments": 90
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 102,
+          "resources": {
+            "alloy": 300,
+            "dataFragments": 120
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 123,
+          "resources": {
+            "alloy": 375,
+            "dataFragments": 150
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 317,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 363,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 409,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 455,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 502,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 150,
+        "nanites": 200,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "field-patch-plating-p-4d22b46",
+      "category": "items",
+      "name": "Field Patch Plating [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Field Patch Plating; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Field Patch Plating",
+      "rarity": "Rare",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 20,
+        "Attack": 0,
+        "Defense": 4
+      },
+      "rating": 106,
+      "image": "assets/gear/fg/field-patch-plating/field-patch-plating-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 375,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "field-patch-plating-sp-1046218",
+      "category": "items",
+      "name": "Field Patch Plating [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Field Patch Plating; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Field Patch Plating",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 23,
+        "Attack": 0,
+        "Defense": 5
+      },
+      "rating": 191,
+      "image": "assets/gear/fg/field-patch-plating/field-patch-plating-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [],
@@ -31206,6 +32671,356 @@
       }
     },
     {
+      "id": "last-line-carapace-4689ff9",
+      "category": "items",
+      "name": "Last Line Carapace",
+      "description": "Faction Titan raid salvage. Layered emergency armour recovered from the last line of a Titan assault. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards.",
+      "sources": [
+        "Faction War: one-time Titan salvage milestone at 10,000 cumulative accepted damage. Claim the item from Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Last Line Carapace",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 85,
+        "Attack": 0,
+        "Defense": 15
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/last-line-carapace/last-line-carapace-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-salvage-last-line-carapace-6f32ab6"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "last-line-carapace-p-6e61bb2",
+      "category": "items",
+      "name": "Last Line Carapace [P]",
+      "description": "Faction Titan raid salvage. Layered emergency armour recovered from the last line of a Titan assault. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Last Line Carapace; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Last Line Carapace",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 95,
+        "Attack": 0,
+        "Defense": 17
+      },
+      "rating": 298,
+      "image": "assets/gear/fg/last-line-carapace/last-line-carapace-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "last-line-carapace-sp-2276030",
+      "category": "items",
+      "name": "Last Line Carapace [SP]",
+      "description": "Faction Titan raid salvage. Layered emergency armour recovered from the last line of a Titan assault. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Last Line Carapace; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Last Line Carapace",
+      "rarity": "Legendary",
+      "type": "Armor",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 106,
+        "Attack": 0,
+        "Defense": 19
+      },
+      "rating": 383,
+      "image": "assets/gear/fg/last-line-carapace/last-line-carapace-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
       "id": "last-stand-armor-d35b63e",
       "category": "items",
       "name": "Last Stand Armor",
@@ -35763,6 +37578,359 @@
       "rating": 264,
       "image": "assets/gear/fg/norio-s-lucky-lid/norio-s-lucky-lid-sp-fg.webp",
       "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "nullwake-screen-46aa505",
+      "category": "items",
+      "name": "Nullwake Screen",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Nullwake Screen",
+      "rarity": "Legendary",
+      "type": "Shield",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 15,
+        "Attack": 0,
+        "Defense": 8,
+        "Shield": 85
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/nullwake-screen/nullwake-screen-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "nullwake-screen-p-8b4d002",
+      "category": "items",
+      "name": "Nullwake Screen [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Nullwake Screen; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Nullwake Screen",
+      "rarity": "Legendary",
+      "type": "Shield",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 17,
+        "Attack": 0,
+        "Defense": 9,
+        "Shield": 95
+      },
+      "rating": 298,
+      "image": "assets/gear/fg/nullwake-screen/nullwake-screen-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "nullwake-screen-sp-60b09ee",
+      "category": "items",
+      "name": "Nullwake Screen [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Nullwake Screen; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Nullwake Screen",
+      "rarity": "Legendary",
+      "type": "Shield",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 19,
+        "Attack": 0,
+        "Defense": 10,
+        "Shield": 106
+      },
+      "rating": 383,
+      "image": "assets/gear/fg/nullwake-screen/nullwake-screen-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [],
@@ -43063,6 +45231,359 @@
       }
     },
     {
+      "id": "resonance-anchor-ee23c5a",
+      "category": "items",
+      "name": "Resonance Anchor",
+      "description": "Faction Titan raid salvage. A containment core built from a dormant Titan fragment. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards.",
+      "sources": [
+        "Faction War: one-time Titan salvage milestone at 30,000 cumulative accepted damage. Claim the item from Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Resonance Anchor",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 35,
+        "Attack": 7,
+        "Defense": 4,
+        "Shield": 40
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/resonance-anchor/resonance-anchor-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-salvage-resonance-anchor-41c9846"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "resonance-anchor-p-e51338a",
+      "category": "items",
+      "name": "Resonance Anchor [P]",
+      "description": "Faction Titan raid salvage. A containment core built from a dormant Titan fragment. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Resonance Anchor; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Resonance Anchor",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 39,
+        "Attack": 8,
+        "Defense": 5,
+        "Shield": 45
+      },
+      "rating": 298,
+      "image": "assets/gear/fg/resonance-anchor/resonance-anchor-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "resonance-anchor-sp-e44b209",
+      "category": "items",
+      "name": "Resonance Anchor [SP]",
+      "description": "Faction Titan raid salvage. A containment core built from a dormant Titan fragment. Earned only through multiplayer raids; usable in any mode. Optional Red Book entry; never required for collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Resonance Anchor; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Resonance Anchor",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 44,
+        "Attack": 9,
+        "Defense": 6,
+        "Shield": 50
+      },
+      "rating": 383,
+      "image": "assets/gear/fg/resonance-anchor/resonance-anchor-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
       "id": "riot-shield-ee0295f",
       "category": "items",
       "name": "Riot Shield",
@@ -44607,7 +47128,8 @@
       "name": "Rusty Thrusters [P]",
       "description": "They get you from A to B. Usually. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Workshop recovery/evolution of Rusty Thrusters; this variant is not a direct Scout reward."
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded."
       ],
       "evidence": [
         "constants.ts",
@@ -44630,7 +47152,18 @@
       "image": "assets/gear/fg/rusty-thrusters/rusty-thrusters-p-fg.webp",
       "background": "assets/gear/bg/rusty-thrusters-p-bg.webp",
       "prototypeAdvantages": [],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [],
       "relatedIds": [],
       "upgrades": [
@@ -45679,7 +48212,8 @@
       "name": "Scrap Cannon [P]",
       "description": "A cobbled-together projectile weapon. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Workshop recovery/evolution of Scrap Cannon; this variant is not a direct Scout reward."
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded."
       ],
       "evidence": [
         "constants.ts",
@@ -45701,7 +48235,18 @@
       "image": "assets/gear/fg/scrap-cannon/scrap-cannon-p-fg.webp",
       "background": "assets/gear/bg/scrap-cannon-p-bg.webp",
       "prototypeAdvantages": [],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [],
       "relatedIds": [],
       "upgrades": [
@@ -46912,6 +49457,712 @@
       "rating": 255,
       "image": "assets/gear/fg/shock-harpoon/shock-harpoon-sp-fg.webp",
       "background": "assets/gear/bg/shock-harpoon-sp-bg.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "siegeheart-dynamo-1e81444",
+      "category": "items",
+      "name": "Siegeheart Dynamo",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Siegeheart Dynamo",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 30,
+        "Attack": 12,
+        "Defense": 5,
+        "Shield": 30
+      },
+      "rating": 255,
+      "image": "assets/gear/fg/siegeheart-dynamo/siegeheart-dynamo-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "siegeheart-dynamo-p-a44b4fe",
+      "category": "items",
+      "name": "Siegeheart Dynamo [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Siegeheart Dynamo; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Siegeheart Dynamo",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 34,
+        "Attack": 13,
+        "Defense": 6,
+        "Shield": 34
+      },
+      "rating": 298,
+      "image": "assets/gear/fg/siegeheart-dynamo/siegeheart-dynamo-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "siegeheart-dynamo-sp-98b0a45",
+      "category": "items",
+      "name": "Siegeheart Dynamo [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Siegeheart Dynamo; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Siegeheart Dynamo",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 38,
+        "Attack": 15,
+        "Defense": 7,
+        "Shield": 38
+      },
+      "rating": 383,
+      "image": "assets/gear/fg/siegeheart-dynamo/siegeheart-dynamo-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 2250,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "signal-spool-f452011",
+      "category": "items",
+      "name": "Signal Spool",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Signal Spool",
+      "rarity": "Common",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 8,
+        "Attack": 2,
+        "Defense": 1,
+        "Shield": 8
+      },
+      "rating": 64,
+      "image": "assets/gear/fg/signal-spool/signal-spool-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 60,
+          "resources": {
+            "alloy": 150,
+            "dataFragments": 60
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 81,
+          "resources": {
+            "alloy": 225,
+            "dataFragments": 90
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 102,
+          "resources": {
+            "alloy": 300,
+            "dataFragments": 120
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 123,
+          "resources": {
+            "alloy": 375,
+            "dataFragments": 150
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 317,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 363,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 409,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 455,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 502,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 150,
+        "nanites": 200,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "signal-spool-p-b5b080f",
+      "category": "items",
+      "name": "Signal Spool [P]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Signal Spool; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Signal Spool",
+      "rarity": "Rare",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 9,
+        "Attack": 3,
+        "Defense": 2,
+        "Shield": 9
+      },
+      "rating": 106,
+      "image": "assets/gear/fg/signal-spool/signal-spool-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 375,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "signal-spool-sp-c09839e",
+      "category": "items",
+      "name": "Signal Spool [SP]",
+      "description": "Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Signal Spool; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Signal Spool",
+      "rarity": "Legendary",
+      "type": "Core",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 10,
+        "Attack": 4,
+        "Defense": 3,
+        "Shield": 10
+      },
+      "rating": 191,
+      "image": "assets/gear/fg/signal-spool/signal-spool-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/gear.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [],
@@ -48903,7 +52154,8 @@
       "name": "Standard Reactor [P]",
       "description": "A basic power core. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Workshop recovery/evolution of Standard Reactor; this variant is not a direct Scout reward."
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded."
       ],
       "evidence": [
         "constants.ts",
@@ -48927,7 +52179,18 @@
       "image": "assets/gear/fg/standard-reactor/standard-reactor-p-fg.webp",
       "background": "assets/gear/bg/standard-reactor-p-bg.webp",
       "prototypeAdvantages": [],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [],
       "relatedIds": [],
       "upgrades": [
@@ -53526,7 +56789,8 @@
       "name": "Welded Plates [P]",
       "description": "Better than nothing. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Workshop recovery/evolution of Welded Plates; this variant is not a direct Scout reward."
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded."
       ],
       "evidence": [
         "constants.ts",
@@ -53548,7 +56812,18 @@
       "image": "assets/gear/fg/welded-plates/welded-plates-p-fg.webp",
       "background": "assets/gear/bg/welded-plates-p-bg.webp",
       "prototypeAdvantages": [],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [],
       "relatedIds": [],
       "upgrades": [
@@ -58792,7 +62067,7 @@
       "favoredFactions": [
         "Aegis Alliance"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/aegis-alliance.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -59156,7 +62431,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -59185,7 +62468,7 @@
       "favoredFactions": [
         "Kingdom of Aurora"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/kingdom-of-aurora.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -59549,7 +62832,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -59642,7 +62933,7 @@
       "favoredFactions": [
         "Cygnus Corporation"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/cygnus-corporation.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -60006,7 +63297,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -60128,7 +63427,7 @@
       "favoredFactions": [
         "Republic of Horizon"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/republic-of-horizon.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -60492,7 +63791,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -60569,7 +63876,7 @@
       "favoredFactions": [
         "No Faction"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/no-faction.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -60933,7 +64240,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -61062,7 +64377,7 @@
       "favoredFactions": [
         "Liberté"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/liberte.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -61426,7 +64741,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -61581,7 +64904,7 @@
       "favoredFactions": [
         "The Rustfang Clans"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/rustfang-clans.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -61945,7 +65268,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -62060,7 +65391,7 @@
         "Legendary": 0.01
       },
       "favoredFactions": [],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/standard.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -62424,7 +65755,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -62477,7 +65816,7 @@
       "favoredFactions": [
         "Red Wolves"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/red-wolves.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -62841,7 +66180,109 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
+      ]
+    },
+    {
+      "id": "titan-raid-cache-9da07ef",
+      "category": "packs",
+      "name": "Titan Raid Cache",
+      "description": "One repeatable reward for every strike with at least 100 accepted damage. Duplicates support normal upgrades. Raid units support Base, P, SP and HSP progression.",
+      "sources": [
+        "Multiplayer → Faction War; reward delivered through Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Multiplayer raid cache",
+      "acquisition": "Multiplayer → Faction War; reward delivered through Comms Mail.",
+      "guaranteed": false,
+      "rarityRates": {
+        "Common": 0.54,
+        "Rare": 0.28,
+        "Epic": 0.15,
+        "Legendary": 0.03
+      },
+      "probabilityNote": "Common 54%, Rare 28%, Epic 15%, Legendary 3%. A Legendary is guaranteed within 20 qualifying caches. One item is chosen uniformly within the rolled rarity. Pity persists across weeks and allegiance changes. All raid cards are optional for collection rewards.",
+      "image": "assets/warmachines/fg/breach-hound/breach-hound-fg.webp",
+      "rewardIds": [
+        "field-patch-plating-cb43a75",
+        "signal-spool-f452011",
+        "anchorstep-jets-d235204",
+        "colossus-breaker-dc7129a",
+        "nullwake-screen-46aa505",
+        "siegeheart-dynamo-1e81444",
+        "breach-hound-4f6d7f5",
+        "mira-flint-536aedb"
+      ]
+    },
+    {
+      "id": "titan-salvage-breachline-driver-65dd786",
+      "category": "packs",
+      "name": "Titan Salvage: Breachline Driver",
+      "description": "A one-time career damage milestone. Optional equipment usable in any mode.",
+      "sources": [
+        "1,000 cumulative accepted Titan damage; claim through Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaids.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Multiplayer damage milestone",
+      "acquisition": "1,000 cumulative accepted Titan damage; claim through Comms Mail.",
+      "guaranteed": true,
+      "image": "assets/gear/fg/breachline-driver/breachline-driver-fg.webp",
+      "rewardIds": [
+        "breachline-driver-bc08333"
+      ]
+    },
+    {
+      "id": "titan-salvage-last-line-carapace-6f32ab6",
+      "category": "packs",
+      "name": "Titan Salvage: Last Line Carapace",
+      "description": "A one-time career damage milestone. Optional equipment usable in any mode.",
+      "sources": [
+        "10,000 cumulative accepted Titan damage; claim through Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaids.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Multiplayer damage milestone",
+      "acquisition": "10,000 cumulative accepted Titan damage; claim through Comms Mail.",
+      "guaranteed": true,
+      "image": "assets/gear/fg/last-line-carapace/last-line-carapace-fg.webp",
+      "rewardIds": [
+        "last-line-carapace-4689ff9"
+      ]
+    },
+    {
+      "id": "titan-salvage-resonance-anchor-41c9846",
+      "category": "packs",
+      "name": "Titan Salvage: Resonance Anchor",
+      "description": "A one-time career damage milestone. Optional equipment usable in any mode.",
+      "sources": [
+        "30,000 cumulative accepted Titan damage; claim through Comms Mail."
+      ],
+      "evidence": [
+        "data/titanRaids.ts",
+        "nakama-server/titanRaids.ts"
+      ],
+      "type": "Multiplayer damage milestone",
+      "acquisition": "30,000 cumulative accepted Titan damage; claim through Comms Mail.",
+      "guaranteed": true,
+      "image": "assets/gear/fg/resonance-anchor/resonance-anchor-fg.webp",
+      "rewardIds": [
+        "resonance-anchor-ee23c5a"
       ]
     },
     {
@@ -62934,7 +66375,7 @@
       "favoredFactions": [
         "The Zenith Concord"
       ],
-      "probabilityNote": "Rarity rates shown are before pity. Category roll: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
+      "probabilityNote": "Rarity rates shown are before pity. Before normal selection, a conditional 1% bonus branch can select the four starter frames or five patrol-only prototypes. Common/Rare share a low-rarity list; Legendary can yield Corrupted Leviathan; Epic has no bonus entry. Unowned bonus items come first, and owned unique frames are excluded. Category roll for the normal pool: 20% War Machine, 20% pilot, 60% equipment. A 50% branch favors this banner’s faction when eligible. Empty categories fall back to the combined pool. Owned unique families and families at three copies are excluded. Per-card odds depend on your inventory and pity.",
       "image": "assets/banners/zenith-concord.webp",
       "rewardIds": [
         "scout-frame-692eea6",
@@ -63298,7 +66739,15 @@
         "salvage-core-a21d472",
         "fractured-lattice-2591b28",
         "peacekeeper-armor-27eec6e",
-        "kinetic-barrier-bf9dcbe"
+        "kinetic-barrier-bf9dcbe",
+        "ares-p-5a0733c",
+        "aegis-p-12968c1",
+        "juggernaut-p-c954f0d",
+        "corrupted-leviathan-p-07b4d7b",
+        "scrap-cannon-p-f9378f6",
+        "welded-plates-p-31c7884",
+        "standard-reactor-p-2d8cd3e",
+        "rusty-thrusters-p-d79a24b"
       ]
     },
     {
@@ -63460,7 +66909,7 @@
         "Evasion": 2,
         "Melee bonus": 25
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/cupid/cupid-hsp-fg.webp",
       "background": "assets/pilots/bg/cupid-bg.webp",
       "prototypeAdvantages": [],
@@ -63696,7 +67145,7 @@
         "Evasion": 2,
         "Melee bonus": 25
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/cupid/cupid-sp-fg.webp",
       "background": "assets/pilots/bg/cupid-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -63941,7 +67390,7 @@
         "Defense": 9,
         "Evasion": 17
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/ghost/ghost-hsp-fg.webp",
       "background": "assets/pilots/bg/ghost-bg.webp",
       "prototypeAdvantages": [],
@@ -64187,7 +67636,7 @@
         "Defense": 6,
         "Evasion": 14
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/ghost/ghost-sp-fg.webp",
       "background": "assets/pilots/bg/ghost-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -64889,7 +68338,7 @@
         "Defense": 9,
         "Evasion": 8
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/observer/observer-hsp-fg.webp",
       "background": "assets/pilots/bg/observer-bg.webp",
       "prototypeAdvantages": [],
@@ -65123,7 +68572,7 @@
         "Defense": 7,
         "Evasion": 7
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/observer/observer-sp-fg.webp",
       "background": "assets/pilots/bg/observer-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -66348,7 +69797,7 @@
         "Defense": 9,
         "Evasion": 12
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/ace-striker/ace-striker-hsp-fg.webp",
       "background": "assets/pilots/bg/ace-striker-bg.webp",
       "prototypeAdvantages": [],
@@ -66593,7 +70042,7 @@
         "Defense": 0,
         "Evasion": 10
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/ace-striker/ace-striker-sp-fg.webp",
       "background": "assets/pilots/bg/ace-striker-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -66836,7 +70285,7 @@
         "Attack": 10,
         "Defense": 14
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/aegis-guardian/aegis-guardian-hsp-fg.webp",
       "background": "assets/pilots/bg/aegis-guardian-bg.webp",
       "prototypeAdvantages": [],
@@ -67079,7 +70528,7 @@
         "Attack": 0,
         "Defense": 12
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/aegis-guardian/aegis-guardian-sp-fg.webp",
       "background": "assets/pilots/bg/aegis-guardian-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -67322,7 +70771,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/aegis-militia/aegis-militia-hsp-fg.webp",
       "background": "assets/pilots/bg/aegis-militia-bg.webp",
       "prototypeAdvantages": [],
@@ -67438,7 +70887,7 @@
         "Attack": 0,
         "Defense": 4
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/aegis-militia/aegis-militia-p-fg.webp",
       "background": "assets/pilots/bg/aegis-militia-p-bg.webp",
       "prototypeAdvantages": [],
@@ -67565,7 +71014,7 @@
         "Attack": 0,
         "Defense": 6
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/aegis-militia/aegis-militia-sp-fg.webp",
       "background": "assets/pilots/bg/aegis-militia-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -69216,7 +72665,7 @@
         "Defense": 9,
         "Evasion": 6
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-hsp-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-bg.webp",
       "prototypeAdvantages": [],
@@ -69333,7 +72782,7 @@
         "Defense": 4,
         "Evasion": 3
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-p-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-p-bg.webp",
       "prototypeAdvantages": [],
@@ -69461,7 +72910,7 @@
         "Defense": 6,
         "Evasion": 5
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-sp-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -69706,7 +73155,7 @@
         "Defense": 9,
         "Evasion": 6
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-hsp-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-bg.webp",
       "prototypeAdvantages": [],
@@ -69823,7 +73272,7 @@
         "Defense": 4,
         "Evasion": 3
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-p-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-p-bg.webp",
       "prototypeAdvantages": [],
@@ -69951,7 +73400,7 @@
         "Defense": 6,
         "Evasion": 5
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/apex-pilot/apex-pilot-sp-fg.webp",
       "background": "assets/pilots/bg/apex-pilot-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -71142,7 +74591,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/banneret/banneret-hsp-fg.webp",
       "background": "assets/pilots/bg/banneret-bg.webp",
       "prototypeAdvantages": [],
@@ -71385,7 +74834,7 @@
         "Attack": 5,
         "Defense": 5
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/banneret/banneret-sp-fg.webp",
       "background": "assets/pilots/bg/banneret-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -71621,7 +75070,7 @@
         "Energy regen": 6,
         "Hull regen": 6
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/chief-engineer-elena/chief-engineer-elena-hsp-fg.webp",
       "background": "assets/pilots/bg/chief-engineer-elena-bg.webp",
       "prototypeAdvantages": [],
@@ -71857,7 +75306,7 @@
         "Energy regen": 5,
         "Hull regen": 6
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/chief-engineer-elena/chief-engineer-elena-sp-fg.webp",
       "background": "assets/pilots/bg/chief-engineer-elena-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -72102,7 +75551,7 @@
         "Defense": 9,
         "Hull regen": 5
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/clan-gearhead/clan-gearhead-hsp-fg.webp",
       "background": "assets/pilots/bg/clan-gearhead-bg.webp",
       "prototypeAdvantages": [],
@@ -72347,7 +75796,7 @@
         "Defense": 3,
         "Hull regen": 5
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/clan-gearhead/clan-gearhead-sp-fg.webp",
       "background": "assets/pilots/bg/clan-gearhead-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -72590,7 +76039,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/clan-scrapper/clan-scrapper-hsp-fg.webp",
       "background": "assets/pilots/bg/clan-scrapper-bg.webp",
       "prototypeAdvantages": [],
@@ -72706,7 +76155,7 @@
         "Attack": 2,
         "Defense": 2
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/clan-scrapper/clan-scrapper-p-fg.webp",
       "background": "assets/pilots/bg/clan-scrapper-p-bg.webp",
       "prototypeAdvantages": [],
@@ -72833,7 +76282,7 @@
         "Attack": 4,
         "Defense": 3
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/clan-scrapper/clan-scrapper-sp-fg.webp",
       "background": "assets/pilots/bg/clan-scrapper-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -73076,7 +76525,7 @@
         "Attack": 17,
         "Defense": 12
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/clan-warchief/clan-warchief-hsp-fg.webp",
       "background": "assets/pilots/bg/clan-warchief-bg.webp",
       "prototypeAdvantages": [],
@@ -73319,7 +76768,7 @@
         "Attack": 14,
         "Defense": 10
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/clan-warchief/clan-warchief-sp-fg.webp",
       "background": "assets/pilots/bg/clan-warchief-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -73564,7 +77013,7 @@
         "Defense": 9,
         "Evasion": 10
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/cygnus-agent/cygnus-agent-hsp-fg.webp",
       "background": "assets/pilots/bg/cygnus-agent-bg.webp",
       "prototypeAdvantages": [],
@@ -73809,7 +77258,7 @@
         "Defense": 2,
         "Evasion": 8
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/cygnus-agent/cygnus-agent-sp-fg.webp",
       "background": "assets/pilots/bg/cygnus-agent-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -74054,7 +77503,7 @@
         "Defense": 9,
         "Evasion": 7
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/cygnus-analyst/cygnus-analyst-hsp-fg.webp",
       "background": "assets/pilots/bg/cygnus-analyst-bg.webp",
       "prototypeAdvantages": [],
@@ -74171,7 +77620,7 @@
         "Defense": 3,
         "Evasion": 3
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/cygnus-analyst/cygnus-analyst-p-fg.webp",
       "background": "assets/pilots/bg/cygnus-analyst-p-bg.webp",
       "prototypeAdvantages": [],
@@ -74299,7 +77748,7 @@
         "Defense": 5,
         "Evasion": 6
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/cygnus-analyst/cygnus-analyst-sp-fg.webp",
       "background": "assets/pilots/bg/cygnus-analyst-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -74544,7 +77993,7 @@
         "Defense": 12,
         "Evasion": 12
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/cygnus-handler/cygnus-handler-hsp-fg.webp",
       "background": "assets/pilots/bg/cygnus-handler-bg.webp",
       "prototypeAdvantages": [],
@@ -74789,7 +78238,7 @@
         "Defense": 10,
         "Evasion": 10
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/cygnus-handler/cygnus-handler-sp-fg.webp",
       "background": "assets/pilots/bg/cygnus-handler-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -76435,7 +79884,7 @@
         "Defense": 9,
         "Hull regen": 4
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/ensign-asami/ensign-asami-hsp-fg.webp",
       "background": "assets/pilots/bg/ensign-asami-bg.webp",
       "prototypeAdvantages": [],
@@ -76669,7 +80118,7 @@
         "Defense": 5,
         "Hull regen": 4
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/ensign-asami/ensign-asami-sp-fg.webp",
       "background": "assets/pilots/bg/ensign-asami-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -76903,7 +80352,7 @@
         "Defense": 9,
         "Evasion": 4
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/ensign-kaito/ensign-kaito-hsp-fg.webp",
       "background": "assets/pilots/bg/ensign-kaito-bg.webp",
       "prototypeAdvantages": [],
@@ -77137,7 +80586,7 @@
         "Defense": 4,
         "Evasion": 3
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/ensign-kaito/ensign-kaito-sp-fg.webp",
       "background": "assets/pilots/bg/ensign-kaito-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -77371,7 +80820,7 @@
         "Defense": 9,
         "Evasion": 7
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/ensign-rika-jones/ensign-rika-jones-hsp-fg.webp",
       "background": "assets/pilots/bg/ensign-rika-jones-bg.webp",
       "prototypeAdvantages": [],
@@ -77605,7 +81054,7 @@
         "Defense": 5,
         "Evasion": 6
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/ensign-rika-jones/ensign-rika-jones-sp-fg.webp",
       "background": "assets/pilots/bg/ensign-rika-jones-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -78797,7 +82246,7 @@
         "Defense": 10,
         "Evasion": 11
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/freeholder/freeholder-hsp-fg.webp",
       "background": "assets/pilots/bg/freeholder-bg.webp",
       "prototypeAdvantages": [],
@@ -79031,7 +82480,7 @@
         "Defense": 8,
         "Evasion": 9
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/freeholder/freeholder-sp-fg.webp",
       "background": "assets/pilots/bg/freeholder-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -79276,7 +82725,7 @@
         "Defense": 12,
         "Evasion": 10
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/freelancer/freelancer-hsp-fg.webp",
       "background": "assets/pilots/bg/freelancer-bg.webp",
       "prototypeAdvantages": [],
@@ -79521,7 +82970,7 @@
         "Defense": 10,
         "Evasion": 8
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/freelancer/freelancer-sp-fg.webp",
       "background": "assets/pilots/bg/freelancer-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -80714,7 +84163,7 @@
         "Defense": 9,
         "Evasion": 19
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/helmsman/helmsman-hsp-fg.webp",
       "background": "assets/pilots/bg/helmsman-bg.webp",
       "prototypeAdvantages": [],
@@ -80959,7 +84408,7 @@
         "Defense": 2,
         "Evasion": 16
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/helmsman/helmsman-sp-fg.webp",
       "background": "assets/pilots/bg/helmsman-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -81208,7 +84657,7 @@
         "Defense": 9,
         "Evasion": 18
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/infiltrator/infiltrator-hsp-fg.webp",
       "background": "assets/pilots/bg/infiltrator-bg.webp",
       "prototypeAdvantages": [],
@@ -81442,7 +84891,7 @@
         "Defense": 0,
         "Evasion": 15
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/infiltrator/infiltrator-sp-fg.webp",
       "background": "assets/pilots/bg/infiltrator-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -83566,7 +87015,7 @@
         "Defense": 17,
         "Evasion": 7
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/knight-captain/knight-captain-hsp-fg.webp",
       "background": "assets/pilots/bg/knight-captain-bg.webp",
       "prototypeAdvantages": [],
@@ -83800,7 +87249,7 @@
         "Defense": 14,
         "Evasion": 6
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/knight-captain/knight-captain-sp-fg.webp",
       "background": "assets/pilots/bg/knight-captain-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -84047,7 +87496,7 @@
         "Evasion": 7,
         "Melee bonus": 12
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/koa-duelist/koa-duelist-hsp-fg.webp",
       "background": "assets/pilots/bg/koa-duelist-bg.webp",
       "prototypeAdvantages": [],
@@ -84294,7 +87743,7 @@
         "Evasion": 6,
         "Melee bonus": 12
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/koa-duelist/koa-duelist-sp-fg.webp",
       "background": "assets/pilots/bg/koa-duelist-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -84539,7 +87988,7 @@
         "Defense": 9,
         "Melee bonus": 15
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/koa-knight/koa-knight-hsp-fg.webp",
       "background": "assets/pilots/bg/koa-knight-bg.webp",
       "prototypeAdvantages": [],
@@ -84784,7 +88233,7 @@
         "Defense": 6,
         "Melee bonus": 15
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/koa-knight/koa-knight-sp-fg.webp",
       "background": "assets/pilots/bg/koa-knight-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -85027,7 +88476,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/koa-squire/koa-squire-hsp-fg.webp",
       "background": "assets/pilots/bg/koa-squire-bg.webp",
       "prototypeAdvantages": [],
@@ -85143,7 +88592,7 @@
         "Attack": 2,
         "Defense": 3
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/koa-squire/koa-squire-p-fg.webp",
       "background": "assets/pilots/bg/koa-squire-p-bg.webp",
       "prototypeAdvantages": [],
@@ -85270,7 +88719,7 @@
         "Attack": 4,
         "Defense": 5
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/koa-squire/koa-squire-sp-fg.webp",
       "background": "assets/pilots/bg/koa-squire-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -85508,7 +88957,7 @@
         "Shield": 504,
         "Shield regen": 66
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/kuro/kuro-hsp-fg.webp",
       "background": "assets/pilots/bg/kuro-bg.webp",
       "prototypeAdvantages": [],
@@ -85627,7 +89076,7 @@
         "Shield": 240,
         "Shield regen": 32
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/kuro/kuro-p-fg.webp",
       "background": "assets/pilots/bg/kuro-p-bg.webp",
       "prototypeAdvantages": [],
@@ -85746,7 +89195,7 @@
         "Shield": 420,
         "Shield regen": 55
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/kuro/kuro-sp-fg.webp",
       "background": "assets/pilots/bg/kuro-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -87921,7 +91370,7 @@
         "Defense": 9,
         "Evasion": 6
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/lieutenant-nakamura/lieutenant-nakamura-hsp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-nakamura-bg.webp",
       "prototypeAdvantages": [],
@@ -88155,7 +91604,7 @@
         "Defense": 6,
         "Evasion": 5
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/lieutenant-nakamura/lieutenant-nakamura-sp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-nakamura-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -88387,7 +91836,7 @@
         "Attack": 10,
         "Defense": 16
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/lieutenant-taro/lieutenant-taro-hsp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-taro-bg.webp",
       "prototypeAdvantages": [],
@@ -88619,7 +92068,7 @@
         "Attack": 8,
         "Defense": 13
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/lieutenant-taro/lieutenant-taro-sp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-taro-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -88851,7 +92300,7 @@
         "Attack": 12,
         "Defense": 12
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/lieutenant-yamamoto/lieutenant-yamamoto-hsp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-yamamoto-bg.webp",
       "prototypeAdvantages": [],
@@ -89083,7 +92532,7 @@
         "Attack": 10,
         "Defense": 10
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/lieutenant-yamamoto/lieutenant-yamamoto-sp-fg.webp",
       "background": "assets/pilots/bg/lieutenant-yamamoto-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -89794,7 +93243,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/logic-core-ai/logic-core-ai-hsp-fg.webp",
       "background": "assets/pilots/bg/logic-core-ai-bg.webp",
       "prototypeAdvantages": [],
@@ -89910,7 +93359,7 @@
         "Attack": 2,
         "Defense": 2
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/logic-core-ai/logic-core-ai-p-fg.webp",
       "background": "assets/pilots/bg/logic-core-ai-p-bg.webp",
       "prototypeAdvantages": [],
@@ -90037,7 +93486,7 @@
         "Attack": 4,
         "Defense": 3
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/logic-core-ai/logic-core-ai-sp-fg.webp",
       "background": "assets/pilots/bg/logic-core-ai-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -91707,7 +95156,7 @@
         "Defense": 13,
         "Evasion": 5
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/major-kenji/major-kenji-hsp-fg.webp",
       "background": "assets/pilots/bg/major-kenji-bg.webp",
       "prototypeAdvantages": [],
@@ -91941,7 +95390,7 @@
         "Defense": 11,
         "Evasion": 4
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/major-kenji/major-kenji-sp-fg.webp",
       "background": "assets/pilots/bg/major-kenji-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -93162,7 +96611,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/mercenary/mercenary-hsp-fg.webp",
       "background": "assets/pilots/bg/mercenary-bg.webp",
       "prototypeAdvantages": [],
@@ -93279,7 +96728,7 @@
         "Attack": 3,
         "Defense": 2
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/mercenary/mercenary-p-fg.webp",
       "background": "assets/pilots/bg/mercenary-p-bg.webp",
       "prototypeAdvantages": [],
@@ -93406,9 +96855,491 @@
         "Attack": 5,
         "Defense": 3
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/mercenary/mercenary-sp-fg.webp",
       "background": "assets/pilots/bg/mercenary-sp-bg.webp",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "independent-operator-7530dcf"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 640,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 960,
+            "dataFragments": 2400
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 1280,
+            "dataFragments": 3200
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 4000
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 0,
+        "nanites": 3000,
+        "dataFragments": 750
+      }
+    },
+    {
+      "id": "mira-flint-536aedb",
+      "category": "pilots",
+      "name": "Mira Flint",
+      "description": "A veteran raid spotter who marks the fault lines in impossible targets. Her calm voice brings scattered strike teams back onto the same firing solution. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Mira Flint",
+      "rarity": "Epic",
+      "type": "Pilot",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 30,
+        "Attack": 8,
+        "Defense": 6,
+        "Evasion": 3,
+        "Ranged bonus": 8
+      },
+      "rating": 28,
+      "image": "assets/pilots/fg/mira-flint/mira-flint-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [
+        "independent-operator-7530dcf"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 350,
+          "resources": {
+            "alloy": 320,
+            "dataFragments": 800
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 473,
+          "resources": {
+            "alloy": 480,
+            "dataFragments": 1200
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 595,
+          "resources": {
+            "alloy": 640,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 717,
+          "resources": {
+            "alloy": 800,
+            "dataFragments": 2000
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 1848,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 2118,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 2387,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 2657,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 2926,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 0,
+        "nanites": 1200,
+        "dataFragments": 300
+      }
+    },
+    {
+      "id": "mira-flint-hsp-f659232",
+      "category": "pilots",
+      "name": "Mira Flint [HSP]",
+      "description": "A veteran raid spotter who marks the fault lines in impossible targets. Her calm voice brings scattered strike teams back onto the same firing solution. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Mira Flint; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Mira Flint",
+      "rarity": "Legendary",
+      "type": "Pilot",
+      "faction": "No Faction",
+      "spoiler": true,
+      "tier": "HSP",
+      "stats": {
+        "HP": 46,
+        "Attack": 12,
+        "Defense": 10,
+        "Evasion": 6,
+        "Ranged bonus": 12
+      },
+      "rating": 235,
+      "image": "assets/pilots/fg/mira-flint/mira-flint-hsp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "independent-operator-7530dcf"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 640,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 960,
+            "dataFragments": 2400
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 1280,
+            "dataFragments": 3200
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 4000
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 0,
+        "nanites": 3000,
+        "dataFragments": 750
+      }
+    },
+    {
+      "id": "mira-flint-p-500a334",
+      "category": "pilots",
+      "name": "Mira Flint [P]",
+      "description": "A veteran raid spotter who marks the fault lines in impossible targets. Her calm voice brings scattered strike teams back onto the same firing solution. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Mira Flint; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Mira Flint",
+      "rarity": "Epic",
+      "type": "Pilot",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 34,
+        "Attack": 9,
+        "Defense": 7,
+        "Evasion": 4,
+        "Ranged bonus": 9
+      },
+      "rating": 42,
+      "image": "assets/pilots/fg/mira-flint/mira-flint-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "independent-operator-7530dcf"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 350,
+          "resources": {
+            "alloy": 320,
+            "dataFragments": 800
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 473,
+          "resources": {
+            "alloy": 480,
+            "dataFragments": 1200
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 595,
+          "resources": {
+            "alloy": 640,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 717,
+          "resources": {
+            "alloy": 800,
+            "dataFragments": 2000
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 1848,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 2118,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 2387,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 2657,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 2926,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 0,
+        "nanites": 1200,
+        "dataFragments": 300
+      }
+    },
+    {
+      "id": "mira-flint-sp-ca4f764",
+      "category": "pilots",
+      "name": "Mira Flint [SP]",
+      "description": "A veteran raid spotter who marks the fault lines in impossible targets. Her calm voice brings scattered strike teams back onto the same firing solution. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Mira Flint; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Mira Flint",
+      "rarity": "Legendary",
+      "type": "Pilot",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 38,
+        "Attack": 10,
+        "Defense": 8,
+        "Evasion": 5,
+        "Ranged bonus": 10
+      },
+      "rating": 69,
+      "image": "assets/pilots/fg/mira-flint/mira-flint-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/pilot.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
       "prototypeAdvantages": [],
       "packIds": [],
       "abilityIds": [
@@ -95073,7 +99004,7 @@
         "Defense": 10,
         "Evasion": 18
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/oracle-ai/oracle-ai-hsp-fg.webp",
       "background": "assets/pilots/bg/oracle-ai-bg.webp",
       "prototypeAdvantages": [],
@@ -95318,7 +99249,7 @@
         "Defense": 8,
         "Evasion": 15
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/oracle-ai/oracle-ai-sp-fg.webp",
       "background": "assets/pilots/bg/oracle-ai-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -95569,7 +99500,7 @@
         "Evasion": 14,
         "Energy": 30
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/phase-weaver/phase-weaver-hsp-fg.webp",
       "background": "assets/pilots/bg/phase-weaver-bg.webp",
       "prototypeAdvantages": [],
@@ -95805,7 +99736,7 @@
         "Evasion": 12,
         "Energy": 25
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/phase-weaver/phase-weaver-sp-fg.webp",
       "background": "assets/pilots/bg/phase-weaver-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -97478,7 +101409,7 @@
         "Defense": 9,
         "Melee bonus": 15
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/red-wolf-berserker/red-wolf-berserker-hsp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-berserker-bg.webp",
       "prototypeAdvantages": [],
@@ -97723,7 +101654,7 @@
         "Defense": -2,
         "Melee bonus": 15
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/red-wolf-berserker/red-wolf-berserker-sp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-berserker-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -98436,7 +102367,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/red-wolf-pup/red-wolf-pup-hsp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-pup-bg.webp",
       "prototypeAdvantages": [],
@@ -98552,7 +102483,7 @@
         "Attack": 4,
         "Defense": 0
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/red-wolf-pup/red-wolf-pup-p-fg.webp",
       "background": "assets/pilots/bg/red-wolf-pup-p-bg.webp",
       "prototypeAdvantages": [],
@@ -98679,7 +102610,7 @@
         "Attack": 6,
         "Defense": 1
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/red-wolf-pup/red-wolf-pup-sp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-pup-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -98924,7 +102855,7 @@
         "Defense": 9,
         "Hull regen": 4
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/red-wolf-scavenger/red-wolf-scavenger-hsp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-scavenger-bg.webp",
       "prototypeAdvantages": [],
@@ -99169,7 +103100,7 @@
         "Defense": 2,
         "Hull regen": 4
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/red-wolf-scavenger/red-wolf-scavenger-sp-fg.webp",
       "background": "assets/pilots/bg/red-wolf-scavenger-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -100358,7 +104289,7 @@
         "Defense": 11,
         "Evasion": 6
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/roh-ace/roh-ace-hsp-fg.webp",
       "background": "assets/pilots/bg/roh-ace-bg.webp",
       "prototypeAdvantages": [],
@@ -100603,7 +104534,7 @@
         "Defense": 9,
         "Evasion": 5
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/roh-ace/roh-ace-sp-fg.webp",
       "background": "assets/pilots/bg/roh-ace-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -100846,7 +104777,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/roh-cadet/roh-cadet-hsp-fg.webp",
       "background": "assets/pilots/bg/roh-cadet-bg.webp",
       "prototypeAdvantages": [],
@@ -100962,7 +104893,7 @@
         "Attack": 3,
         "Defense": 2
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/roh-cadet/roh-cadet-p-fg.webp",
       "background": "assets/pilots/bg/roh-cadet-p-bg.webp",
       "prototypeAdvantages": [],
@@ -101089,7 +105020,7 @@
         "Attack": 5,
         "Defense": 3
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/roh-cadet/roh-cadet-sp-fg.webp",
       "background": "assets/pilots/bg/roh-cadet-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -101336,7 +105267,7 @@
         "Evasion": 2,
         "Ranged bonus": 25
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/roh-marksman/roh-marksman-hsp-fg.webp",
       "background": "assets/pilots/bg/roh-marksman-bg.webp",
       "prototypeAdvantages": [],
@@ -101583,7 +105514,7 @@
         "Evasion": 2,
         "Ranged bonus": 25
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/roh-marksman/roh-marksman-sp-fg.webp",
       "background": "assets/pilots/bg/roh-marksman-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -101830,7 +105761,7 @@
         "Energy regen": 7,
         "Shield regen": 6
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/roh-technician/roh-technician-hsp-fg.webp",
       "background": "assets/pilots/bg/roh-technician-bg.webp",
       "prototypeAdvantages": [],
@@ -102077,7 +106008,7 @@
         "Energy regen": 6,
         "Shield regen": 5
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/roh-technician/roh-technician-sp-fg.webp",
       "background": "assets/pilots/bg/roh-technician-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -102320,7 +106251,7 @@
         "Attack": 10,
         "Defense": 9
       },
-      "rating": 247,
+      "rating": 217,
       "image": "assets/pilots/fg/rookie-pilot/rookie-pilot-hsp-fg.webp",
       "background": "assets/pilots/bg/rookie-pilot-bg.webp",
       "prototypeAdvantages": [],
@@ -102436,7 +106367,7 @@
         "Attack": 2,
         "Defense": 2
       },
-      "rating": 32,
+      "rating": 24,
       "image": "assets/pilots/fg/rookie-pilot/rookie-pilot-p-fg.webp",
       "background": "assets/pilots/bg/rookie-pilot-p-bg.webp",
       "prototypeAdvantages": [],
@@ -102563,7 +106494,7 @@
         "Attack": 4,
         "Defense": 3
       },
-      "rating": 81,
+      "rating": 51,
       "image": "assets/pilots/fg/rookie-pilot/rookie-pilot-sp-fg.webp",
       "background": "assets/pilots/bg/rookie-pilot-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -102806,7 +106737,7 @@
         "Attack": 10,
         "Defense": 18
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/royal-guard/royal-guard-hsp-fg.webp",
       "background": "assets/pilots/bg/royal-guard-bg.webp",
       "prototypeAdvantages": [],
@@ -103049,7 +106980,7 @@
         "Attack": 5,
         "Defense": 15
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/royal-guard/royal-guard-sp-fg.webp",
       "background": "assets/pilots/bg/royal-guard-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -103751,7 +107682,7 @@
         "Defense": 9,
         "Evasion": 4
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/sergeant-sakura/sergeant-sakura-hsp-fg.webp",
       "background": "assets/pilots/bg/sergeant-sakura-bg.webp",
       "prototypeAdvantages": [],
@@ -103985,7 +107916,7 @@
         "Defense": 4,
         "Evasion": 3
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/sergeant-sakura/sergeant-sakura-sp-fg.webp",
       "background": "assets/pilots/bg/sergeant-sakura-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -104219,7 +108150,7 @@
         "Defense": 9,
         "Evasion": 5
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/sergeant-yuki/sergeant-yuki-hsp-fg.webp",
       "background": "assets/pilots/bg/sergeant-yuki-bg.webp",
       "prototypeAdvantages": [],
@@ -104453,7 +108384,7 @@
         "Defense": 5,
         "Evasion": 4
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/sergeant-yuki/sergeant-yuki-sp-fg.webp",
       "background": "assets/pilots/bg/sergeant-yuki-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -105197,7 +109128,7 @@
         "Evasion": 10,
         "Energy": 38
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/silent-correction/silent-correction-hsp-fg.webp",
       "background": "assets/pilots/bg/silent-correction-bg.webp",
       "prototypeAdvantages": [],
@@ -105433,7 +109364,7 @@
         "Evasion": 8,
         "Energy": 32
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/silent-correction/silent-correction-sp-fg.webp",
       "background": "assets/pilots/bg/silent-correction-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -107579,7 +111510,7 @@
         "Defense": 10,
         "Evasion": 6
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/the-construct/the-construct-hsp-fg.webp",
       "background": "assets/pilots/bg/the-construct-bg.webp",
       "prototypeAdvantages": [],
@@ -107824,7 +111755,7 @@
         "Defense": 8,
         "Evasion": 5
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/the-construct/the-construct-sp-fg.webp",
       "background": "assets/pilots/bg/the-construct-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -109053,7 +112984,7 @@
         "Defense": 10,
         "Hull regen": 3
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/the-survivor/the-survivor-hsp-fg.webp",
       "background": "assets/pilots/bg/the-survivor-bg.webp",
       "prototypeAdvantages": [],
@@ -109298,7 +113229,7 @@
         "Defense": 8,
         "Hull regen": 3
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/the-survivor/the-survivor-sp-fg.webp",
       "background": "assets/pilots/bg/the-survivor-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -109532,7 +113463,7 @@
         "Defense": 9,
         "Melee bonus": 19
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/tiamat/tiamat-hsp-fg.webp",
       "background": "assets/pilots/bg/tiamat-bg.webp",
       "prototypeAdvantages": [],
@@ -109766,7 +113697,7 @@
         "Defense": -7,
         "Melee bonus": 19
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/tiamat/tiamat-sp-fg.webp",
       "background": "assets/pilots/bg/tiamat-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -109998,10 +113929,10 @@
       "spoiler": true,
       "tier": "HSP",
       "stats": {
-        "HP": 50,
-        "Attack": 22,
-        "Defense": 16,
-        "Evasion": 18,
+        "HP": 227,
+        "Attack": 63,
+        "Defense": 43,
+        "Evasion": 31,
         "Energy": 140,
         "Energy regen": 40
       },
@@ -110491,7 +114422,7 @@
         "Defense": 9,
         "Evasion": 4
       },
-      "rating": 247,
+      "rating": 225,
       "image": "assets/pilots/fg/veteran/veteran-hsp-fg.webp",
       "background": "assets/pilots/bg/veteran-bg.webp",
       "prototypeAdvantages": [],
@@ -110736,7 +114667,7 @@
         "Defense": 6,
         "Evasion": 3
       },
-      "rating": 81,
+      "rating": 59,
       "image": "assets/pilots/fg/veteran/veteran-sp-fg.webp",
       "background": "assets/pilots/bg/veteran-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -110985,7 +114916,7 @@
         "Attack": 10,
         "Defense": 22
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/warden-commander/warden-commander-hsp-fg.webp",
       "background": "assets/pilots/bg/warden-commander-bg.webp",
       "prototypeAdvantages": [],
@@ -111217,7 +115148,7 @@
         "Attack": 6,
         "Defense": 18
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/warden-commander/warden-commander-sp-fg.webp",
       "background": "assets/pilots/bg/warden-commander-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -111467,7 +115398,7 @@
         "Defense": 14,
         "Evasion": 0
       },
-      "rating": 247,
+      "rating": 235,
       "image": "assets/pilots/fg/warlord-grim/warlord-grim-hsp-fg.webp",
       "background": "assets/pilots/bg/warlord-grim-bg.webp",
       "prototypeAdvantages": [],
@@ -111701,7 +115632,7 @@
         "Defense": 12,
         "Evasion": -2
       },
-      "rating": 81,
+      "rating": 69,
       "image": "assets/pilots/fg/warlord-grim/warlord-grim-sp-fg.webp",
       "background": "assets/pilots/bg/warlord-grim-sp-bg.webp",
       "prototypeAdvantages": [],
@@ -112439,6 +116370,8 @@
       "name": "Aegis [P]",
       "description": "A defensive powerhouse. Ability: Reactive Plating - Temporarily increases Defense after being hit.",
       "sources": [
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded.",
         "New-game starter selection: only your selected frame is granted."
       ],
       "evidence": [
@@ -112465,7 +116398,18 @@
       "prototypeAdvantages": [
         "Assault"
       ],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [
         "thruster-overcharge-9c751de",
         "guerrilla-shroud-1ea8d7c"
@@ -114288,7 +118232,7 @@
       "name": "Apex Predator",
       "description": "A whisper in the arena, this Skirmisher is spoken of as a ghost that kills before it is ever seen. The master of the 100th wave.",
       "sources": [
-        "Enemy dossier: defeat Apex Predator in Fighting Pits boss waves (50, 100...). 6% per defeat; unlocks base Workshop production."
+        "Enemy dossier: defeat Apex Predator in Fighting Pits boss waves (25, 50, 75...). 6% per defeat; unlocks base Workshop production."
       ],
       "evidence": [
         "constants.ts",
@@ -115387,6 +119331,8 @@
       "name": "Ares [P]",
       "description": "A sturdy, all-purpose chassis. Ability: Predictive Counter - 30% chance to immediately counter-attack when hit by a Skirmisher.",
       "sources": [
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded.",
         "New-game starter selection: only your selected frame is granted."
       ],
       "evidence": [
@@ -115413,7 +119359,18 @@
       "prototypeAdvantages": [
         "Skirmisher"
       ],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [
         "thruster-overcharge-9c751de",
         "guerrilla-shroud-1ea8d7c"
@@ -121987,6 +125944,496 @@
       }
     },
     {
+      "id": "breach-hound-4f6d7f5",
+      "category": "warmachines",
+      "name": "Breach Hound",
+      "description": "A quadruped rescue frame that runs into the breach while other machines retreat. Its orange plating is scarred by crews it brought home. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards.",
+      "sources": [
+        "Faction War: repeatable Titan raid cache, mailed after at least 100 accepted damage in one strike. Common 54%, Rare 28%, Epic 15%, Legendary 3%; a Legendary is guaranteed within 20 qualifying caches."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breach Hound",
+      "rarity": "Rare",
+      "type": "Guardian",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "Base",
+      "stats": {
+        "HP": 145,
+        "Attack": 12,
+        "Defense": 15,
+        "Evasion": 4,
+        "Shield": 30
+      },
+      "rating": 128,
+      "image": "assets/warmachines/fg/breach-hound/breach-hound-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "pilotSlots": 1,
+      "prototypeAdvantages": [],
+      "packIds": [
+        "titan-raid-cache-9da07ef"
+      ],
+      "abilityIds": [
+        "field-overdrive-86cf37a",
+        "standard-brace-29b3051"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 1000,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "breach-hound-hsp-ee9c005",
+      "category": "warmachines",
+      "name": "Breach Hound [HSP]",
+      "description": "A quadruped rescue frame that runs into the breach while other machines retreat. Its orange plating is scarred by crews it brought home. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Breach Hound; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breach Hound",
+      "rarity": "Legendary",
+      "type": "Guardian",
+      "faction": "No Faction",
+      "spoiler": true,
+      "tier": "HSP",
+      "stats": {
+        "HP": 260,
+        "Attack": 24,
+        "Defense": 28,
+        "Evasion": 7,
+        "Shield": 80
+      },
+      "rating": 744,
+      "image": "assets/warmachines/fg/breach-hound/breach-hound-hsp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "pilotSlots": 1,
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "field-overdrive-86cf37a",
+        "standard-brace-29b3051"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 6000,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "breach-hound-p-d4f703a",
+      "category": "warmachines",
+      "name": "Breach Hound [P]",
+      "description": "A quadruped rescue frame that runs into the breach while other machines retreat. Its orange plating is scarred by crews it brought home. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
+      "sources": [
+        "Workshop recovery/evolution of Breach Hound; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breach Hound",
+      "rarity": "Rare",
+      "type": "Guardian",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "P",
+      "stats": {
+        "HP": 162,
+        "Attack": 13,
+        "Defense": 17,
+        "Evasion": 5,
+        "Shield": 34
+      },
+      "rating": 170,
+      "image": "assets/warmachines/fg/breach-hound/breach-hound-p-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "pilotSlots": 1,
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "field-overdrive-86cf37a",
+        "standard-brace-29b3051"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 150,
+          "resources": {
+            "alloy": 350,
+            "dataFragments": 140
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 203,
+          "resources": {
+            "alloy": 525,
+            "dataFragments": 210
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 255,
+          "resources": {
+            "alloy": 700,
+            "dataFragments": 280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 308,
+          "resources": {
+            "alloy": 875,
+            "dataFragments": 350
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 792,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 908,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 1023,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 1139,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 1254,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 1000,
+        "nanites": 500,
+        "dataFragments": 0
+      }
+    },
+    {
+      "id": "breach-hound-sp-c79d8c2",
+      "category": "warmachines",
+      "name": "Breach Hound [SP]",
+      "description": "A quadruped rescue frame that runs into the breach while other machines retreat. Its orange plating is scarred by crews it brought home. Multiplayer Titan cache reward. Earned only from contributing strikes; usable in every mode. Optional catalogue entry, excluded from collection rewards. Blacksite engineers perfected this design in secret, unlocking its apex potential for elite deployments. Trait: Unbreakable - This unit cannot be permanently lost.",
+      "sources": [
+        "Workshop recovery/evolution of Breach Hound; this variant is not a direct Scout reward."
+      ],
+      "evidence": [
+        "data/titanRaidRewards.ts / data/titanRaids.ts",
+        "utils/itemFactory.ts",
+        "utils/assetPaths.ts"
+      ],
+      "family": "Breach Hound",
+      "rarity": "Legendary",
+      "type": "Guardian",
+      "faction": "No Faction",
+      "spoiler": false,
+      "tier": "SP",
+      "stats": {
+        "HP": 181,
+        "Attack": 15,
+        "Defense": 19,
+        "Evasion": 6,
+        "Shield": 38
+      },
+      "rating": 255,
+      "image": "assets/warmachines/fg/breach-hound/breach-hound-sp-fg.webp",
+      "background": "assets/faction-backgrounds/no-faction/warmachine.webp",
+      "multiplayerOnly": true,
+      "note": "Multiplayer-only acquisition; usable in every mode. Optional Red Book entry, excluded from collection rewards. Variants use normal recovery, upgrades and unit HSP progression.",
+      "pilotSlots": 1,
+      "prototypeAdvantages": [],
+      "packIds": [],
+      "abilityIds": [
+        "field-overdrive-86cf37a",
+        "standard-brace-29b3051"
+      ],
+      "relatedIds": [],
+      "upgrades": [
+        {
+          "rank": 1,
+          "multiplier": 1.07,
+          "nanites": 700,
+          "resources": {
+            "alloy": 1600,
+            "dataFragments": 640
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 2,
+          "multiplier": 1.1400000000000001,
+          "nanites": 945,
+          "resources": {
+            "alloy": 2400,
+            "dataFragments": 960
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 3,
+          "multiplier": 1.21,
+          "nanites": 1190,
+          "resources": {
+            "alloy": 3200,
+            "dataFragments": 1280
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 4,
+          "multiplier": 1.28,
+          "nanites": 1435,
+          "resources": {
+            "alloy": 4000,
+            "dataFragments": 1600
+          },
+          "duplicates": 1
+        },
+        {
+          "rank": 5,
+          "multiplier": 1.42,
+          "nanites": 3696,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 6,
+          "multiplier": 1.56,
+          "nanites": 4235,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 7,
+          "multiplier": 1.7000000000000002,
+          "nanites": 4774,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 8,
+          "multiplier": 1.84,
+          "nanites": 5313,
+          "resources": null,
+          "duplicates": 2
+        },
+        {
+          "rank": 9,
+          "multiplier": 1.98,
+          "nanites": 5852,
+          "resources": null,
+          "duplicates": 2
+        }
+      ],
+      "productionCost": {
+        "alloy": 6000,
+        "nanites": 3000,
+        "dataFragments": 0
+      }
+    },
+    {
       "id": "bulldozer-goliath-8108223",
       "category": "warmachines",
       "name": "Bulldozer Goliath",
@@ -128371,7 +132818,7 @@
       "rarity": "Legendary",
       "type": "Guardian",
       "faction": "No Faction",
-      "spoiler": true,
+      "spoiler": false,
       "tier": "Base",
       "stats": {
         "HP": 190,
@@ -128597,7 +133044,8 @@
       "name": "Corrupted Leviathan [P]",
       "description": "The salvaged frame of a Leviathan, twisted and reforged by a nanite swarm. It still retains some of its self-repairing capabilities, now augmented with a corrupting influence. Recovery specialists refitted this design with reinforced systems, enhancing its reliability.",
       "sources": [
-        "Workshop recovery/evolution of Corrupted Leviathan; this variant is not a direct Scout reward."
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded."
       ],
       "evidence": [
         "constants.ts",
@@ -128608,7 +133056,7 @@
       "rarity": "Legendary",
       "type": "Guardian",
       "faction": "No Faction",
-      "spoiler": true,
+      "spoiler": false,
       "tier": "P",
       "stats": {
         "HP": 213,
@@ -128620,7 +133068,18 @@
       "background": "assets/warmachines/bg/corrupted-leviathan-p-bg.webp",
       "pilotSlots": 1,
       "prototypeAdvantages": [],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [
         "field-overdrive-86cf37a",
         "standard-brace-29b3051"
@@ -128726,7 +133185,7 @@
       "rarity": "Legendary",
       "type": "Guardian",
       "faction": "No Faction",
-      "spoiler": true,
+      "spoiler": false,
       "tier": "SP",
       "stats": {
         "HP": 238,
@@ -150661,6 +155120,8 @@
       "name": "Juggernaut [P]",
       "description": "A heavily armed frame designed for breaking fortified positions. Ability: Stabilizers - Ignores evasion when attacking Guardian-class frames.",
       "sources": [
+        "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded.",
         "New-game starter selection: only your selected frame is granted."
       ],
       "evidence": [
@@ -150687,7 +155148,18 @@
       "prototypeAdvantages": [
         "Guardian"
       ],
-      "packIds": [],
+      "packIds": [
+        "standard-acquisition-57d0ca3",
+        "horizon-s-vanguard-bec8aac",
+        "aurora-s-royal-guard-78a98b7",
+        "the-red-pack-80a185e",
+        "liberte-s-resolve-5d37aa0",
+        "zenith-ascension-3298b11",
+        "rustfang-warbands-653d12d",
+        "cygnus-acquisition-12b8db9",
+        "alliance-vanguard-e1e23da",
+        "independent-contracts-9156f40"
+      ],
       "abilityIds": [
         "thruster-overcharge-9c751de",
         "guerrilla-shroud-1ea8d7c"
@@ -181920,6 +186392,7 @@
       "description": "A frame designed for infiltration and assassination, equipped with a low-power stealth field. This prototype's stealth field can fool even advanced sensor suites.",
       "sources": [
         "Scout: any base-game banner. Ownership and duplicate limits apply.",
+        "Scout: conditional 1% bonus list on every base banner. Common/Rare rolls share the low-rarity list; Legendary can award Corrupted Leviathan; Epic has no bonus items. Unowned entries come first and owned unique frames are excluded.",
         "New-game starter selection: only your selected frame is granted."
       ],
       "evidence": [
@@ -185089,7 +189562,7 @@
       "name": "The Juggernaut Prime",
       "description": "The legendary warmachine that guards the 50th wave. A walking fortress of unimaginable durability.",
       "sources": [
-        "Enemy dossier: defeat The Juggernaut Prime in Fighting Pits boss waves (50, 100...). 6% per defeat; unlocks base Workshop production."
+        "Enemy dossier: defeat The Juggernaut Prime in Fighting Pits boss waves (25, 50, 75...). 6% per defeat; unlocks base Workshop production."
       ],
       "evidence": [
         "constants.ts",
@@ -190609,14 +195082,14 @@
       "spoiler": true,
       "tier": "HSP",
       "stats": {
-        "HP": 340,
-        "Attack": 40,
-        "Defense": 34,
-        "Evasion": 16,
-        "Shield": 130,
+        "HP": 647,
+        "Attack": 93,
+        "Defense": 49,
+        "Evasion": 36,
+        "Shield": 284,
         "Energy": 160,
         "Energy regen": 45,
-        "Shield regen": 22
+        "Shield regen": 49
       },
       "rating": 744,
       "image": "assets/warmachines/fg/v-x-excalivault/v-x-excalivault-hsp-fg.webp",
@@ -195163,6 +199636,14 @@
     }
   ],
   "rules": {
+    "titanRaids": {
+      "sharedHealth": 2500000,
+      "battleHealth": 15000,
+      "cooldownMs": 60000,
+      "cacheMinDamage": 100,
+      "legendaryPity": 20,
+      "rewardFamilies": 11
+    },
     "scoutCost": 150,
     "rarityRates": {
       "Common": 0.6,
