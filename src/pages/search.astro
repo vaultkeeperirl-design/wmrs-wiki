@@ -1,0 +1,7 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Browser from '../components/Browser.astro';
+import {guides} from '../content/guides';
+import {entries, href} from '../lib/data';
+---
+<Layout title="Search all WMRS content"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span>Search</nav><div class="page-heading"><p class="eyebrow">CROSS-CATALOG SEARCH</p><h1>Find your next answer.</h1><p>Search names, factions, types, abilities, packs and acquisition routes. Spoilers stay hidden until you choose to reveal them.</p></div><Browser items={[...entries,...guides.map(g=>({id:`guide-${g.slug}`,category:'guides',name:g.title,description:g.summary,type:'Guide',sources:[],evidence:g.sources}))]} /></Layout>

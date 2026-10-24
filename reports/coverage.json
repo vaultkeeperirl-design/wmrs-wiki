@@ -1,0 +1,93 @@
+{
+  "entries": 1844,
+  "categories": {
+    "abilities": 28,
+    "achievements": 53,
+    "bosses": 55,
+    "campaigns": 5,
+    "enemies": 50,
+    "items": 420,
+    "missions": 107,
+    "packs": 38,
+    "pilots": 408,
+    "upgrades": 2,
+    "warmachines": 678
+  },
+  "gameVersion": "2.1.7",
+  "withheldCount": 1,
+  "missingArt": [
+    "demolisher-ff5f29e",
+    "demolisher-hsp-cb132c1",
+    "demolisher-p-c1f9a7f",
+    "demolisher-sp-893744c"
+  ],
+  "changes": {
+    "added": [],
+    "removed": [],
+    "changed": [
+      {
+        "id": "eros-hsp-3a23d50",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "tar-hsp-873da1f",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "aria-s-pearl-hsp-7e49f60",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "asami-emerald-idol-hsp-a0bd163",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "heart-s-pink-bunny-medic-hsp-64abc7a",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "momo-s-beat-booster-hsp-dcf1a75",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "nova-s-cosmic-dj-hsp-5d593fa",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      },
+      {
+        "id": "rin-s-crimson-rock-hsp-1642a1f",
+        "fields": [
+          "image",
+          "artworkNote"
+        ]
+      }
+    ]
+  },
+  "investigations": [
+    "Released story details and hidden rewards are approved behind click-to-reveal controls; unreleased DLC remains excluded.",
+    "Game achievement text for Rare Find claims an SP Scout pull, but Scout excludes SP cards. Withheld pending correction.",
+    "Steam DLC catalog is empty; expansion details are excluded.",
+    "Live regional prices, active Twitch Drop campaigns, server event schedules and Steam achievement configuration are not inferred from source.",
+    "The versioned package is prepared for Steam upload. Public Steam rollout has not been independently confirmed."
+  ]
+}

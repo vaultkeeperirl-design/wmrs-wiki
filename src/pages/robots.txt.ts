@@ -1,0 +1,1 @@
+export function GET(){return new Response('User-agent: *\nAllow: /\nDisallow: /wmrs-wiki/search-index.json\nSitemap: https://vaultkeeperirl-design.github.io/wmrs-wiki/sitemap-index.xml\n',{headers:{'Content-Type':'text/plain'}});}

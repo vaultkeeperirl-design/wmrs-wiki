@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {guides} from '../../content/guides';
+import {href} from '../../lib/data';
+---
+<Layout title="WMRS guides & game mechanics"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span>Guides</nav><div class="page-heading"><p class="eyebrow">FROM ROOKIE TO COMMANDER</p><h1>Understand the game.</h1><p>Progressive explanations grounded in the actual implementation. Start with your first deployment, then learn the systems behind every decision.</p></div><div class="guide-cards">{guides.map(g => <a class="guide-card" href={href(`guides/${g.slug}/`)}><span>{g.level}</span><h3>{g.title} ↗</h3><p>{g.summary}</p></a>)}</div></Layout>

@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {href} from '../lib/data';
+---
+<Layout title="Signal not found"><div class="page-heading"><p class="eyebrow">404 / SIGNAL LOST</p><h1>This record is off the map.</h1><p>Search the current database or return to the command center.</p></div><div class="button-row"><a class="button" href={href('search/')}>Search the wiki →</a><a class="button secondary" href={href()}>Command center</a></div></Layout>

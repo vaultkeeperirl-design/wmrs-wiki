@@ -1,0 +1,32 @@
+{
+  "name": "wmrs-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "extract": "node scripts/extract.mjs",
+    "approve-data": "node scripts/approve.mjs",
+    "check": "astro check",
+    "test": "node --test scripts/*.test.mjs",
+    "build": "node scripts/validate.mjs && astro build && node scripts/audit-build.mjs",
+    "preview": "astro preview --host 127.0.0.1",
+    "stage": "node scripts/stage.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@fontsource/orbitron": "^5.2.8",
+    "@fontsource/roboto-mono": "^5.2.9",
+    "@tailwindcss/vite": "^4.3.2",
+    "astro": "^5.16.0",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.14.0",
+    "cheerio": "^1.1.0",
+    "esbuild": "^0.25.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.3.0"
+  }
+}

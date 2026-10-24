@@ -1,0 +1,416 @@
+[
+  {
+    "loadout": {
+      "warmachine": "scout-frame-692eea6",
+      "pilot": "mercenary-66f4feb",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 120,
+      "Attack": 22,
+      "Defense": 10,
+      "Evasion": 10,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "gryphon-p-3e470a1",
+      "pilot": "mercenary-p-16fc821",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 138,
+      "Attack": 30,
+      "Defense": 11,
+      "Evasion": 16,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "corsair-7f2dccb",
+      "pilot": "veteran-f2fd9d4",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 145,
+      "Attack": 34,
+      "Defense": 15,
+      "Evasion": 16,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "blackout-p-c4130e1",
+      "pilot": "veteran-p-d94ac19",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 170,
+      "Attack": 35,
+      "Defense": 22,
+      "Evasion": 6,
+      "Shield": 190,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "praetorian-p-8644519",
+      "pilot": "ghost-6ad2946",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 330,
+      "Attack": 47,
+      "Defense": 37,
+      "Evasion": 12,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "the-unchained-sp-fab7291",
+      "pilot": "ghost-p-310eb90",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 235,
+      "Attack": 46,
+      "Defense": 24,
+      "Evasion": 14,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "fenrir-sp-93aa9e4",
+      "pilot": "helmsman-609fb30",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 205,
+      "Attack": 44,
+      "Defense": 24,
+      "Evasion": 13,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "the-masterless-blade-78c28b9",
+      "pilot": "helmsman-p-67d213f",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 470,
+      "Attack": 70,
+      "Defense": 37,
+      "Evasion": 37,
+      "Shield": 310,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 36,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "red-rescue-sp-338fdd1",
+      "pilot": "ronin-6a4805e",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 275,
+      "Attack": 48,
+      "Defense": 36,
+      "Evasion": 13,
+      "Shield": 240,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "warbear-red-e49171a",
+      "pilot": "ronin-p-0ef763b",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 278,
+      "Attack": 49,
+      "Defense": 38,
+      "Evasion": 14,
+      "Shield": 230,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "crystalline-annihilator-71bfb2e",
+      "pilot": "roh-cadet-2f04046",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 118,
+      "Attack": 29,
+      "Defense": 12,
+      "Evasion": 10,
+      "Shield": 150,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "mining-marauder-sp-6508ebb",
+      "pilot": "roh-cadet-p-ec83be7",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 84,
+      "Attack": 26,
+      "Defense": 12,
+      "Evasion": 12,
+      "Shield": 137,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "jury-rigged-warden-p-d4cc836",
+      "pilot": "roh-marksman-ec0a7b3",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 118,
+      "Attack": 29,
+      "Defense": 15,
+      "Evasion": 7,
+      "Shield": 175,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "gladiator-sentry-sp-a94dbd3",
+      "pilot": "roh-marksman-p-a5cbdb6",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 103,
+      "Attack": 27,
+      "Defense": 13,
+      "Evasion": 7,
+      "Shield": 143,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "type-88-legion-hsp-abbf046",
+      "pilot": "roh-technician-9ed541b",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 262,
+      "Attack": 42,
+      "Defense": 29,
+      "Evasion": 13,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 8,
+      "Shield regen": 8,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "celestial-hsp-dd76002",
+      "pilot": "roh-technician-p-5c87100",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 265,
+      "Attack": 53,
+      "Defense": 33,
+      "Evasion": 27,
+      "Shield": 274,
+      "Energy": 50,
+      "Energy regen": 9,
+      "Shield regen": 9,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "vanguard-interceptor-hsp-b9b262b",
+      "pilot": "roh-ace-951d35a",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 341,
+      "Attack": 71,
+      "Defense": 34,
+      "Evasion": 30,
+      "Shield": 130,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  },
+  {
+    "loadout": {
+      "warmachine": "mining-warden-hsp-691e2e9",
+      "pilot": "roh-ace-p-fbb0f8b",
+      "weapon1": "auto-cannon-a9361b1",
+      "weapon2": "auto-cannon-a9361b1",
+      "armor": "composite-armor-2995a7a",
+      "core": "overcharged-core-96b4f59",
+      "thrusters": "advanced-thrusters-675a9d9",
+      "shield": "energy-shield-1c8f5de"
+    },
+    "expected": {
+      "HP": 320,
+      "Attack": 45,
+      "Defense": 39,
+      "Evasion": 8,
+      "Shield": 210,
+      "Energy": 50,
+      "Energy regen": 5,
+      "Shield regen": 6,
+      "Hull regen": 0
+    }
+  }
+]

@@ -1,0 +1,30 @@
+---
+import Card from './Card.astro';
+import { categories, entryHref, type Entry } from '../lib/data';
+import {groupFamilies} from '../lib/families';
+interface Props { items: Entry[]; category?: string; rewardFilter?: boolean; collection?: boolean; }
+const {items, category = '', rewardFilter = false, collection = false} = Astro.props;
+const groups = groupFamilies(items.filter(e => !e.spoiler));
+const initial = groups.slice(0, 48);
+const hasFamilies = items.some(e=>!!e.family);
+const rarities = [...new Set(items.map(e => e.rarity).filter(Boolean))];
+const types = [...new Set(items.map(e => e.type).filter(Boolean))].sort();
+const factions = [...new Set(items.map(e => e.faction).filter(Boolean))].sort();
+---
+<div class="database-browser" data-category={category} data-ids={category ? undefined : JSON.stringify(items.map(e=>e.id))} data-collection={collection ? 'true' : 'false'}>
+<div class="filters">
+  <div class="field wide"><label for="db-query">SEARCH NAME, ABILITY, PACK OR SOURCE</label><input id="db-query" type="search" placeholder="Search the database…" autocomplete="off" /></div>
+  {!category && <div class="field"><label for="db-category">CATEGORY</label><select id="db-category"><option value="">All categories</option>{Object.entries(categories).map(([key,c]) => <option value={key}>{c.label}</option>)}<option value="guides">Guides</option></select></div>}
+  <div class="field"><label for="db-rarity">RARITY</label><select id="db-rarity"><option value="">All rarities</option>{['Common','Rare','Epic','Legendary'].filter(r => rarities.includes(r)).map(r => <option>{r}</option>)}</select></div>
+  <div class="field"><label for="db-type">TYPE</label><select id="db-type"><option value="">All types</option>{types.map(t => <option>{t}</option>)}</select></div>
+  {factions.length > 0 && <div class="field"><label for="db-faction">FACTION</label><select id="db-faction"><option value="">All factions</option>{factions.map(f => <option>{f}</option>)}</select></div>}
+  {rewardFilter && <><div class="field"><label for="db-reward-type">REWARD CATEGORY</label><select id="db-reward-type"><option value="">Any reward</option><option value="warmachines">War Machines</option><option value="pilots">Pilots</option><option value="items">Equipment</option><option value="currency">Currency</option></select></div><div class="field"><label for="db-reward-rarity">REWARD RARITY</label><select id="db-reward-rarity"><option value="">Any rarity</option>{['Common','Rare','Epic','Legendary'].map(r => <option>{r}</option>)}</select></div></>}
+  <div class="field"><label for="db-sort">SORT</label><select id="db-sort"><option value="name">Name A–Z</option><option value="rarity">Rarity: highest</option><option value="hp">HP: highest</option><option value="attack">Attack: highest</option><option value="defense">Defense: highest</option></select></div>
+</div>
+<div class="results-meta"><span id="result-count" role="status" aria-live="polite">{groups.length} results · grouped by family</span><div class="browse-toggles">{hasFamilies && <label class="spoiler-toggle"><input type="checkbox" id="db-group" checked /> Group card families</label>}<label class="spoiler-toggle"><input type="checkbox" id="db-spoilers" /> Reveal spoilers</label></div></div>
+<div id="db-gallery" class="gallery">{initial.map(group => <Card entry={group[0]} variants={group[0].family ? group : []} />)}</div>
+<div id="db-empty" class="empty-state" hidden>No results. Try a shorter name or clear a filter.</div>
+<nav class="pagination" aria-label="Result pages"><button id="db-prev" type="button" disabled>← Previous</button><span id="db-page">Page 1</span><button id="db-next" type="button">Next →</button></nav>
+<noscript><p class="notice">Enable JavaScript for search, filters and interactive tools. Every database page is also linked below.</p><ul>{items.filter(e => !e.spoiler).map(e => <li><a href={entryHref(e)}>{e.name}</a></li>)}</ul></noscript>
+</div>
+<script>import '../scripts/browser';</script>

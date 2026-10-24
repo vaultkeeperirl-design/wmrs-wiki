@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EntityBody from '../../components/EntityBody.astro';
+import {entries, categories, href} from '../../lib/data';
+export function getStaticPaths(){return entries.map(entry => ({params:{category:entry.category,id:entry.id},props:{entry}}));}
+const {entry} = Astro.props;
+const protectedEntry = !!entry.spoiler;
+---
+<Layout title={protectedEntry ? `${categories[entry.category].label} · spoiler-protected entry` : entry.name} description={protectedEntry ? 'This entry contains released story or hidden reward details. Choose Reveal spoilers to read it.' : `${entry.name}: ${entry.description.slice(0,150)}`} image={protectedEntry ? undefined : entry.image} noindex={protectedEntry}>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href={href()}>Command center</a><span>/</span><a href={href(`${entry.category}/`)}>{categories[entry.category].label}</a><span>/</span><span>{protectedEntry ? 'Spoiler-protected entry' : entry.name}</span></nav>
+<h1 class:list={{'sr-only':!protectedEntry}}>{protectedEntry ? 'Spoiler-protected entry' : entry.name}</h1>
+{protectedEntry ? <><p class="tool-note">This released content includes a hidden reward, encounter identity or story revelation.</p><details class="spoiler-box full-spoiler"><summary>Reveal spoilers for this entry</summary><EntityBody entry={entry} /></details></> : <EntityBody entry={entry} />}
+</Layout>

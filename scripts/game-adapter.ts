@@ -1,0 +1,26 @@
+// Evaluated only by the local extractor. Never copied into the public site.
+import * as C from '../../constants.ts';
+import * as PremiumPilots from '../../data/premiumPilots.ts';
+import * as PremiumFrames from '../../data/premiumWarmachines.ts';
+import * as Founders from '../../data/foundersPack.ts';
+import * as Twitch from '../../data/twitchDrops.ts';
+import * as Referrals from '../../data/referrals.ts';
+import * as Sorties from '../../data/sorties.ts';
+import * as Cosmetics from '../../data/cosmetics.ts';
+import { COMMAND_UPGRADES } from '../../data/commandUpgrades.ts';
+import { FACTION_ABILITY_INFO } from '../../utils/factionAbilities.ts';
+import { ABILITIES } from '../../data/abilities.ts';
+import { ENEMY_CODEX_ENTRIES, ENEMY_DOSSIER_DROP_CHANCE, createEnemyBlueprint } from '../../services/geminiService.ts';
+import { ACHIEVEMENTS } from '../../services/achievements.ts';
+import { getItemLayerAssetCandidates } from '../../utils/assetPaths.ts';
+import { getUpgradeNaniteCost, getUpgradeResourceCost, getUpgradeRankMultiplier } from '../../utils/upgradeRank.ts';
+import { getMassProductionCost } from '../../utils/gameLogic.ts';
+import { calculateTotalStats } from '../../utils/gameLogic.ts';
+export { calculateTotalStats };
+import { SIGNATURE_PAIRS } from '../../utils/gameLogic.ts';
+import { BATTLE_PASS_SETS } from '../../data/battlePassData.ts';
+import { createRecoveryVariants } from '../../utils/itemFactory.ts';
+import { evolveWarmachineToHsp } from '../../utils/evolution.ts';
+import { evolvePilotToHsp } from '../../utils/pilotEvolution.ts';
+export { evolveWarmachineToHsp, evolvePilotToHsp };
+export { C, PremiumPilots, PremiumFrames, Founders, Twitch, Referrals, Sorties, Cosmetics, COMMAND_UPGRADES, FACTION_ABILITY_INFO, ABILITIES, ENEMY_CODEX_ENTRIES, ENEMY_DOSSIER_DROP_CHANCE, createEnemyBlueprint, ACHIEVEMENTS, getItemLayerAssetCandidates, getUpgradeNaniteCost, getUpgradeResourceCost, getUpgradeRankMultiplier, getMassProductionCost, SIGNATURE_PAIRS, BATTLE_PASS_SETS, createRecoveryVariants };

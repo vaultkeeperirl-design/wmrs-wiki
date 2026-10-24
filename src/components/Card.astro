@@ -1,0 +1,15 @@
+---
+import Art from './Art.astro';
+import { entryHref, categories, rarityColor, type Entry } from '../lib/data';
+interface Props { entry: Entry; variants?: Entry[]; }
+const {entry, variants = []} = Astro.props;
+---
+<article class="entry-card" style={`--rarity:${rarityColor(entry.rarity)}`}>
+  <a href={entryHref(entry)} class="card-link">
+    <Art entry={entry} />
+    <div class="card-info"><div class="card-meta"><span>{entry.rarity ?? entry.type ?? categories[entry.category]?.label}</span>{entry.tier && <span>{entry.tier}</span>}</div><h3>{variants.length ? entry.family : entry.name}</h3><p>{entry.type ?? categories[entry.category]?.label} {entry.faction && ` / ${entry.faction}`}</p></div>
+  </a>
+  {variants.length > 0 && <nav class="variant-tabs" aria-label={`${entry.family} variants`}>{variants.map(v=><a href={entryHref(v)} class:list={{selected:v.id===entry.id}}>{v.tier}</a>)}</nav>}
+  {['warmachines','pilots','items'].includes(entry.category) && <button type="button" class="collect-button" data-collect={entry.id} aria-pressed="false" aria-label={`Mark ${entry.name} as collected`}>＋ Collection</button>}
+  {entry.category === 'achievements' && <button type="button" class="collect-button" data-collect={entry.id} aria-pressed="false">◇ Mark complete</button>}
+</article>

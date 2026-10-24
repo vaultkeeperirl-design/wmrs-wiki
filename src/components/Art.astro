@@ -1,0 +1,9 @@
+---
+import { href, type Entry } from '../lib/data';
+interface Props { entry: Entry; eager?: boolean; }
+const {entry, eager = false} = Astro.props;
+---
+<div class:list={['art', {'art-banner': entry.category === 'packs' && entry.type === 'Scout banner'}]}>
+  {entry.background && <img class="art-bg" src={href(entry.background)} alt="" loading={eager ? 'eager' : 'lazy'} width="400" height="400" />}
+  {entry.image ? <img class="art-fg" src={href(entry.image)} alt={`${entry.name} official artwork`} loading={eager ? 'eager' : 'lazy'} decoding="async" width="400" height="400" /> : <span class="art-fallback" aria-label="Artwork unavailable">{entry.category === 'abilities' ? '✦' : entry.category === 'achievements' ? '◇' : 'WMRS'}</span>}
+</div>

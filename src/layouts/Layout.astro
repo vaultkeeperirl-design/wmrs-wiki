@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+import '@fontsource/orbitron/600.css';
+import '@fontsource/orbitron/800.css';
+import '@fontsource/roboto-mono/400.css';
+import { categories, href, database } from '../lib/data';
+interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
+const { title, description = 'The Warmachine Rogue Scout wiki: War Machines, pilots, packs, equipment, missions and clear guides to every verified base-game system.', image = 'assets/title/base/ares-full-title.webp', noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(href(image), Astro.site);
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: `${title} | WMRS Wiki`, description, url: canonical.href, isPartOf: {'@type':'WebSite', name:'Warmachine Rogue Scout Wiki', url: new URL(href(), Astro.site).href} };
+---
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="color-scheme" content="dark" />{noindex && <meta name="robots" content="noindex, follow" />}<title>{title} | Warmachine Rogue Scout Wiki</title><meta name="description" content={description} /><link rel="canonical" href={canonical} /><meta property="og:type" content="website" /><meta property="og:title" content={`${title} | WMRS Wiki`} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={ogImage} /><meta name="twitter:card" content="summary_large_image" /><script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g,'\\u003c')} /></head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header"><a class="brand" href={href()}><span class="brand-mark">W<span>RS</span></span><span>WARMACHINE<br/><small>ROGUE SCOUT <b>/ WIKI</b></small></span></a><nav class="header-nav" aria-label="Primary"><a href={href('guides/start-here/')}>Start here</a><a href={href('warmachines/')}>Database</a><a href={href('packs/')}>Packs</a><a href={href('tools/compare/')}>Tools</a></nav><a class="header-search" href={href('search/')}><span>⌕</span> Search the wiki <kbd>/</kbd></a><button type="button" id="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open navigation">☰</button></header>
+<div class="site-grid"><aside class="sidebar" id="sidebar"><span class="nav-caption">FIELD MANUAL</span><a href={href()} class:list={{active: Astro.url.pathname === href()}}>⌂ <span>Command center</span></a><a href={href('guides/')}>↗ <span>Guides & mechanics</span></a><span class="nav-caption">ENCYCLOPEDIA</span>{Object.entries(categories).map(([key, c]) => <a href={href(`${key}/`)} class:list={{active: Astro.url.pathname.includes(`/${key}/`)}}><span class="nav-icon">{c.short}</span><span>{c.label}</span></a>)}<a href={href('expansions/')}><span class="nav-icon">DLC</span><span>Expansions</span></a><span class="nav-caption">PLAYER TOOLS</span><a href={href('tools/compare/')}>⇄ <span>Compare cards</span></a><a href={href('tools/pack-explorer/')}>▧ <span>Pack explorer</span></a><a href={href('tools/team-builder/')}>▦ <span>Team builder</span></a><a href={href('tools/collection/')}>◇ <span>My collection</span></a><a href={href('tools/progression/')}>↗ <span>Progression</span></a><a href={href('tools/glossary/')}>≡ <span>Glossary</span></a><div class="sidebar-bottom"><span class="status-dot"></span> BASE GAME REFERENCE<small>Catalog snapshot {database.gameVersion}</small><a href="https://store.steampowered.com/app/5006180/Warmachine_RogueScout/" target="_blank" rel="noopener noreferrer">Play on Steam ↗</a></div></aside>
+<div class="content-shell"><main id="main" tabindex="-1"><slot /></main><footer><span>WARMACHINE: ROGUE SCOUT <b>/</b> FIELD INTELLIGENCE</span><p>Game artwork and content © Hellfun Digital. Catalog {database.gameVersion}. <a href={href('about/')}>Sources, coverage & privacy</a></p></footer></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>import '../scripts/global';</script>
+</body></html>
