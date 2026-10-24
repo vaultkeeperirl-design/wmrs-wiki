@@ -1,5 +1,12 @@
 import type {Entry} from './data';
 import {familyKey,tierOrder} from './families';
+import {damageScore,durabilityScore} from './power';
+
+/** Combined-stat sorts shared with the tier list's Rank by options. */
+export const derivedSorts = [
+  {value:'damage',label:'Damage output: highest',short:'DMG',of:(e:Entry)=>damageScore(e.stats)},
+  {value:'durability',label:'Durability (effective HP): highest',short:'EHP',of:(e:Entry)=>durabilityScore(e.stats)},
+] as const;
 
 export const statSorts = [
   {value:'hp',stat:'HP',label:'HP: highest'},
@@ -37,6 +44,12 @@ export function compareBrowseEntries(a:Entry,b:Entry,sort:string,lookup?:Readonl
     if(aScore===undefined&&bScore!==undefined)return 1;
     if(aScore!==undefined&&bScore===undefined)return -1;
     difference=sort==='power-high'?(bScore??0)-(aScore??0):(aScore??0)-(bScore??0);
+  }
+  else if(derivedSorts.some(option=>option.value===sort)){
+    const of=derivedSorts.find(option=>option.value===sort)!.of;
+    if(!a.stats&&b.stats)return 1;
+    if(a.stats&&!b.stats)return -1;
+    difference=of(b)-of(a);
   }
   else if(sort==='rarity')difference=(rarityRank[b.rarity??'']??0)-(rarityRank[a.rarity??'']??0);
   else if(sort==='name-desc')difference=b.name.localeCompare(a.name);

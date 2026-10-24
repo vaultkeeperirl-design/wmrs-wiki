@@ -52,14 +52,14 @@ export const powerScore = (e: Entry) => e.category === 'items' ? (e.rating ?? 0)
 export interface PowerResult {score: number; rank: PowerRank; position: number; of: number;}
 
 /** Rank every entry against the others in its group (all card tiers together). */
-export function rankPower(items: Entry[]): Map<string, PowerResult> {
+export function rankPower(items: Entry[], score: (e: Entry) => number = powerScore): Map<string, PowerResult> {
   const groups = new Map<string, Entry[]>();
   for (const e of items.filter(isRankable)) {
     const key = powerGroup(e);
     groups.set(key, [...(groups.get(key) ?? []), e]);
   }
   const results = new Map<string, PowerResult>();
-  for (const group of groups.values()) for (const [id, result] of rankScores(group.map(e => ({id: e.id, score: powerScore(e)})))) results.set(id, result);
+  for (const group of groups.values()) for (const [id, result] of rankScores(group.map(e => ({id: e.id, score: score(e)})).filter(s => score === powerScore || s.score > 0))) results.set(id, result);
   return results;
 }
 

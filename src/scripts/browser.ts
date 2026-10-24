@@ -1,7 +1,7 @@
 import {getCatalog,node,link,art,url} from './catalog';
 import {refreshState,readState,toast} from './global';
 import {familyKey,tierOrder} from '../lib/families';
-import {matchesTierVisibility,sortedBrowseGroups,statSorts} from '../lib/browse';
+import {matchesTierVisibility,sortedBrowseGroups,statSorts,derivedSorts} from '../lib/browse';
 import {createTierBadge,createTierName} from '../lib/tier-icons';
 import {createPowerBadge} from '../lib/power';
 import '../styles/power.css';
@@ -42,7 +42,7 @@ async function init(){
     function cardFor(e:typeof all[number],variants:typeof all){
       const card=node('article',undefined,'entry-card');card.style.setProperty('--rarity',({Common:'#aab8c4',Rare:'#6dbaff',Epic:'#c193ff',Legendary:'#edbf70'} as Record<string,string>)[e.rarity??'']??'#8fe8d3');
       const anchor=link('',e.url,'card-link');if(e.power)anchor.append(createPowerBadge(e.power,'card-power'));anchor.append(art(e));const info=node('div',undefined,'card-info');const meta=node('div',undefined,'card-meta');meta.append(node('span',e.rarity??e.type??e.category));if(e.tier)meta.append(createTierBadge(e.tier,url));if(e.spoiler)meta.append(node('span','SPOILER'));info.append(meta,variants.length?node('h3',e.family??e.name):createTierName(e.name,url,'h3'),node('p',[e.type,e.faction].filter(Boolean).join(' / ')));
-      if(e.stats){const values=node('div',undefined,'card-stats');const sortStat=statSorts.find(option=>option.value===sort)?.stat;const shownStats=[...new Set(['HP','Attack','Defense',...(sortStat?[sortStat]:[])])];for(const stat of shownStats)if(e.stats[stat]!==undefined)values.append(node('span',`${stat==='Attack'?'ATK':stat==='Defense'?'DEF':stat} ${e.stats[stat]}`));info.append(values);}
+      if(e.stats){const values=node('div',undefined,'card-stats');const sortStat=statSorts.find(option=>option.value===sort)?.stat;const shownStats=[...new Set(['HP','Attack','Defense',...(sortStat?[sortStat]:[])])];for(const stat of shownStats)if(e.stats[stat]!==undefined)values.append(node('span',`${stat==='Attack'?'ATK':stat==='Defense'?'DEF':stat} ${e.stats[stat]}`));const derived=derivedSorts.find(option=>option.value===sort);if(derived)values.append(node('span',`${derived.short} ${Math.round(derived.of(e)).toLocaleString()}`,'card-stat-focus'));info.append(values);}
       anchor.append(info);card.append(anchor);
       if(variants.length){const tabs=node('div',undefined,'variant-tabs');tabs.setAttribute('aria-label',`${e.family} variants`);for(const variant of variants){const button=node('button');button.append(createTierBadge(variant.tier,url));if(variant.spoiler&&!spoiler.checked)button.append(node('span','◇','tier-spoiler-mark'));button.type='button';button.classList.toggle('selected',variant.id===e.id);button.setAttribute('aria-pressed',String(variant.id===e.id));button.setAttribute('aria-label',variant.spoiler&&!spoiler.checked?`Reveal ${variant.tier} spoiler variant of ${e.family}`:`Show ${variant.tier} variant of ${e.family}`);button.addEventListener('click',()=>{card.replaceWith(cardFor(variant,variants));refreshState();});tabs.append(button);}card.append(tabs);}
       if(['warmachines','pilots','items','achievements'].includes(e.category)){const button=node('button','＋ Collection','collect-button');button.type='button';button.dataset.collect=e.id;button.setAttribute('aria-pressed','false');button.setAttribute('aria-label',`Mark ${e.name} as collected`);card.append(button);}return card;

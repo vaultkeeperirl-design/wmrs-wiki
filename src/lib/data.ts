@@ -1,5 +1,5 @@
 import raw from '../data/database.json';
-import {rankPower,type PowerResult} from './power';
+import {rankPower,damageScore,durabilityScore,type PowerResult} from './power';
 export interface Entry {
   id: string; category: string; name: string; description: string;
   type?: string; family?: string; faction?: string; rarity?: string; tier?: string;
@@ -21,6 +21,10 @@ export const database = raw as unknown as { entries: Entry[]; gameVersion: strin
 export const entries = database.entries;
 export const byId = new Map(entries.map(e => [e.id, e]));
 for (const [id, result] of rankPower(entries)) byId.get(id)!.power = result;
+// Frames and pilots also rank on each half of the power score, shown on their profiles.
+const crew = entries.filter(e => e.category !== 'items');
+export const damageRanks = rankPower(crew, e => damageScore(e.stats));
+export const durabilityRanks = rankPower(crew, e => durabilityScore(e.stats));
 export const categories: Record<string, {label: string; short: string; description: string}> = {
   warmachines: {label: 'War Machines', short: 'WM', description: 'Find your next frame. Browse chassis, compare base stats and trace every acquisition route.'},
   pilots: {label: 'Pilots', short: 'PL', description: 'Meet your crew. Explore pilot bonuses, faction passives and signature pairings.'},
