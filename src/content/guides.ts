@@ -306,6 +306,44 @@ export const guides: Guide[] = [
     }
   ]
 },
+{
+  "slug": "update-2-2-3",
+  "title": "What changes in 2.2.3",
+  "summary": "Classic Fighting Pits behaviour with a targeted stall fix, plus stable Red Book reading positions.",
+  "level": "UPDATE / 2.2.3",
+  "sources": [
+    "components/FightingPitsSimulationScreen.tsx",
+    "components/RedBookScreen.tsx",
+    "data/changelog.ts"
+  ],
+  "related": [
+    "modes",
+    "upgrades",
+    "update-2-2-2"
+  ],
+  "sections": [
+    {
+      "title": "Classic Pits combat stays intact",
+      "paragraphs": [
+        "The Pits retains its pre-Titan hull-based victory, waves, enemy statistics, rewards and Recovery rules. It uses its normal combat flow rather than Titan raid encounter rules.",
+        "If all remaining challengers have lost their operational crew, they cannot fire to release a defending champion. Defending champions now stand down and finish those enemy hulls, preventing the repeating hold-position loop. The wave advances only after the hulls are destroyed. Normal Defend remains toggled when an operational opponent can still fire."
+      ]
+    },
+    {
+      "title": "Keep your place in Faction Lore",
+      "paragraphs": [
+        "Red Book keeps each faction’s reading position through background updates, switching tabs and inspecting item details. Returning to a faction restores its own reading position.",
+        "The collection requirements and collection rewards remain unchanged."
+      ]
+    },
+    {
+      "title": "Client-only hotfix",
+      "paragraphs": [
+        "This update needs no multiplayer service restart. The deployed 2.2.2 Titan raid backend remains compatible. The prepared Windows base-game package excludes DLC and developer demo packs; preparing it does not upload anything to Steam."
+      ]
+    }
+  ]
+},
 ];
 export const journey = [
   {slug:'start-here',label:'Start here',hint:'Learn the loop'}, {slug:'first-battle',label:'First battle',hint:'Read the battlefield'},

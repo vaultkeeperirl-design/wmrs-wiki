@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "2.2.2",
+  "gameVersion": "2.2.3",
   "releasePolicy": "base-game; released spoilers available behind reveal controls; deployment requires reviewed snapshot",
   "entries": [
     {

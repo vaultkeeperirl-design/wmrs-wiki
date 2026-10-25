@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "2.2.2",
-  "databaseHash": "15099c96b3a36b2f2f4fc20c87261f455bcb195a62d9ab1eb56e2cd75edf3263",
+  "gameVersion": "2.2.3",
+  "databaseHash": "3016f5ccfaafd294eac0460b7aa0ccde37e7330b6b375b909152659846b8f5fd",
   "assetHashes": {
     "assets/banners/aegis-alliance.webp": "5a1ac8b00cb51691b0954d56fbd6f8da538644e6a885a2990814d275ba03cba4",
     "assets/banners/cygnus-corporation.webp": "60537f206959ca2d717116f645d295ab49414b19ae8cd1b5bb16dca5e2fcc753",
